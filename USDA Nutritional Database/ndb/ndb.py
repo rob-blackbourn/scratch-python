@@ -1,26 +1,28 @@
+"""Load the USDA Nutritional database"""
 
+from __future__ import print_function
+
+import os.path
 import sqlalchemy as sa
 import pandas as pd
 import numpy as np
 
-engine = sa.create_engine('mysql+pymysql://admin:trustno1@citlonwks107/ndb?charset=utf8', encoding='utf-8')
-
-FD_GROUP_TABLE_NAME="FD_GROUP"
+FD_GROUP_TABLE_NAME="fd_group"
 FD_GROUP_KEYS=['FdGrp_Cd']
 
 def _defineFoodGroupTable(metadata):
     return sa.Table(
         FD_GROUP_TABLE_NAME,
         metadata,
-        sa.Column('FdGrp_Cd', sa.String(4), nullable=False),
-        sa.Column('FdGrp_Desc', sa.String(60), nullable=False),
+        sa.Column('FdGrp_Cd', sa.String(4), nullable=False, comment='4-digit code identifying a food group. Only the first 2 digits are currently assigned. In the future, the last 2 digits may be used. Codes may not be consecutive.'),
+        sa.Column('FdGrp_Desc', sa.String(60), nullable=False, comment='Name of food group.'),
         sa.PrimaryKeyConstraint(*FD_GROUP_KEYS)
     )
 
 def _saveFoodGroupsToSql(engine, df):
     df.set_index(FD_GROUP_KEYS).to_sql(FD_GROUP_TABLE_NAME, con=engine, if_exists='append')
 
-FOOD_DES_TABLE_NAME="FOOD_DES"
+FOOD_DES_TABLE_NAME="food_des"
 FOOD_DES_KEYS=['NDB_No']
 
 def _defineFoodDescriptionTable(metadata):
@@ -31,7 +33,7 @@ def _defineFoodDescriptionTable(metadata):
         sa.Column('FdGrp_Cd', sa.String(4), nullable=False, comment='4-digit code indicating food group to which a food item belongs.'),
         sa.Column('Long_Desc', sa.String(200), nullable=False, comment='200-character description of food item.'),
         sa.Column('Shrt_Desc', sa.String(60), nullable=False, comment='60-character abbreviated description of food item. Generated from the 200-character description using abbreviations in Appendix A. If short description is longer than 60 characters, additional abbreviations are made.'),
-        sa.Column('ComName', sa.String(100), nullable=True, comment='Other names commonly used to describe a food, including local or regional names for various foods, for example, “soda” or “pop” for “carbonated beverages.”'),
+        sa.Column('ComName', sa.String(100), nullable=True, comment='Other names commonly used to describe a food, including local or regional names for various foods, for example, "soda" or "pop" for "carbonated beverages."'),
         sa.Column('ManufacName', sa.String(65), nullable=True, comment='Indicates the company that manufactured the product, when appropriate.'),
         sa.Column('Survey', sa.Boolean, nullable=True, comment='Indicates if the food item is used in the USDA Food and Nutrient Database for Dietary Studies (FNDDS) and thus has a complete nutrient profile for the 65 FNDDS nutrients.'),
         sa.Column('Ref_desc', sa.String(135), nullable=True, comment='Description of inedible parts of a food item (refuse), such as seeds or bone.'),
@@ -48,7 +50,7 @@ def _defineFoodDescriptionTable(metadata):
 def _saveFoodDescriptionsToSql(engine, df):
     df.set_index(FOOD_DES_KEYS).to_sql(FOOD_DES_TABLE_NAME, con=engine, if_exists='append')
 
-WEIGHTS_TABLE_NAME="WEIGHTS"
+WEIGHTS_TABLE_NAME="weights"
 WEIGHTS_KEYS = ['NDB_No', 'Seq']
 
 def _defineWeightsTable(metadata):
@@ -57,7 +59,7 @@ def _defineWeightsTable(metadata):
         metadata,
         sa.Column('NDB_No', sa.String(5), nullable=False, comment='5-digit Nutrient Databank number.'),
         sa.Column('Seq', sa.String(2), nullable=False, comment='Sequence number.'),
-        sa.Column('Amount', sa.Numeric(7, 4), nullable=False, comment='Unit modifier (for example, 1 in “1 cup”).'),
+        sa.Column('Amount', sa.Numeric(7, 4), nullable=False, comment='Unit modifier (for example, 1 in "1 cup").'),
         sa.Column('Msre_Desc', sa.String(84), nullable=False, comment='Description (for example, cup, diced, and 1-inch pieces).'),
         sa.Column('Gm_Wgt', sa.Numeric(8, 2), nullable=False, comment='Gram weight.'),
         sa.Column('Num_Data_Pts', sa.Numeric(4, 0), nullable=True, comment='Number of data points.'),
@@ -69,7 +71,7 @@ def _defineWeightsTable(metadata):
 def _saveWeightsToSql(engine, df):
     df.set_index(WEIGHTS_KEYS).to_sql(WEIGHTS_TABLE_NAME, con=engine, if_exists='append')
 
-NUTR_DEF_TABLE_NAME="NUTR_DEF"
+NUTR_DEF_TABLE_NAME="nutr_def"
 NUTR_DEF_KEYS=['Nutr_No']
 
 def _defineNutrientDefinitionTable(metadata):
@@ -77,7 +79,7 @@ def _defineNutrientDefinitionTable(metadata):
         NUTR_DEF_TABLE_NAME,
         metadata,
         sa.Column('Nutr_No', sa.String(3), nullable=False, comment='Unique 3-digit identifier code for a nutrient.'),
-        sa.Column('Units', sa.String(7), nullable=False, comment='Units of measure (mg, g, μg, and so on).'),
+        sa.Column('Units', sa.String(7), nullable=False, comment='Units of measure (mg, g, and so on).'),
         sa.Column('Tagname', sa.String(20), nullable=True, comment='International Network of Food Data Systems (INFOODS) Tagnames. A unique abbreviation for a nutrient/food component developed by INFOODS to aid in the interchange of data.'),
         sa.Column('NutrDesc', sa.String(60), nullable=False, comment='Name of nutrient/food component.'),
         sa.Column('Num_Dec', sa.Numeric(1, 0), nullable=False, comment='Number of decimal places to which a nutrient value is rounded.'),
@@ -88,7 +90,7 @@ def _defineNutrientDefinitionTable(metadata):
 def _saveNutrientDefinitionsToSql(engine, df):
     df.set_index(NUTR_DEF_KEYS).to_sql(NUTR_DEF_TABLE_NAME, con=engine, if_exists='append')
 
-SRC_CD_TABLE_NAME="SRC_CD"
+SRC_CD_TABLE_NAME="src_cd"
 SRC_CD_KEYS=["Src_Cd"]
 
 def _defineSourceCodeTable(metadata):
@@ -103,7 +105,7 @@ def _defineSourceCodeTable(metadata):
 def _saveSourceCodesToSql(engine, df):
     df.set_index(SRC_CD_KEYS).to_sql(SRC_CD_TABLE_NAME, con=engine, if_exists='append')
 
-DERIV_CD_TABLE_NAME="DERIV_CD"
+DERIV_CD_TABLE_NAME="deriv_cd"
 DERIV_CD_KEYS=['Deriv_Cd']
 
 def _definedDerivationCodeTable(metadata):
@@ -118,7 +120,7 @@ def _definedDerivationCodeTable(metadata):
 def _saveDerivationCodesToSql(engine, df):
     df.set_index(DERIV_CD_KEYS).to_sql(DERIV_CD_TABLE_NAME, con=engine, if_exists='append')
 
-NUT_DATA_TABLE_NAME="NUT_DATA"
+NUT_DATA_TABLE_NAME="nut_data"
 NUT_DATA_KEYS=['NDB_No', 'Nutr_No']
 
 def _defineNutrientDataTable(metadata):
@@ -141,7 +143,7 @@ def _defineNutrientDataTable(metadata):
         sa.Column('Low_EB', sa.Numeric(10, 3), nullable=True, comment='Lower 95% error bound.'),
         sa.Column('Up_EB', sa.Numeric(10, 3), nullable=True, comment='Upper 95% error bound.'),
         sa.Column('Stat_cmt', sa.String(10), nullable=True, comment='Statistical comments. See definitions below.'),
-        sa.Column('AddMod_Date', sa.String(10), nullable=IsADirectoryError, comment='Indicates when a value was either added to the database or last modified.'),
+        sa.Column('AddMod_Date', sa.String(10), nullable=True, comment='Indicates when a value was either added to the database or last modified.'),
         sa.Column('CC', sa.String(1), nullable=True, comment='Confidence Code indicating data quality, based on evaluation of sample plan, sample handling, analytical method, analytical quality control, and number of samples analyzed. Not included in this release, but is planned for future releases.'),
         sa.PrimaryKeyConstraint(*NUT_DATA_KEYS),
         sa.ForeignKeyConstraint(['NDB_No'], [FOOD_DES_TABLE_NAME + '.NDB_No']),
@@ -153,7 +155,7 @@ def _defineNutrientDataTable(metadata):
 def _saveNutrientDataToSql(engine, df):
     df.set_index(NUT_DATA_KEYS).to_sql(NUT_DATA_TABLE_NAME, con=engine, if_exists='append')
 
-DATA_SRC_TABLE_NAME="DATA_SRC"
+DATA_SRC_TABLE_NAME="data_src"
 DATA_SRC_KEYS=['DataSrc_ID']
 
 def _defineSourcesOfDataTable(metadata):
@@ -175,7 +177,7 @@ def _defineSourcesOfDataTable(metadata):
 def _saveSourcesOfDataToSql(engine, df):
     df.set_index(DATA_SRC_KEYS).to_sql(DATA_SRC_TABLE_NAME, con=engine, if_exists='append')
 
-DATASRCLN_TABLE_NAME="DATASRCLN"
+DATASRCLN_TABLE_NAME="datasrcln"
 DATASRCLN_KEYS=['NDB_No', 'Nutr_No', 'DataSrc_ID']
 
 def _defineDataSourceLinkTable(metadata):
@@ -195,7 +197,7 @@ def _defineDataSourceLinkTable(metadata):
 def _saveDataSourceLinksToSql(engine, df):
     df.set_index(DATASRCLN_KEYS).to_sql(DATASRCLN_TABLE_NAME, con=engine, if_exists='append')
 
-LANGDESC_TABLE_NAME="LANGDESC"
+LANGDESC_TABLE_NAME="langdesc"
 LANGDESC_KEYS=['Factor_Code']
 
 def _defineLanguaLFactorDescriptionTable(metadata):
@@ -210,7 +212,7 @@ def _defineLanguaLFactorDescriptionTable(metadata):
 def _saveLanguaLFactorDescriptionsToSql(engine, df):
     df.set_index(LANGDESC_KEYS).to_sql(LANGDESC_TABLE_NAME, con=engine, if_exists='append')
 
-LANGUAL_TABLE_NAME="LANGUAL"
+LANGUAL_TABLE_NAME="langual"
 LANGUAL_KEYS=['NDB_No', 'Factor_Code']
 
 def _defineLanguaLFactorTable(metadata):
@@ -227,7 +229,7 @@ def _defineLanguaLFactorTable(metadata):
 def _saveLanguaLFactorsToSql(engine, df):
     df.set_index(LANGUAL_KEYS).to_sql(LANGUAL_TABLE_NAME, con=engine, if_exists='append')
 
-FOOTNOTE_TABLE_NAME="FOOTNOTE"
+FOOTNOTE_TABLE_NAME="footnote"
 
 def _defineFootnoteTable(metadata):
     return sa.Table(
@@ -248,7 +250,7 @@ def _saveFootnotesToSql(engine, df):
     df.to_sql(FOOTNOTE_TABLE_NAME, con=engine, if_exists='append', index=False)
 
 def loadData():
-    engine = sa.create_engine('mysql+pymysql://admin:trustno1@citlonwks107/ndb?charset=utf8', encoding='utf-8')
+    engine = sa.create_engine('mysql+mysqlconnector://admin:trustno1@localhost/ndb?charset=utf8', encoding='utf-8')
 
     metadata = sa.MetaData(bind=engine)
     metadata.reflect()
@@ -280,11 +282,20 @@ def loadData():
 
     metadata.create_all()
 
-    food_groups = pd.read_csv("./sr28asc/FD_GROUP.txt", sep='^', quotechar='~', header=None, names=['FdGrp_Cd', 'FdGrp_Desc'], dtype={'FdGrp_Cd': np.object, 'FdGrp_Desc': np.object})
+    folder = os.path.join(os.path.dirname(__file__), 'sr28asc')
+
+    food_groups = pd.read_csv(
+        os.path.join(folder, "FD_GROUP.txt"),
+        sep='^',
+        quotechar='~',
+        header=None,
+        encoding='iso-8859-1', 
+        names=['FdGrp_Cd', 'FdGrp_Desc'],
+        dtype={'FdGrp_Cd': np.object, 'FdGrp_Desc': np.object})
     _saveFoodGroupsToSql(engine, food_groups)
 
     food_descriptions = pd.read_csv(
-        "./sr28asc/FOOD_DES.txt", 
+        os.path.join(folder, "FOOD_DES.txt"), 
         sep='^', 
         quotechar='~', 
         true_values='Y',
@@ -309,11 +320,18 @@ def loadData():
             'CHO_Factor': np.float64})
     _saveFoodDescriptionsToSql(engine, food_descriptions)
 
-    weights = pd.read_csv("./sr28asc/WEIGHT.txt", sep='^', quotechar='~', header=None, encoding='iso-8859-1', names=['NDB_No', 'Seq', 'Amount', 'Msre_Desc', 'Gm_Wgt', 'Num_Data_Pts', 'Std_Dev'], dtype={'NDB_No': np.object, 'Seq': np.object, 'Amount': np.float64, 'Msre_Desc': np.object, 'Gm_Wgt': np.float64, 'Num_Data_Pts': np.float64, 'Std_Dev': np.float64})
+    weights = pd.read_csv(
+        os.path.join(folder, "WEIGHT.txt"),
+        sep='^',
+        quotechar='~',
+        header=None,
+        encoding='iso-8859-1',
+        names=['NDB_No', 'Seq', 'Amount', 'Msre_Desc', 'Gm_Wgt', 'Num_Data_Pts', 'Std_Dev'],
+        dtype={'NDB_No': np.object, 'Seq': np.object, 'Amount': np.float64, 'Msre_Desc': np.object, 'Gm_Wgt': np.float64, 'Num_Data_Pts': np.float64, 'Std_Dev': np.float64})
     _saveWeightsToSql(engine, weights)
 
     nutr_defs = pd.read_csv(
-        "./sr28asc/NUTR_DEF.txt", 
+        os.path.join(folder, "NUTR_DEF.txt"), 
         sep='^', 
         quotechar='~', 
         true_values='Y',
@@ -325,7 +343,7 @@ def loadData():
     _saveNutrientDefinitionsToSql(engine, nutr_defs)
 
     source_codes = pd.read_csv(
-        "./sr28asc/SRC_CD.txt", 
+        os.path.join(folder, "SRC_CD.txt"), 
         sep='^', 
         quotechar='~', 
         true_values='Y',
@@ -337,7 +355,7 @@ def loadData():
     _saveSourceCodesToSql(engine, source_codes)
 
     derivation_codes = pd.read_csv(
-        "./sr28asc/DERIV_CD.txt", 
+        os.path.join(folder, "DERIV_CD.txt"), 
         sep='^', 
         quotechar='~', 
         true_values='Y',
@@ -349,7 +367,7 @@ def loadData():
     _saveDerivationCodesToSql(engine, derivation_codes)
 
     nutrient_data = pd.read_csv(
-        "./sr28asc/NUT_DATA.txt", 
+        os.path.join(folder, "NUT_DATA.txt"), 
         sep='^', 
         quotechar='~', 
         true_values='Y',
@@ -379,7 +397,7 @@ def loadData():
     _saveNutrientDataToSql(engine, nutrient_data)
 
     sources_of_data = pd.read_csv(
-        "./sr28asc/DATA_SRC.txt", 
+        os.path.join(folder, "DATA_SRC.txt"), 
         sep='^', 
         quotechar='~', 
         true_values='Y',
@@ -400,7 +418,7 @@ def loadData():
     _saveSourcesOfDataToSql(engine, sources_of_data)
 
     data_source_links = pd.read_csv(
-        "./sr28asc/DATSRCLN.txt", 
+        os.path.join(folder, "DATSRCLN.txt"),
         sep='^', 
         quotechar='~', 
         true_values='Y',
@@ -412,7 +430,7 @@ def loadData():
     _saveDataSourceLinksToSql(engine, data_source_links)
 
     langual_factor_descriptions = pd.read_csv(
-        "./sr28asc/LANGDESC.txt", 
+        os.path.join(folder, "LANGDESC.txt"), 
         sep='^', 
         quotechar='~', 
         true_values='Y',
@@ -424,7 +442,7 @@ def loadData():
     _saveLanguaLFactorDescriptionsToSql(engine, langual_factor_descriptions)
 
     langual_factors = pd.read_csv(
-        "./sr28asc/LANGUAL.txt", 
+        os.path.join(folder, "LANGUAL.txt"), 
         sep='^', 
         quotechar='~', 
         true_values='Y',
@@ -436,7 +454,7 @@ def loadData():
     _saveLanguaLFactorsToSql(engine, langual_factors)
 
     footnotes = pd.read_csv(
-        "./sr28asc/FOOTNOTE.txt", 
+        os.path.join(folder, "FOOTNOTE.txt"), 
         sep='^', 
         quotechar='~', 
         true_values='Y',
