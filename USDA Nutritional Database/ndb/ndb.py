@@ -153,7 +153,7 @@ def _defineNutrientDataTable(metadata):
     )
 
 def _saveNutrientDataToSql(engine, df):
-    df.set_index(NUT_DATA_KEYS).to_sql(NUT_DATA_TABLE_NAME, con=engine, if_exists='append')
+    df.set_index(NUT_DATA_KEYS).to_sql(NUT_DATA_TABLE_NAME, con=engine, chunksize=10000, if_exists='append')
 
 DATA_SRC_TABLE_NAME="data_src"
 DATA_SRC_KEYS=['DataSrc_ID']
@@ -195,7 +195,7 @@ def _defineDataSourceLinkTable(metadata):
     )
 
 def _saveDataSourceLinksToSql(engine, df):
-    df.set_index(DATASRCLN_KEYS).to_sql(DATASRCLN_TABLE_NAME, con=engine, if_exists='append')
+    df.set_index(DATASRCLN_KEYS).to_sql(DATASRCLN_TABLE_NAME, con=engine, chunksize=10000, if_exists='append')
 
 LANGDESC_TABLE_NAME="langdesc"
 LANGDESC_KEYS=['Factor_Code']
@@ -284,6 +284,7 @@ def loadData():
 
     folder = os.path.join(os.path.dirname(__file__), 'sr28asc')
 
+    print("Food groups")
     food_groups = pd.read_csv(
         os.path.join(folder, "FD_GROUP.txt"),
         sep='^',
@@ -294,6 +295,7 @@ def loadData():
         dtype={'FdGrp_Cd': np.object, 'FdGrp_Desc': np.object})
     _saveFoodGroupsToSql(engine, food_groups)
 
+    print("Food descriptions")
     food_descriptions = pd.read_csv(
         os.path.join(folder, "FOOD_DES.txt"), 
         sep='^', 
@@ -320,6 +322,7 @@ def loadData():
             'CHO_Factor': np.float64})
     _saveFoodDescriptionsToSql(engine, food_descriptions)
 
+    print("Weight")
     weights = pd.read_csv(
         os.path.join(folder, "WEIGHT.txt"),
         sep='^',
@@ -330,6 +333,7 @@ def loadData():
         dtype={'NDB_No': np.object, 'Seq': np.object, 'Amount': np.float64, 'Msre_Desc': np.object, 'Gm_Wgt': np.float64, 'Num_Data_Pts': np.float64, 'Std_Dev': np.float64})
     _saveWeightsToSql(engine, weights)
 
+    print("Nutrient defintions")
     nutr_defs = pd.read_csv(
         os.path.join(folder, "NUTR_DEF.txt"), 
         sep='^', 
@@ -342,6 +346,7 @@ def loadData():
         dtype={'Nutr_No': np.object, 'Units': np.object, 'Tagname': np.object, 'NutrDesc': np.object, 'Num_Dec': np.float64, 'SR_Order': np.float64})
     _saveNutrientDefinitionsToSql(engine, nutr_defs)
 
+    print("Source codes")
     source_codes = pd.read_csv(
         os.path.join(folder, "SRC_CD.txt"), 
         sep='^', 
@@ -354,6 +359,7 @@ def loadData():
         dtype={'Src_Cd': np.object, 'SrcCd_Desc': np.object})
     _saveSourceCodesToSql(engine, source_codes)
 
+    print("Derivation code")
     derivation_codes = pd.read_csv(
         os.path.join(folder, "DERIV_CD.txt"), 
         sep='^', 
@@ -366,6 +372,7 @@ def loadData():
         dtype={'Deriv_Cd': np.object, 'Deriv_Desc': np.object})
     _saveDerivationCodesToSql(engine, derivation_codes)
 
+    print("Nutrient data")
     nutrient_data = pd.read_csv(
         os.path.join(folder, "NUT_DATA.txt"), 
         sep='^', 
@@ -373,7 +380,7 @@ def loadData():
         true_values='Y',
         false_values='N',
         header=None, 
-        encoding='iso-8859-1', 
+        encoding='iso-8859-1',
         names=['NDB_No', 'Nutr_No', 'Nutr_Val', 'Num_Data_Pts', 'Std_Error', 'Src_Cd', 'Deriv_Cd', 'Ref_NDB_No', 'Add_Nutr_Mark', 'Num_Studies', 'Min', 'Max', 'DF', 'Low_EB', 'Up_EB', 'Stat_cmt', 'AddMod_Date', 'CC'],
         dtype={
             'NDB_No': np.object, 
@@ -396,6 +403,7 @@ def loadData():
             'CC': np.object})
     _saveNutrientDataToSql(engine, nutrient_data)
 
+    print("Sources of data")
     sources_of_data = pd.read_csv(
         os.path.join(folder, "DATA_SRC.txt"), 
         sep='^', 
@@ -417,6 +425,7 @@ def loadData():
             'End_Page': np.object})
     _saveSourcesOfDataToSql(engine, sources_of_data)
 
+    print("Data source links")
     data_source_links = pd.read_csv(
         os.path.join(folder, "DATSRCLN.txt"),
         sep='^', 
@@ -429,6 +438,7 @@ def loadData():
         dtype={'NDB_No': np.object, 'Nutr_No': np.object, 'DataSrc_ID': np.object})
     _saveDataSourceLinksToSql(engine, data_source_links)
 
+    print("LaunguaL factor defintions")
     langual_factor_descriptions = pd.read_csv(
         os.path.join(folder, "LANGDESC.txt"), 
         sep='^', 
@@ -441,6 +451,7 @@ def loadData():
         dtype={'Factor_Code': np.object, 'Description': np.object})
     _saveLanguaLFactorDescriptionsToSql(engine, langual_factor_descriptions)
 
+    print("LanguaL factors")
     langual_factors = pd.read_csv(
         os.path.join(folder, "LANGUAL.txt"), 
         sep='^', 
@@ -453,6 +464,7 @@ def loadData():
         dtype={'NDB_No': np.object, 'Factor_Code': np.object})
     _saveLanguaLFactorsToSql(engine, langual_factors)
 
+    print("Footnotes")
     footnotes = pd.read_csv(
         os.path.join(folder, "FOOTNOTE.txt"), 
         sep='^', 
