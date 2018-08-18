@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "blog-rest-api"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "*"
+motor = "^2.0"
+aiohttp = "^3.3"
+cchardet = "^2.1"
+aiodns = "^1.1"
+PyJwt = "^1.6"
+bcrypt = "^3.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
