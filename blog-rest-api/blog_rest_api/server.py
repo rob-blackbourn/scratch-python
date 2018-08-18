@@ -32,7 +32,8 @@ def start():
     app.on_startup.append(initialse)
 
     auth_controller = AuthController()
-    auth_controller.bind_routes(app)
+    admin = auth_controller.create_app(app['db'], app['config'])
+    app.add_subapp('/admin/', admin)
 
     web.run_app(app)
 

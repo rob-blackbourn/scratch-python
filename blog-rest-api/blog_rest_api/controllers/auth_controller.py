@@ -36,12 +36,17 @@ def has_any_role(required_roles, user_roles):
 
 class AuthController:
 
-    def bind_routes(self, app):
-        app.add_routes([
+    def create_app(self, db, config):
+        admin = web.Application()
+
+        admin['db'] = db
+        admin['config'] = config
+
+        admin.add_routes([
             web.post('/login', self.login),
             web.post('/register', self.register)
         ])
-        return app
+        return admin
 
     async def login(self, request):
 
