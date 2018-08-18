@@ -1,9 +1,10 @@
 from datetime import datetime
 
 from pymongo import IndexModel, ASCENDING
+from bson import ObjectId
 
 from aioodm import ValidatingDocument
-from aioodm.fields import (StrField, ListField, DateTimeField)
+from aioodm.fields import (StrField, ListField, DateTimeField, ObjectIdField)
 
 import bcrypt
 from blog_rest_api.config import CONFIG
@@ -15,6 +16,7 @@ def encrypt_password(password):
 
 
 class User(ValidatingDocument):
+    _id = ObjectIdField(required=True, default=lambda: ObjectId())
     primary_email = StrField(allow_blank=False, required=True)
     password = StrField(allow_blank=False, required=True,
                         before_set=encrypt_password)

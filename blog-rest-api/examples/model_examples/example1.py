@@ -35,6 +35,9 @@ async def go(db):
         roles=['post:read', 'post:write']
     )
 
+    user2 = await User.q(db).find_one({User.nickname.s: 'Rob'})
+    assert user2 == user
+
     await permission.delete(db)
 
     await user.delete(db)
