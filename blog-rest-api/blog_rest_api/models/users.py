@@ -19,7 +19,7 @@ def encrypt_password(password):
 class User(ValidatingDocument):
     primary_email = StrField(allow_blank=False, required=True)
     password = StrField(allow_blank=False, required=True,
-                        set_transform=encrypt_password)
+                        before_set=encrypt_password)
     secondary_emails = ListField(StrField(allow_blank=False))
     given_names = ListField(StrField(allow_blank=False))
     family_name = StrField()
@@ -32,11 +32,6 @@ class User(ValidatingDocument):
 
     def compare_password(self, password):
         return bcrypt.checkpw(password.encode(), self.password.encode())
-
-    @classmethod
-    def encrypt_password(cls, password, salt_rounds):
-        salt = bcrypt.gensalt(salt_rounds)
-        return bcrypt.hashpw(password.encode(), salt).decode()
 
     async def pre_save(self):
         timestamp = datetime.utcnow()

@@ -34,7 +34,7 @@ class Field(abc.ABC):
 
     def __init__(self, *, required=True, default=_Empty, mongo_name=None,
                  name=None, allow_none=False, choices=None, field_type=None,
-                 set_transform=None, get_transform=None):
+                 before_set=None, after_get=None):
         """Create field.
 
         Args:
@@ -63,8 +63,8 @@ class Field(abc.ABC):
             choices (dict, set): Possible values for field. If it is a
                 ``dict``, keys should be possible values. To preserve values
                 order use ``collections.OrderedDict``. Defaults to ``None``.
-            set_transform (func(value) => value): A function to apply before a set operation.
-            get_transform (func(value) => value): A function to apply after a get operation.
+            before_set (func(value) => value): A function to apply before a set operation.
+            after_get (func(value) => value): A function to apply after a get operation.
 
 
         .. note::
@@ -77,8 +77,8 @@ class Field(abc.ABC):
         self.required = required
         self.allow_none = allow_none
         self._default = default
-        self.set_transform = set_transform
-        self.get_transform = get_transform
+        self.before_set = before_set
+        self.after_get = after_get
         if choices is None or isinstance(choices, dict):
             self.choices = choices
         else:
@@ -117,11 +117,11 @@ class Field(abc.ABC):
             # TODO: should we try to return default here?
             value = None
 
-        return self.get_transform(value) if self.get_transform else value
+        return self.after_get(value) if self.after_get else value
 
     def __set__(self, instance, value):
         instance._data[self.name] = self.from_data(
-            self.set_transform(value) if self.set_transform else value)
+            self.before_set(value) if self.before_set else value)
 
     def to_mongo(self, value):
         """Convert value to mongo format."""
