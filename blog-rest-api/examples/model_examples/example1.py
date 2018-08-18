@@ -1,37 +1,42 @@
 import asyncio
 from bson import ObjectId
 from motor.motor_asyncio import AsyncIOMotorClient
+
 from blog_rest_api.models.users import User
+from blog_rest_api.models.permissions import Permission
 
 
 async def go(db):
     # create model's indexes
     await User.q(db).create_indexes()
 
-    u = await User(
-        primary_email='rob.blackbourn@googlemail.com',
-        secondary_emails=['rob.blackbourn@gmail.com'],
-        password='trustno1',
-        given_names=['Robert', 'Thomas'],
-        family_name='Blackbourn',
-        nickname='Rob',
-        _ffo=True
-    ).save(db, do_insert=True)
-
-    await u.delete(db)
-
-    # create using create
-    u = await User.create(
+    user = await User.create(
         db,
         primary_email='rob.blackbourn@googlemail.com',
         secondary_emails=['rob.blackbourn@gmail.com'],
-        password='trustno1',
+        password='foo',
         given_names=['Robert', 'Thomas'],
         family_name='Blackbourn',
         nickname='Rob'
     )
 
-    await u.delete(db)
+    assert user.is_valid_password('foo')
+
+    user.password = 'bar'
+    await user.save(db)
+
+    assert not user.is_valid_password('foo')
+    assert user.is_valid_password('bar')
+
+    permission = await Permission.create(
+        db,
+        user=user,
+        roles=['post:read', 'post:write']
+    )
+
+    await permission.delete(db)
+
+    await user.delete(db)
 
     # using query
     u = await User.q(db).create(
