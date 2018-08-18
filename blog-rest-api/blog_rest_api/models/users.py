@@ -30,7 +30,7 @@ class User(ValidatingDocument):
     class Meta:
         collection = 'users'
 
-    def compare_password(self, password):
+    def is_valid_password(self, password):
         return bcrypt.checkpw(password.encode(), self.password.encode())
 
     async def pre_save(self):
