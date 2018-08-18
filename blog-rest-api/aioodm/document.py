@@ -290,6 +290,15 @@ class BaseDocument(object):
 
         return son
 
+    def __eq__(self, other):
+        for field_name, field in self.meta.fields.items():
+            if (field_name in self._data and field_name not in other._data) or (field_name not in self._data and field_name in other._data):
+                return False
+            if field_name in self._data:
+                if field.to_mongo(self._data[field_name]) != field.to_mongo(other._data[field_name]):
+                    return False
+        return True
+
     @classmethod
     def from_mongo(cls, data):
         """Create document from mongo data.
