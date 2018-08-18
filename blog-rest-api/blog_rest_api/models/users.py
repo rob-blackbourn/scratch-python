@@ -1,11 +1,9 @@
 from datetime import datetime
 
-from pymongo import IndexModel, DESCENDING
+from pymongo import IndexModel, ASCENDING
 
 from aioodm import ValidatingDocument
-from aioodm.fields import (
-    StrField, BoolField, ListField, EmbDocField, RefField, SynonymField,
-    IntField, FloatField, DateTimeField, ObjectIdField)
+from aioodm.fields import (StrField, ListField, DateTimeField)
 
 import bcrypt
 from blog_rest_api.config import CONFIG
@@ -29,6 +27,9 @@ class User(ValidatingDocument):
 
     class Meta:
         collection = 'users'
+        indexes = [
+            IndexModel([('primary_email', ASCENDING)], unique=True)
+        ]
 
     def is_valid_password(self, password):
         return bcrypt.checkpw(password.encode(), self.password.encode())

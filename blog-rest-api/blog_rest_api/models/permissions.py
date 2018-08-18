@@ -1,11 +1,9 @@
 from datetime import datetime
 
-from pymongo import IndexModel, DESCENDING
+from pymongo import IndexModel, ASCENDING
 
 from aioodm import ValidatingDocument
-from aioodm.fields import (
-    StrField, BoolField, ListField, EmbDocField, RefField, SynonymField,
-    IntField, FloatField, DateTimeField, ObjectIdField)
+from aioodm.fields import (StrField, ListField, RefField, DateTimeField)
 
 from blog_rest_api.models.users import User
 
@@ -18,6 +16,9 @@ class Permission(ValidatingDocument):
 
     class Meta:
         collection = 'permissions'
+        indexes = [
+            IndexModel([('user', ASCENDING)], unique=True)
+        ]
 
     async def pre_save(self):
         timestamp = datetime.utcnow()

@@ -9,6 +9,7 @@ from blog_rest_api.models.permissions import Permission
 async def go(db):
     # create model's indexes
     await User.q(db).create_indexes()
+    await Permission.q(db).create_indexes()
 
     user = await User.create(
         db,
