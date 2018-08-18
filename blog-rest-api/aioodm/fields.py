@@ -339,7 +339,8 @@ class DateTimeField(Field):
         super().__init__(field_type=datetime, **kwargs)
 
     def from_data(self, value):
-        return value
+        # Mongo only has millisecond accuracy.
+        return value.replace(microsecond=round(value.microsecond, -3)) if value else value
 
 
 class ObjectIdField(Field):
