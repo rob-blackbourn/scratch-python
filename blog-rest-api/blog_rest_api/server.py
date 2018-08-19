@@ -10,7 +10,7 @@ from blog_rest_api.controllers import AuthController, UserController
 from blog_rest_api.models import (User, Permission)
 from blog_rest_api.utils import Struct
 
-from blog_rest_api.initialisation import initialse
+from blog_rest_api.initialisation import initialize, configure
 
 
 def start():
@@ -25,18 +25,9 @@ def start():
     app['db'] = client.blog
     app['config'] = Struct(CONFIG)
 
-    app.on_startup.append(initialse)
+    app.on_startup.append(initialize)
 
-    auth_controller = AuthController(app['db'], app['config'])
-    admin = auth_controller.create_app()
-    app.add_subapp('/admin/', admin)
-
-    user_controller = UserController(app['db'], app['config'])
-    user_app = user_controller.create_app(
-        auth_controller.authenticate,
-        auth_controller.authorise(all_roles=['admin']),
-        auth_controller.authorise(all_roles=['admin']))
-    app.add_subapp('/user/', user_app)
+    configure(app, app['db'], app['config'])
 
     web.run_app(app)
 

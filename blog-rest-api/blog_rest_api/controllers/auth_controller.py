@@ -88,7 +88,7 @@ class AuthController:
             await Permission.create(
                 self.db,
                 user=user,
-                roles=['public:read'])
+                roles=self.config.authorization.default_roles)
 
             token = self.sign(user._id)
 

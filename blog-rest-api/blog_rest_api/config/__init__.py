@@ -9,5 +9,9 @@ CONFIG = {
         'token_expiry': '24h',
         'admin_primary_email': 'admin@localhost',
         'admin_default_password': 'admin'
+    },
+    'authorization': {
+        'default_roles': ['user:read', 'user:write', 'public:read'],
+        'approved_roles': ['posts:write', 'comment:write']
     }
 }

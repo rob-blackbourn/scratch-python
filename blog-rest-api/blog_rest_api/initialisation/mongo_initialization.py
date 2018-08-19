@@ -30,11 +30,12 @@ async def setup_admin_account(db, config):
     await Permission.create(
         db,
         user=admin,
-        roles=['admin']
+        roles=['admin'] + config.authorization.default_roles +
+        config.authorization.approved_roles
     )
 
 
-async def initialise_mongo(db, config):
+async def initialize_mongo(db, config):
     logging.debug('Initialising mongo ...')
     await setup_indexes(db)
     await setup_admin_account(db, config)
