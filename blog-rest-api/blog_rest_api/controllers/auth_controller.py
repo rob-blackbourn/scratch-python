@@ -9,21 +9,6 @@ from blog_rest_api.models.users import User
 from blog_rest_api.models.permissions import Permission
 
 
-def verify_token(authorization, secret):
-    if not authorization:
-        raise Exception('no authorization header')
-
-    scheme, token = authorization.split(' ')
-    if scheme.lower() != 'bearer':
-        raise Exception(f'invalid scheme {scheme} - expected "Bearer"')
-
-    payload = jwt.decode(token, secret)
-    if not payload['sub']:
-        raise Exception('token contains no "sub"')
-
-    return payload
-
-
 def has_any_role(required_roles, user_roles):
     if not required_roles or len(required_roles) == 0:
         return True
@@ -33,6 +18,17 @@ def has_any_role(required_roles, user_roles):
             return True
 
     return False
+
+
+def has_all_roles(required_roles, user_roles):
+    if not required_roles or len(required_roles) == 0:
+        return True
+
+    for required_role in required_roles:
+        if required_role not in user_roles:
+            return False
+
+    return True
 
 
 class AuthController:
@@ -134,12 +130,15 @@ class AuthController:
             logger.debug(f"Failed to authenticate - {error}")
             return web.Response(body='unauthorized', status=401)
 
-    def authorise(self, application_roles, is_owner=False, owner_roles=None):
+    def authorise(self, *, any_role=[], all_roles=[], is_owner=False, owner_roles=None):
 
         @web.middleware
         async def authenticate_roles(request, handler):
             try:
-                if not has_any_role(application_roles, request.permission.roles):
+                if not has_any_role(any_role, request.permission.roles):
+                    raise Exception('Required roles not found')
+
+                if not has_all_roles(all_roles, request.permission.roles):
                     raise Exception('Required roles not found')
 
                 if is_owner and not (request.user == request.document.user or has_any_role(owner_roles, request.user.roles)):

@@ -34,8 +34,8 @@ def start():
     user_controller = UserController(app['db'], app['config'])
     user_app = user_controller.create_app(
         auth_controller.authenticate,
-        auth_controller.authorise(['admin']),
-        auth_controller.authorise(['admin']))
+        auth_controller.authorise(all_roles=['admin']),
+        auth_controller.authorise(all_roles=['admin']))
     app.add_subapp('/user/', user_app)
 
     web.run_app(app)
