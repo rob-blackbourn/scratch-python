@@ -27,7 +27,7 @@ def start():
 
     app.on_startup.append(initialize)
 
-    configure(app, app['db'], app['config'])
+    configure(app)
 
     web.run_app(app)
 

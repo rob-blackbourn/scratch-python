@@ -6,5 +6,5 @@ async def initialize(app):
     await initialize_mongo(app['db'], app['config'])
 
 
-def configure(app, db, config):
-    configure_controllers(app, db, config)
+def configure(app):
+    configure_controllers(app, app['db'], app['config'])
