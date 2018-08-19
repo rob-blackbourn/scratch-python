@@ -3,6 +3,7 @@ logger = logging.getLogger(__name__)
 
 import jwt
 from datetime import datetime, timedelta
+from bson import ObjectId
 from aiohttp import web
 from blog_rest_api.models.users import User
 from blog_rest_api.models.permissions import Permission
@@ -36,34 +37,33 @@ def has_any_role(required_roles, user_roles):
 
 class AuthController:
 
-    def create_app(self, db, config):
-        admin = web.Application()
+    def __init__(self, db, config):
+        self.db = db
+        self.config = config
 
-        admin['db'] = db
-        admin['config'] = config
+    def create_app(self):
+        admin = web.Application()
 
         admin.add_routes([
             web.post('/login', self.login),
             web.post('/register', self.register)
         ])
+
         return admin
 
     async def login(self, request):
 
-        db = request.app['db']
-        auth_config = request.app['config'].authentication
-
         try:
             body = await request.json()
 
-            user = await User.q(db).find_one({
+            user = await User.q(self.db).find_one({
                 User.primary_email.s: body['email']
             })
 
             if not user.is_valid_password(body['password']):
                 raise Exception('invalid password')
 
-            token = self.sign(user._id, auth_config.issuer, auth_config.secret)
+            token = self.sign(user._id)
 
             return web.json_response({'token': token})
 
@@ -73,9 +73,6 @@ class AuthController:
 
     async def register(self, request):
 
-        db = request.app['db']
-        auth_config = request.app['config'].authentication
-
         try:
             body = await request.json()
 
@@ -83,7 +80,7 @@ class AuthController:
                 raise Exception('no primary email or password')
 
             user = await User.create(
-                db,
+                self.db,
                 primary_email=body['primary_email'],
                 password=body['password'],
                 secondary_emails=body['secondary_emails'],
@@ -93,12 +90,11 @@ class AuthController:
             )
 
             await Permission.create(
-                db,
+                self.db,
                 user=user,
                 roles=['public:read'])
 
-            token = self.sign(
-                user._id, auth_config.issuer, auth_config.secret)
+            token = self.sign(user._id)
 
             return web.json_response({'token': token})
 
@@ -106,49 +102,52 @@ class AuthController:
             logger.debug(f'failed to login - {error}')
             return web.Response(text='unauthenticated', status=401)
 
-    def sign(self, id, issuer, secret):
+    def sign(self, id):
         payload = {
-            'iss': issuer,
+            'iss': self.config.authentication.issuer,
             'sub': str(id),
             'exp': datetime.utcnow() + timedelta(days=1)
         }
-        return jwt.encode(payload, key=secret).decode()
+        return jwt.encode(payload, key=self.config.authentication.secret).decode()
 
-    async def authenticate(self, request):
-
-        db = request.app['db']
-        auth_config = request.app['config'].authentication
+    @web.middleware
+    async def authenticate(self, request, handler):
 
         try:
             scheme, token = request.headers['authorization'].split(' ')
             if scheme.lower() != 'bearer':
                 raise Exception('invalid token')
-            payload = jwt.decode(token, key=auth_config.secret)
+            payload = jwt.decode(token, key=self.config.authentication.secret)
 
             if not payload['sub']:
                 raise Exception('token contains no "sub"')
-            request.user = await User.q(db).find_one({
-                User._id.s: payload['sub']
+            user_id = ObjectId(payload['sub'])
+            request.user = await User.q(self.db).get(user_id)
+            request.permission = await Permission.q(self.db).find_one({
+                Permission.user.s: user_id
             })
-            if not request.user:
-                raise Exception(f'unknown user id {payload.sub}')
 
-            return None
-        except:
+            response = await handler(request)
+
+            return response
+        except Exception as error:
+            logger.debug(f"Failed to authenticate - {error}")
             return web.Response(body='unauthorized', status=401)
 
     def authorise(self, application_roles, is_owner=False, owner_roles=None):
 
-        async def authenticate_roles(request):
+        @web.middleware
+        async def authenticate_roles(request, handler):
             try:
-                if not has_any_role(application_roles, request.user.roles):
+                if not has_any_role(application_roles, request.permission.roles):
                     raise Exception('Required roles not found')
 
-                if is_owner and not (request.user._id == request.document.user_id or has_any_role(owner_roles, request.user.roles)):
+                if is_owner and not (request.user == request.document.user or has_any_role(owner_roles, request.user.roles)):
                     raise Exception('user not owner or an owner role')
 
-                return None
-            except:
+                return await handler(request)
+            except Exception as error:
+                logger.debug(f"Failed to authorize - {error}")
                 return web.Response(body='unauthorized', status=401)
 
         return authenticate_roles

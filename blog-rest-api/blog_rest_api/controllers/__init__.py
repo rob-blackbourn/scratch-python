@@ -1,1 +1,4 @@
 from blog_rest_api.controllers.auth_controller import AuthController
+from blog_rest_api.controllers.user_controller import UserController
+from blog_rest_api.controllers.post_controller import PostController
+from blog_rest_api.controllers.comment_controller import CommentController

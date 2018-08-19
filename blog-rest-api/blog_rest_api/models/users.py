@@ -20,10 +20,10 @@ class User(ValidatingDocument):
     primary_email = StrField(allow_blank=False, required=True)
     password = StrField(allow_blank=False, required=True,
                         before_set=encrypt_password)
-    secondary_emails = ListField(StrField(allow_blank=False))
-    given_names = ListField(StrField(allow_blank=False))
-    family_name = StrField()
-    nickname = StrField(required=True, allow_blank=False)
+    secondary_emails = ListField(StrField(allow_blank=False), required=False)
+    given_names = ListField(StrField(allow_blank=False), required=False)
+    family_name = StrField(required=False)
+    nickname = StrField(required=False, allow_blank=False)
     created = DateTimeField(required=True)
     updated = DateTimeField(required=True)
 
