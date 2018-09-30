@@ -1,0 +1,53 @@
+version: '3.1'
+
+services:
+
+  mongo:
+    image: mongo:4.0.2-xenial
+    restart: always
+    ports:
+    - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: rtb
+      MONGO_INITDB_ROOT_PASSWORD: trustno1
+      MONGO_INITDB_DATABASE: contests
+    volumes:
+    - ./init-mongo:/docker-entrypoint-initdb.d/
+
+
+  mongo-express:
+    image: mongo-express:0.49.0
+    depends_on:
+    - mongo
+    restart: always
+    ports:
+    - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: rtb
+      ME_CONFIG_MONGODB_ADMINPASSWORD: trustno1
+
+  postgres:
+    image: postgres:10.5-alpine
+    ports:
+    - '5432:5432'
+    restart: always
+    environment:
+      POSTGRES_USER: 'rtb'
+      POSTGRES_PASSWORD: 'trustno1'
+      POSTGRES_DB: 'contests'
+    volumes:
+    - ./init-postgres:/docker-entrypoint-initdb.d/
+
+  adminer:
+    image: adminer:4.6.3
+    depends_on:
+    - postgres
+    restart: always
+    environment:
+      ADMINER_DESIGN: 'nette'
+    ports:
+    - 8082:8080
+
+# docker-compose up
+# mongo --username rtb --password trustno1 --authenticationDatabase admin mydb
+# psql --host=localhost --username=rtb contests
