@@ -22,10 +22,9 @@ ContestStatusType = GraphQLEnumType(
     ])
 )
 
-
-def fields():
-    from .name import NameType
-    return {
+ContestType = GraphQLObjectType(
+    name='ContestType',
+    fields=lambda: {
         'id': GraphQLField(GraphQLID),
         'code': GraphQLField(GraphQLNonNull(GraphQLString)),
         'title': GraphQLField(GraphQLNonNull(GraphQLString)),
@@ -34,9 +33,7 @@ def fields():
         'createdAt': GraphQLField(GraphQLNonNull(GraphQLString)),
         'names': GraphQLField(GraphQLList(NameType), resolver=pgdb.get_names)
     }
-
-
-ContestType = GraphQLObjectType(
-    name='ContestType',
-    fields=fields
 )
+
+# Located at the end of the file to avoid cyclic dependencies
+from .name import NameType
