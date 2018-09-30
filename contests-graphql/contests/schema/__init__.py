@@ -8,18 +8,18 @@ from graphql import (
 )
 
 from ..database import pgdb
-from .types.me import MeType
+from .types.user import UserType
 
 RootQueryType = GraphQLObjectType(
     name='RootQueryType',
     fields=lambda: {
         'me': GraphQLField(
-            MeType,
+            UserType,
             args={
                 'key': GraphQLArgument(GraphQLNonNull(GraphQLString))
             },
             description="The current user identified by an api key",
-            resolver=pgdb.get_user
+            resolver=pgdb.get_user_by_api_key
         )
     }
 )

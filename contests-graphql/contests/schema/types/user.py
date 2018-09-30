@@ -10,11 +10,11 @@ from graphql import (
 
 from ...database.pgdb import get_contests
 from ...database.mdb import get_counts
-from .contest_type import ContestType
 
-MeType = GraphQLObjectType(
-    name='Metype',
-    fields=lambda: {
+
+def fields():
+    from .contest_type import ContestType
+    return {
         'id': GraphQLField(GraphQLID),
         'email': GraphQLField(GraphQLNonNull(GraphQLString)),
         'firstName': GraphQLField(GraphQLString),
@@ -27,4 +27,9 @@ MeType = GraphQLObjectType(
         'namesCount': GraphQLField(GraphQLInt, resolver=get_counts),
         'votesCount': GraphQLField(GraphQLInt, resolver=get_counts),
     }
+
+
+UserType = GraphQLObjectType(
+    name='UserType',
+    fields=fields
 )
