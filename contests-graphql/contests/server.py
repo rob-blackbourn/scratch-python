@@ -9,14 +9,6 @@ from contests.initialization import initialize
 app = web.Application()
 app['config'] = CONFIG
 
-GraphQLView.attach(
-    app,
-    schema=schema,
-    context={'foo': 'bar'},
-    graphiql=True,
-    executor=AsyncioExecutor(),
-    enable_async=True)
-
 initialize(app)
 
 web.run_app(app)
