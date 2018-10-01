@@ -11,6 +11,7 @@ from graphql import (
     GraphQLList
 )
 
+from ...utils.resolver import resolver_wrapper
 from ...database import pgdb
 
 ContestStatusType = GraphQLEnumType(
@@ -31,7 +32,14 @@ ContestType = GraphQLObjectType(
         'description': GraphQLField(GraphQLString),
         'status': GraphQLField(GraphQLNonNull(ContestStatusType)),
         'createdAt': GraphQLField(GraphQLNonNull(GraphQLString)),
-        'names': GraphQLField(GraphQLList(NameType), resolver=pgdb.get_names)
+        'names': GraphQLField(
+            GraphQLList(NameType),
+            resolver=lambda contest, info, **kwargs: resolver_wrapper(
+                pgdb.get_names_by_contest_id,
+                info.context['pg_pool'],
+                contest.id
+            )
+        )
     }
 )
 

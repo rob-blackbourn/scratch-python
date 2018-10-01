@@ -8,13 +8,8 @@ from graphql import (
     GraphQLList
 )
 
-from ...database.pgdb import get_contests
-from ...database.mdb import get_counts
-
-
-def fields():
-    return
-
+from ...utils.resolver import resolver_wrapper
+from ...database import pgdb, mdb
 
 UserType = GraphQLObjectType(
     name='UserType',
@@ -26,10 +21,41 @@ UserType = GraphQLObjectType(
         'apiKey': GraphQLField(GraphQLNonNull(GraphQLString)),
         'createdAt': GraphQLField(GraphQLNonNull(GraphQLString)),
         'fullName': GraphQLField(GraphQLString, resolver=lambda obj, info: f"{obj.firstName} {obj.lastName}"),
-        'contests': GraphQLField(GraphQLList(ContestType), resolver=get_contests),
-        'contestsCount': GraphQLField(GraphQLInt, resolver=get_counts),
-        'namesCount': GraphQLField(GraphQLInt, resolver=get_counts),
-        'votesCount': GraphQLField(GraphQLInt, resolver=get_counts),
+        'contests': GraphQLField(
+            GraphQLList(ContestType),
+            resolver=lambda user, info, **kwargs: resolver_wrapper(
+                pgdb.get_contests_by_created_by,
+                info.context['pg_pool'],
+                user.id
+            )
+        ),
+        'contestsCount': GraphQLField(
+            GraphQLInt,
+            resolver=lambda user, info, **kwargs: resolver_wrapper(
+                mdb.get_counts,
+                info.context['mongo_db'],
+                user.id,
+                info.field_name
+            )
+        ),
+        'namesCount': GraphQLField(
+            GraphQLInt,
+            resolver=lambda user, info, **kwargs: resolver_wrapper(
+                mdb.get_counts,
+                info.context['mongo_db'],
+                user.id,
+                info.field_name
+            )
+        ),
+        'votesCount': GraphQLField(
+            GraphQLInt,
+            resolver=lambda user, info, **kwargs: resolver_wrapper(
+                mdb.get_counts,
+                info.context['mongo_db'],
+                user.id,
+                info.field_name
+            )
+        ),
     }
 )
 

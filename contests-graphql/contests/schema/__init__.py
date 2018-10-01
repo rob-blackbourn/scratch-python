@@ -7,6 +7,7 @@ from graphql import (
     GraphQLArgument
 )
 
+from ..utils.resolver import resolver_wrapper
 from ..database import pgdb
 from .types.user import UserType
 
@@ -19,7 +20,11 @@ RootQueryType = GraphQLObjectType(
                 'key': GraphQLArgument(GraphQLNonNull(GraphQLString))
             },
             description="The current user identified by an api key",
-            resolver=pgdb.get_user_by_api_key
+            resolver=lambda obj, info, **kwargs: resolver_wrapper(
+                pgdb.get_user_by_api_key,
+                info.context['pg_pool'],
+                kwargs['key']
+            )
         )
     }
 )

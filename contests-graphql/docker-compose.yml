@@ -21,7 +21,7 @@ services:
     - mongo
     restart: always
     ports:
-    - 8081:8081
+    - 9001:8081
     environment:
       ME_CONFIG_MONGODB_ADMINUSERNAME: rtb
       ME_CONFIG_MONGODB_ADMINPASSWORD: trustno1
@@ -46,7 +46,7 @@ services:
     environment:
       ADMINER_DESIGN: 'nette'
     ports:
-    - 8082:8080
+    - 9002:8080
 
 # docker-compose up
 # mongo --username rtb --password trustno1 --authenticationDatabase admin mydb
