@@ -6,8 +6,7 @@ from graphql import (
     GraphQLNonNull
 )
 
-from ...utils.resolver import resolver_wrapper
-from ...database import pgdb
+from ...utils.resolver import resolve_with_loader
 
 NameType = GraphQLObjectType(
     name='Name',
@@ -18,10 +17,11 @@ NameType = GraphQLObjectType(
         'createdAt': GraphQLField(GraphQLNonNull(GraphQLString)),
         'createdBy': GraphQLField(
             GraphQLNonNull(UserType),
-            resolver=lambda name, info, **kwargs: resolver_wrapper(
-                pgdb.get_user_by_id,
-                info.context['pg_pool'],
-                name.createdBy
+            resolver=lambda name, info, **kwargs: resolve_with_loader(
+                'user_by_id',
+                info.context,
+                name.createdBy,
+                []
             )
         )
     }

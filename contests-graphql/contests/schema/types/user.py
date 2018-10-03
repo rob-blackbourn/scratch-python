@@ -8,8 +8,8 @@ from graphql import (
     GraphQLList
 )
 
-from ...utils.resolver import resolver_wrapper
-from ...database import pgdb, mdb
+from ...utils.resolver import resolver_wrapper, resolve_with_loader
+from ...database import mdb
 
 UserType = GraphQLObjectType(
     name='UserType',
@@ -23,9 +23,9 @@ UserType = GraphQLObjectType(
         'fullName': GraphQLField(GraphQLString, resolver=lambda obj, info: f"{obj.firstName} {obj.lastName}"),
         'contests': GraphQLField(
             GraphQLList(ContestType),
-            resolver=lambda user, info, **kwargs: resolver_wrapper(
-                pgdb.get_contests_by_created_by,
-                info.context['pg_pool'],
+            resolver=lambda user, info, **kwargs: resolve_with_loader(
+                'contests_by_created_by',
+                info.context,
                 user.id
             )
         ),
