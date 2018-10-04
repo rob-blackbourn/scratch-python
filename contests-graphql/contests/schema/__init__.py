@@ -9,6 +9,7 @@ from graphql import (
 
 from ..utils.resolver import resolve_with_loader
 from .types.user import UserType
+from .mutations.add_contest import AddContestMutation
 
 RootQueryType = GraphQLObjectType(
     name='RootQueryType',
@@ -28,6 +29,14 @@ RootQueryType = GraphQLObjectType(
     }
 )
 
+RootMutationType = GraphQLObjectType(
+    name='RootMutationType',
+    fields=lambda: {
+        'AddContest': AddContestMutation
+    }
+)
+
 schema = GraphQLSchema(
-    query=RootQueryType
+    query=RootQueryType,
+    mutation=RootMutationType
 )
