@@ -18,7 +18,7 @@ idna==2.7
 idna-ssl==1.1.0
 more-itertools==4.3.0
 motor==2.0.0
-motorodm==0.0.1
+motorodm==0.0.4
 multidict==4.4.2
 pluggy==0.7.1
 promise==2.1

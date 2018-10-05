@@ -56,6 +56,7 @@ async def authenticate_user(db, config, **kwargs):
 
 
 async def get_roles_by_user_ids(db, user_ids):
-    permissions = Permission.qs(db).find(user={'$in': user_ids})
-    result = await organise(permissions, user_ids, 'primary_email', False)
+    users = [User(id=id) for id in user_ids]
+    permissions = Permission.qs(db).find(user={'$in': users})
+    result = await organise(permissions, user_ids, 'user', False)
     return result
