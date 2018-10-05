@@ -1,0 +1,21 @@
+mongo:
+  host: localhost
+  port: 27017
+  username: rtb
+  password: trustno1
+  auth_source: admin
+  database: contests
+
+authentication:
+  rounds: 12
+  issuer: www.example.com
+  secret: mysecret
+
+authorization:
+  default_roles:
+  - user:read
+  - user:write
+  - public:read
+  approved_roles:
+  - posts:write
+  - comment:write
