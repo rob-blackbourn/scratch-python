@@ -32,10 +32,15 @@ RegisterUserMutation = GraphQLField(
         register_user,
         info.context['mongo_db'],
         info.context['config'],
-        **kwargs
+        kwargs['primaryEmail'],
+        kwargs['password'],
+        kwargs.get('secondaryEmails', None),
+        kwargs.get('givenNames', None),
+        kwargs.get('familyName', None),
+        kwargs.get('nickname', None)
     ))
 
-AuthenticateUserMutation = GraphQLField(
+AuthenticateMutation = GraphQLField(
     AuthenticationType,
     args={
         'primaryEmail': GraphQLArgument(GraphQLNonNull(GraphQLString)),
@@ -45,7 +50,8 @@ AuthenticateUserMutation = GraphQLField(
         authenticate_user,
         info.context['mongo_db'],
         info.context['config'],
-        **kwargs
+        kwargs['primaryEmail'],
+        kwargs['password']
     ))
 
 UpdateRolesMutation = GraphQLField(

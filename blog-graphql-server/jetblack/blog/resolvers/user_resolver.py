@@ -25,7 +25,7 @@ def signed_response(user, issuer, secret):
 async def get_default_roles(db, config):
     if await User.qs(db).count_documents() > 1:
         return config.authorization.default_roles
-    return ['admin'] + config.authorization.default_roles + config.authorization.approved_roles
+    return config.authorization.admin_roles
 
 
 async def get_users_by_ids(db, ids):
@@ -40,19 +40,24 @@ async def get_users_by_primary_emails(db, primary_emails):
     return users
 
 
-async def register_user(db, config, **kwargs):
-    user_args = {snakecase(k): v for k, v in kwargs.items()}
-    user_args['password'] = encrypt_password(user_args['password'], config.authentication.rounds)
-    user = await User.qs(db).create(**user_args)
+async def register_user(db, config, primary_email, password, secondary_emails, given_names, family_name, nickname):
+    hashed_password = encrypt_password(password, config.authentication.rounds)
+    user = await User.qs(db).create(
+        primary_email=primary_email,
+        password=hashed_password,
+        secondary_emails=secondary_emails,
+        given_names=given_names,
+        family_name=family_name,
+        nickname=nickname
+    )
     roles = await get_default_roles(db, config)
     await Permission.qs(db).create(user=user, roles=roles)
     return signed_response(user, config.authentication.issuer, config.authentication.secret)
 
 
-async def authenticate_user(db, config, **kwargs):
-    user_args = {snakecase(k): v for k, v in kwargs.items()}
-    user = await User.qs(db).find_one(primary_email=user_args['primary_email'])
-    if not is_valid_password(user.password, user_args['password']):
+async def authenticate_user(db, config, primary_email, password):
+    user = await User.qs(db).find_one(primary_email=primary_email)
+    if not is_valid_password(user.password, password):
         raise GraphQLError('unauthenticated')
     return signed_response(user, config.authentication.issuer, config.authentication.secret)
 
@@ -67,6 +72,7 @@ async def get_roles_by_user_ids(db, user_ids):
         lambda permission: permission.roles,
         True)
     return permissions
+
 
 async def update_roles(db, primary_email, roles):
     user = await User.qs(db).find_one(primary_email={'$eq': primary_email})

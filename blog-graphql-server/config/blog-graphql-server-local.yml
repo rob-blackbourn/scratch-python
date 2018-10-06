@@ -13,9 +13,12 @@ authentication:
 
 authorization:
   default_roles:
+  - public:read
+  admin_roles:
+  - admin
   - user:read
   - user:write
-  - public:read
-  approved_roles:
-  - posts:write
+  - post:read
+  - post:write
+  - comment:read
   - comment:write
