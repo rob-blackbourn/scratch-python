@@ -6,8 +6,13 @@ RootMutationType = GraphQLObjectType(
     name='RootMutationType',
     fields=lambda: {
         'registerUser': RegisterUserMutation,
-        'authenticateUser': AuthenticateUserMutation
+        'authenticateUser': AuthenticateUserMutation,
+        'updateRoles': UpdateRolesMutation
     }
 )
 
-from .authentication_mutations import (RegisterUserMutation, AuthenticateUserMutation)
+from .authentication_mutations import (
+    RegisterUserMutation,
+    AuthenticateUserMutation,
+    UpdateRolesMutation
+)

@@ -18,6 +18,11 @@ def dict_to_camelcase(dct):
 def dict_to_snakecase(dct):
     return {snakecase(k): v for k, v in dct.items()}
 
+def document_to_camelcase_dict(document, dct={}):
+    for k, v in document.to_dict().items():
+        dct[camelcase(k)] = v
+    return dct
+
 async def organise(cursor, keys, key_selector, projection=None, is_single=True):
     documents = [document async for document in cursor]
     groups = group_by(documents, key_selector)

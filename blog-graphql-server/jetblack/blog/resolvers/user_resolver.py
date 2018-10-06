@@ -5,7 +5,7 @@ import jwt
 from stringcase import (snakecase)
 from ..models import (User, Permission)
 from ..utils.password import (encrypt_password, is_valid_password)
-from ..utils.resolver import organise
+from ..utils.resolver import (organise, document_to_camelcase_dict)
 
 
 def sign(sub, issuer, secret):
@@ -67,3 +67,10 @@ async def get_roles_by_user_ids(db, user_ids):
         lambda permission: permission.roles,
         True)
     return permissions
+
+async def update_roles(db, primary_email, roles):
+    user = await User.qs(db).find_one(primary_email={'$eq': primary_email})
+    permission = await Permission.qs(db).find_one(user={'$eq': user})
+    permission.roles = roles
+    await permission.qs(db).update()
+    return document_to_camelcase_dict(user, edict())
