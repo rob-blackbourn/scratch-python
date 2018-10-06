@@ -2,7 +2,7 @@ from datetime import (datetime, timedelta)
 from easydict import EasyDict as edict
 from graphql import GraphQLError
 import jwt
-from stringcase import (snakecase, camelcase)
+from stringcase import (snakecase)
 from ..models import (User, Permission)
 from ..utils.password import (encrypt_password, is_valid_password)
 from ..utils.resolver import organise
@@ -29,13 +29,15 @@ async def get_default_roles(db, config):
 
 
 async def get_users_by_ids(db, ids):
-    return await User.qs(db).find({'id': {'$in': ids}})
+    cursor = User.qs(db).find(id={'$in': ids})
+    users = await organise(cursor, ids, lambda user: user.id)
+    return users
 
 
 async def get_users_by_primary_emails(db, primary_emails):
-    users = User.qs(db).find(primary_email={'$in': primary_emails})
-    result = await organise(users, primary_emails, 'primary_email', True)
-    return result
+    cursor = User.qs(db).find(primary_email={'$in': primary_emails})
+    users = await organise(cursor, primary_emails, lambda user: user.primary_email)
+    return users
 
 
 async def register_user(db, config, **kwargs):
@@ -57,6 +59,11 @@ async def authenticate_user(db, config, **kwargs):
 
 async def get_roles_by_user_ids(db, user_ids):
     users = [User(id=id) for id in user_ids]
-    permissions = Permission.qs(db).find(user={'$in': users})
-    result = await organise(permissions, user_ids, 'user', False)
-    return result
+    cursor = Permission.qs(db).find(user={'$in': users})
+    permissions = await organise(
+        cursor,
+        user_ids,
+        lambda permission: permission.user._identity,
+        lambda permission: permission.roles,
+        True)
+    return permissions

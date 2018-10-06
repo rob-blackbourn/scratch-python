@@ -1,9 +1,3 @@
-venv
-__pycache__
-dist
-*.egg-info
-.eggs
-.pytest_cache
-.idea
-.vscode
-.pytest_cache
+pytest==3.8.0
+pytest-asyncio==0.9.0
+pytest-runner==4.2

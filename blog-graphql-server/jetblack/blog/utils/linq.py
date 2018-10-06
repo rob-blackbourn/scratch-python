@@ -1,4 +1,4 @@
-def group_by(iterable, key_selector):
+def group_by(iterable, key_selector, projection=None):
     """
     Returns an iterator which groups the iterable with a key provided by the
     supplied function. The source iterable does not need to be sorted.
@@ -10,10 +10,11 @@ def group_by(iterable, key_selector):
     groups = {}
     for item in iterable:
         key = key_selector(item)
+        value = projection(item) if projection else item
         if key in groups:
-            groups[key].append(item)
+            groups[key].append(value)
         else:
-            groups[key] = [item]
+            groups[key] = [value]
     return groups
 
 

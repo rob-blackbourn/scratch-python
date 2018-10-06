@@ -8,7 +8,7 @@ def dict_to_camelcase_edict(dct):
 
 
 async def aiterable_to_camelcase_edict(aiterable):
-    return [dict_to_camelcase_edict(document.to_dict()) async for document in aiterable]
+    return [dict_to_camelcase_edict(document.to_dict()) for document in documents]
 
 
 def dict_to_camelcase(dct):
@@ -18,14 +18,15 @@ def dict_to_camelcase(dct):
 def dict_to_snakecase(dct):
     return {snakecase(k): v for k, v in dct.items()}
 
-
-async def organise(aiterable, keys, field, is_single):
-    camelcased = await aiterable_to_camelcase_edict(aiterable)
-    field = camelcase(field)
-    groups = group_by(camelcased, lambda row: row[field])
+async def organise(cursor, keys, key_selector, projection=None, is_single=True):
+    documents = [document async for document in cursor]
+    groups = group_by(documents, key_selector)
     result = []
     for key in keys:
-        values = groups.get(key)
+        values = [
+            projection(document) if projection else dict_to_camelcase_edict(document.to_dict())
+            for document in groups.get(key)
+        ]
         if values:
             if is_single:
                 result.append(first_or_default(values))
