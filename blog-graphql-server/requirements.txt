@@ -4,6 +4,7 @@ aiohttp==3.4.4
 aiohttp-graphql==1.0.0
 aiohttp-route-middleware==0.0.2
 bcrypt==3.1.4
+cachetools==2.1.0
 cchardet==2.1.4
 easydict==1.8
 graphql-core==2.1
