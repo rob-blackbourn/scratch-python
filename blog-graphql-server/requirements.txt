@@ -10,7 +10,7 @@ easydict==1.8
 graphql-core==2.1
 graphql-server-core==1.1.1
 motor==2.0.0
-motorodm==0.0.6
+motorodm==0.0.7
 PyJWT==1.6.4
 PyYAML==3.13
 stringcase==1.2.0

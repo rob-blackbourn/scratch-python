@@ -1,5 +1,6 @@
 import jwt
 import logging
+from cachetools import TTLCache
 
 logger = logging.getLogger(__name__)
 
@@ -11,8 +12,9 @@ from ..models import (
 
 class AuthenticationMiddleware(object):
 
-    def __init__(self, whitelist=[]):
+    def __init__(self, whitelist=[], maxsize=1000, ttl=60 * 60):
         self.whitelist = whitelist
+        self._cache = TTLCache(maxsize=maxsize, ttl=ttl)
 
     def is_whitelisted(self, path):
         for unauthenticated_path in self.whitelist:
@@ -20,6 +22,15 @@ class AuthenticationMiddleware(object):
                 logger.info(f"Path is whitelisted: {path}")
                 return True
         return False
+
+    async def _get_user_and_permission(self, db, user_id):
+        user, permission = self._cache.get(user_id, (None, None))
+        if not (user or permission):
+            logger.debug(f"Getting permissions from the database for '{user_id}'")
+            user = await User.qs(db).get(user_id)
+            permission = await Permission.qs(db).find_one(user={'$eq': user}) if user else None
+            self._cache[user_id] = (user, permission)
+        return user, permission
 
     async def _authenticate(self, request, config, db):
 
@@ -33,9 +44,7 @@ class AuthenticationMiddleware(object):
 
         user_id = payload['sub']
 
-        user = await User.qs(db).get(user_id)
-        permission = await Permission.qs(db).find_one(user={'$eq': user}) if user else None
-        return user, permission
+        return await self._get_user_and_permission(db, user_id)
 
     async def resolve(self, next, root, info, *args, **kwargs):
         try:

@@ -1,3 +1,4 @@
+from easydict import EasyDict as edict
 from graphql import (
     GraphQLField,
     GraphQLNonNull,
@@ -17,6 +18,7 @@ from ...resolvers.user_resolver import (
     authenticate_user,
     update_roles
 )
+from ...middlewares import authorize
 
 RegisterUserMutation = GraphQLField(
     AuthenticationType,
@@ -62,7 +64,8 @@ UpdateRolesMutation = GraphQLField(
     },
     resolver=lambda _, info, *args, **kwargs: resolver_wrapper(
         update_roles,
-        info.context['mongo_db'],
+        authorize(any_role=['admin']),
+        edict(info.context),
         kwargs['primaryEmail'],
         kwargs['roles']
     )

@@ -74,9 +74,12 @@ async def get_roles_by_user_ids(db, user_ids):
     return permissions
 
 
-async def update_roles(db, primary_email, roles):
-    user = await User.qs(db).find_one(primary_email={'$eq': primary_email})
-    permission = await Permission.qs(db).find_one(user={'$eq': user})
+async def update_roles(authorize, context, primary_email, roles):
+    if not authorize(context.user, context.permission):
+        raise GraphQLError('unauthorized')
+
+    user = await User.qs(context.mongo_db).find_one(primary_email={'$eq': primary_email})
+    permission = await Permission.qs(context.mongo_db).find_one(user={'$eq': user})
     permission.roles = roles
-    await permission.qs(db).update()
+    await permission.qs(context.mongo_db).update()
     return document_to_camelcase_dict(user, edict())
