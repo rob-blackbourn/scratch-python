@@ -17,18 +17,6 @@ def _signed_response(user, authentication):
     return edict(token=token, message=f"Set the header 'Authorization' to 'Bearer {token}'")
 
 
-async def get_users_by_ids(db, ids):
-    cursor = User.qs(db).find(id={'$in': ids})
-    users = await organise(cursor, ids, lambda user: user.id)
-    return users
-
-
-async def get_users_by_primary_emails(db, primary_emails):
-    cursor = User.qs(db).find(primary_email={'$in': primary_emails})
-    users = await organise(cursor, primary_emails, lambda user: user.primary_email)
-    return users
-
-
 async def register_user(context, primary_email, password, secondary_emails, given_names, family_name, nickname):
     hashed_password = encrypt_password(password, context.config.authentication.rounds)
     user = await User.qs(context.db).create(
@@ -54,18 +42,6 @@ async def authenticate_user(context, primary_email, password):
     if not is_valid_password(user.password, password):
         raise GraphQLError('unauthenticated')
     return _signed_response(user, context.config.authentication)
-
-
-async def get_roles_by_user_ids(db, user_ids):
-    users = [User(id=id) for id in user_ids]
-    cursor = Permission.qs(db).find(user={'$in': users})
-    permissions = await organise(
-        cursor,
-        user_ids,
-        lambda permission: permission.user._identity,
-        lambda permission: permission.roles,
-        True)
-    return permissions
 
 
 async def update_roles(authorize, context, primary_email, roles):

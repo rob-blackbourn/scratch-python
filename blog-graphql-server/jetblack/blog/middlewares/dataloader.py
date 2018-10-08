@@ -1,5 +1,5 @@
 from aiohttp import web
-from ..resolvers import user
+from ..data_loaders import user
 from ..resolvers.db_dataloader import DbDataLoader
 
 
