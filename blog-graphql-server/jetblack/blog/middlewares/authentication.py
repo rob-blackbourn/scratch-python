@@ -1,3 +1,4 @@
+from easydict import EasyDict as edict
 import jwt
 import logging
 from cachetools import TTLCache
@@ -19,41 +20,45 @@ class AuthenticationMiddleware(object):
     def is_whitelisted(self, path):
         for unauthenticated_path in self.whitelist:
             if path[:len(unauthenticated_path)] == unauthenticated_path:
-                logger.info(f"Path is whitelisted: {path}")
+                logger.debug(f"Path is whitelisted: {path}")
                 return True
         return False
 
     async def _get_user_and_permission(self, db, user_id):
         user, permission = self._cache.get(user_id, (None, None))
-        if not (user or permission):
-            logger.debug(f"Getting permissions from the database for '{user_id}'")
+        if user and permission:
+            logger.debug('Using cached credentials')
+        else:
+            logger.debug(f"Getting credentials for '{user_id}'")
             user = await User.qs(db).get(user_id)
             permission = await Permission.qs(db).find_one(user={'$eq': user}) if user else None
             self._cache[user_id] = (user, permission)
         return user, permission
 
-    async def _authenticate(self, request, config, db):
+    async def _authenticate(self, context):
 
-        scheme, token = request.headers['authorization'].split(' ')
+        scheme, token = context.request.headers['authorization'].split(' ')
         if scheme.lower() != 'bearer':
             raise Exception('invalid token')
-        payload = jwt.decode(token, key=config.authentication.secret)
+        payload = jwt.decode(token, key=context.config.authentication.secret)
 
         if not payload['sub']:
             raise Exception('token contains no "sub"')
 
         user_id = payload['sub']
 
-        return await self._get_user_and_permission(db, user_id)
+        return await self._get_user_and_permission(context.db, user_id)
 
     async def resolve(self, next, root, info, *args, **kwargs):
+        logger.debug(f"Authenticating {info.path}")
         try:
-            if not ('user' in info.context or self.is_whitelisted(info.path)):
-                logger.info(f"Authenticating {info.path}")
-                request = info.context['request']
-                config = info.context['config']
-                db = info.context['mongo_db']
-                user, permission = await self._authenticate(request, config, db)
+            if self.is_whitelisted(info.path):
+                logger.debug(f"Path is whitelisted: {info.path}")
+            elif 'user' in info.context:
+                logger.debug(f"Path is already authenticated: {info.path}")
+            else:
+                logger.debug(f"Path requires authentication {info.path}")
+                user, permission = await self._authenticate(edict(info.context))
                 info.context['user'] = user
                 info.context['permission'] = permission
         finally:

@@ -26,18 +26,26 @@ def has_all_roles(required_roles, user_roles):
 
 
 def authorize(*, any_role=[], all_roles=[], is_owner=False, owner_roles=None):
-    def authenticate_roles(user, permission, owner=None):
+    def authorize_roles(context, owner=None):
+        logger.debug('Authorizing user roles')
+
+        if not ('user' in context and 'permission' in context):
+            logger.debug('User not authenticated')
+            return False
+
+        user, permission = context.user, context.permission
         if not has_any_role(any_role, permission.roles):
-            logger.debug(f"The user did not have any required role: user='{user}', any_role={any_role}")
+            logger.debug(f"User '{user.primary_email}' did not have any required role {any_role}")
             return False
 
         if not has_all_roles(all_roles, permission.roles):
-            logger.debug("All required roles not found")
+            logger.debug(f"User '{user.primary_email}' did not have all required roles {all_roles}")
 
         if is_owner and not (
                 user == owner or has_any_role(owner_roles, permission.roles)):
-            logger.debug("user not owner or an owner role")
+            logger.debug(f"User {user.primary_email} is not the owner '{owner.primary_email}' or an owner role")
 
+        logger.debug(f"User '{user.primary_email}' is authorized.")
         return True
 
-    return authenticate_roles
+    return authorize_roles

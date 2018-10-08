@@ -2,30 +2,19 @@ from datetime import (datetime, timedelta)
 from easydict import EasyDict as edict
 from graphql import GraphQLError
 import jwt
-from stringcase import (snakecase)
 from ..models import (User, Permission)
 from ..utils.password import (encrypt_password, is_valid_password)
 from ..utils.resolver import (organise, document_to_camelcase_dict)
 
 
-def sign(sub, issuer, secret):
+def _signed_response(user, authentication):
     payload = {
-        'iss': issuer,
-        'sub': sub,
+        'iss': authentication.issuer,
+        'sub': str(user.id),
         'exp': datetime.utcnow() + timedelta(days=1)
     }
-    return jwt.encode(payload, key=secret).decode()
-
-
-def signed_response(user, issuer, secret):
-    token = sign(str(user.id), issuer, secret)
+    token = jwt.encode(payload, key=authentication.secret).decode()
     return edict(token=token, message=f"Set the header 'Authorization' to 'Bearer {token}'")
-
-
-async def get_default_roles(db, config):
-    if await User.qs(db).count_documents() > 1:
-        return config.authorization.default_roles
-    return config.authorization.admin_roles
 
 
 async def get_users_by_ids(db, ids):
@@ -40,9 +29,9 @@ async def get_users_by_primary_emails(db, primary_emails):
     return users
 
 
-async def register_user(db, config, primary_email, password, secondary_emails, given_names, family_name, nickname):
-    hashed_password = encrypt_password(password, config.authentication.rounds)
-    user = await User.qs(db).create(
+async def register_user(context, primary_email, password, secondary_emails, given_names, family_name, nickname):
+    hashed_password = encrypt_password(password, context.config.authentication.rounds)
+    user = await User.qs(context.db).create(
         primary_email=primary_email,
         password=hashed_password,
         secondary_emails=secondary_emails,
@@ -50,16 +39,21 @@ async def register_user(db, config, primary_email, password, secondary_emails, g
         family_name=family_name,
         nickname=nickname
     )
-    roles = await get_default_roles(db, config)
-    await Permission.qs(db).create(user=user, roles=roles)
-    return signed_response(user, config.authentication.issuer, config.authentication.secret)
+
+    if await User.qs(context.db).count_documents() > 1:
+        roles = context.config.authorization.default_roles
+    else:
+        roles = context.config.authorization.admin_roles
+
+    await Permission.qs(context.db).create(user=user, roles=roles)
+    return _signed_response(user, context.config.authentication)
 
 
-async def authenticate_user(db, config, primary_email, password):
-    user = await User.qs(db).find_one(primary_email=primary_email)
+async def authenticate_user(context, primary_email, password):
+    user = await User.qs(context.db).find_one(primary_email=primary_email)
     if not is_valid_password(user.password, password):
         raise GraphQLError('unauthenticated')
-    return signed_response(user, config.authentication.issuer, config.authentication.secret)
+    return _signed_response(user, context.config.authentication)
 
 
 async def get_roles_by_user_ids(db, user_ids):
@@ -75,11 +69,11 @@ async def get_roles_by_user_ids(db, user_ids):
 
 
 async def update_roles(authorize, context, primary_email, roles):
-    if not authorize(context.user, context.permission):
+    if not authorize(context):
         raise GraphQLError('unauthorized')
 
-    user = await User.qs(context.mongo_db).find_one(primary_email={'$eq': primary_email})
-    permission = await Permission.qs(context.mongo_db).find_one(user={'$eq': user})
+    user = await User.qs(context.db).find_one(primary_email={'$eq': primary_email})
+    permission = await Permission.qs(context.db).find_one(user={'$eq': user})
     permission.roles = roles
-    await permission.qs(context.mongo_db).update()
+    await permission.qs(context.db).update()
     return document_to_camelcase_dict(user, edict())

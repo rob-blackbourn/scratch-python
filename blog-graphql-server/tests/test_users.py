@@ -4,7 +4,7 @@ import pytest
 
 from jetblack.blog.models import (User, Permission)
 from jetblack.blog.server import load_config
-from jetblack.blog.resolvers.user_resolver import (register_user, authenticate_user)
+from jetblack.blog.resolvers.user import (register_user, authenticate_user)
 
 
 @pytest.mark.asyncio

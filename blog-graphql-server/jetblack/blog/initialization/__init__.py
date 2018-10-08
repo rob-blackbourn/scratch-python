@@ -1,8 +1,8 @@
-from .initialize_mongo import (
+from .mongo import (
     startup as startup_mongo,
     shutdown as shutdown_mongo
 )
-from .initialize_graphql import (
+from .graphql import (
     startup as startup_graphql,
     shutdown as shutdown_graphql
 )

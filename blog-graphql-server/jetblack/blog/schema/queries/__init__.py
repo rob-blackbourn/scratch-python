@@ -10,4 +10,4 @@ RootQueryType = GraphQLObjectType(
     }
 )
 
-from .user_queries import (UserByIdQuery, UserByPrimaryEmailQuery)
+from .user import (UserByIdQuery, UserByPrimaryEmailQuery)

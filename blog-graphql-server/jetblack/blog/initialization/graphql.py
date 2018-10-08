@@ -19,7 +19,7 @@ async def startup(app):
             schema=schema,
             context={
                 'config': app['config'],
-                'mongo_db': app['mongo_db']
+                'db': app['mongo_db']
             },
             middleware=[authentication],
             graphiql=True,

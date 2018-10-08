@@ -13,7 +13,7 @@ from ..types import (
 )
 
 from ...utils.resolver import resolver_wrapper
-from ...resolvers.user_resolver import (
+from ...resolvers.user import (
     register_user,
     authenticate_user,
     update_roles
@@ -32,8 +32,7 @@ RegisterUserMutation = GraphQLField(
     },
     resolver=lambda _, info, **kwargs: resolver_wrapper(
         register_user,
-        info.context['mongo_db'],
-        info.context['config'],
+        edict(info.context),
         kwargs['primaryEmail'],
         kwargs['password'],
         kwargs.get('secondaryEmails', None),
@@ -50,8 +49,7 @@ AuthenticateMutation = GraphQLField(
     },
     resolver=lambda _, info, *args, **kwargs: resolver_wrapper(
         authenticate_user,
-        info.context['mongo_db'],
-        info.context['config'],
+        edict(info.context),
         kwargs['primaryEmail'],
         kwargs['password']
     ))

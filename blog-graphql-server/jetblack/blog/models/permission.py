@@ -7,7 +7,7 @@ from motorodm import (
     ReferenceField
 )
 
-from .user_model import User
+from .user import User
 
 
 class Permission(Document):
@@ -16,10 +16,8 @@ class Permission(Document):
     created = DateTimeField(required=True)
     updated = DateTimeField(required=True)
 
-
     def before_create(self):
         self.created = self.updated = datetime.utcnow()
-
 
     def before_update(self):
         self.updated = datetime.utcnow()

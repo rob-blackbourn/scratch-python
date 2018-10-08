@@ -1,3 +1,4 @@
+from easydict import EasyDict as edict
 from graphql import (
     GraphQLArgument,
     GraphQLString,
@@ -5,8 +6,9 @@ from graphql import (
     GraphQLNonNull,
 )
 
-from ..types.user_type import UserType
+from ..types.user import UserType
 from ...utils.resolver import resolve_with_loader
+from ...middlewares import authorize
 
 UserByIdQuery = GraphQLField(
     UserType,
@@ -16,7 +18,7 @@ UserByIdQuery = GraphQLField(
     description="The user identified by their id",
     resolver=lambda obj, info, **kwargs: resolve_with_loader(
         'user_by_id',
-        info.context,
+        edict(info.context),
         kwargs['id']
     )
 )
@@ -29,7 +31,8 @@ UserByPrimaryEmailQuery = GraphQLField(
     description="The user identified by their primary email address",
     resolver=lambda obj, info, **kwargs: resolve_with_loader(
         'user_by_primary_email',
-        info.context,
+        authorize(any_role=['admin']),
+        edict(info.context),
         kwargs['email']
     )
 )

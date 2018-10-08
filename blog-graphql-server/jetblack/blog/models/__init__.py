@@ -1,4 +1,4 @@
-from .user_model import User
-from .permission_model import Permission
+from .user import User
+from .permission import Permission
 
 __all__ = ['User', 'Permission']

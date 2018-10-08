@@ -1,14 +1,15 @@
+from easydict import EasyDict as edict
 from graphql import (
     GraphQLObjectType,
     GraphQLString,
     GraphQLField,
     GraphQLNonNull,
     GraphQLID,
-    GraphQLList,
-    GraphQLArgument
+    GraphQLList
 )
 
 from ...utils.resolver import resolve_with_loader
+from ...middlewares import authorize
 
 UserType = GraphQLObjectType(
     name='UserType',
@@ -26,7 +27,8 @@ UserType = GraphQLObjectType(
             GraphQLList(GraphQLString),
             resolver=lambda user, info, **kwargs: resolve_with_loader(
                 'roles_by_user_id',
-                info.context,
+                authorize(any_role=['admin']),
+                edict(info.context),
                 user.id
             )
         )
