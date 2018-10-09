@@ -41,7 +41,7 @@ class Register extends Component {
     } = this.state
 
     const query = `
-mutation RegisterUser($primaryEmail: String!, $password: String!, $secondaryEmails: [String], $givenNames, [String], $familyName: String, $nickname: String) {
+mutation RegisterUser($primaryEmail: String!, $password: String!, $secondaryEmails: [String], $givenNames: [String], $familyName: String, $nickname: String) {
   registerUser(primaryEmail: $primaryEmail, password: $password, secondaryEmails: $secondaryEmails, givenNames: $givenNames, familyName: $familyName, nickname: $nickname) {
     token
   }
@@ -73,7 +73,7 @@ mutation RegisterUser($primaryEmail: String!, $password: String!, $secondaryEmai
           this.setState({ error: "Invalid username or password" })
           console.log("Failed")
         } else {
-          onToken(response.data.authenticate.token)
+          onToken(response.data.registerUser.token)
         }
       })
       .catch(error => {
@@ -133,15 +133,6 @@ mutation RegisterUser($primaryEmail: String!, $password: String!, $secondaryEmai
         </Grid>
         <Grid item xs={12}>
           <TextField
-            label="Nickname"
-            className={classes.textField}
-            value={nickname}
-            margin="normal"
-            onChange={event => this.setState({ nickname: event.target.value })}
-          />
-        </Grid>
-        <Grid item xs={12}>
-          <TextField
             label="Family Name"
             className={classes.textField}
             value={familyName}
@@ -149,6 +140,15 @@ mutation RegisterUser($primaryEmail: String!, $password: String!, $secondaryEmai
             onChange={event =>
               this.setState({ familyName: event.target.value })
             }
+          />
+        </Grid>
+        <Grid item xs={12}>
+          <TextField
+            label="Nickname"
+            className={classes.textField}
+            value={nickname}
+            margin="normal"
+            onChange={event => this.setState({ nickname: event.target.value })}
           />
         </Grid>
         <Grid container>
