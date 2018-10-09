@@ -6,8 +6,15 @@ RootQueryType = GraphQLObjectType(
     name='RootQueryType',
     fields=lambda: {
         'userById': UserByIdQuery,
-        'userByPrimaryEmail': UserByPrimaryEmailQuery
+        'userByPrimaryEmail': UserByPrimaryEmailQuery,
+        'users': UsersQuery,
+        'currentUser': CurrentUserQuery
     }
 )
 
-from .user import (UserByIdQuery, UserByPrimaryEmailQuery)
+from .user import (
+    UserByIdQuery,
+    UserByPrimaryEmailQuery,
+    UsersQuery,
+    CurrentUserQuery
+)

@@ -61,6 +61,8 @@ class AuthenticationMiddleware(object):
                 user, permission = await self._authenticate(edict(info.context))
                 info.context['user'] = user
                 info.context['permission'] = permission
+        except:
+            logger.debug(f'Failed to authenticate {info.path}')
         finally:
             response = await next(root, info, *args, **kwargs)
             return response

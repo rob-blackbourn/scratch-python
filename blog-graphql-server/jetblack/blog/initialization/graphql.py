@@ -1,3 +1,4 @@
+import aiohttp_cors
 from aiohttp_graphql import GraphQLView
 from graphql.execution.executors.asyncio import AsyncioExecutor
 
@@ -11,8 +12,17 @@ async def startup(app):
         ['authenticate']
     ])
 
-    app.router.add_route(
-        '*',
+    # Configure default CORS settings.
+    cors = aiohttp_cors.setup(app, defaults={
+        "*": aiohttp_cors.ResourceOptions(
+            allow_credentials=True,
+            expose_headers="*",
+            allow_headers="*",
+        )
+    })
+
+    route = app.router.add_route(
+        'POST',
         '/graphql',
         dataloader_middleware,
         GraphQLView(
@@ -27,6 +37,8 @@ async def startup(app):
             enable_async=True)
         ,
         name='grqphql')
+
+    cors.add(route)
 
 
 async def shutdown(app):

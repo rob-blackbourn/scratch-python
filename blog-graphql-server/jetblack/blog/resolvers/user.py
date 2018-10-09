@@ -53,3 +53,16 @@ async def update_roles(authorize, context, primary_email, roles):
     permission.roles = roles
     await permission.qs(context.db).update()
     return document_to_camelcase_dict(user, edict())
+
+
+async def get_all_users(authorize, context):
+    if not authorize(context):
+        raise GraphQLError('unauthorized')
+
+    users = [user async for user in User.qs(context.db).find()]
+    return [document_to_camelcase_dict(user) for user in users]
+
+
+async def get_current_user(context):
+    user = document_to_camelcase_dict(context.user, edict())
+    return user
