@@ -25,7 +25,7 @@ RegisterUserMutation = GraphQLField(
     args={
         'primaryEmail': GraphQLArgument(GraphQLNonNull(GraphQLString)),
         'password': GraphQLArgument(GraphQLNonNull(GraphQLString)),
-        'secondaryEmails': GraphQLArgument(GraphQLString),
+        'secondaryEmails': GraphQLArgument(GraphQLList(GraphQLString)),
         'givenNames': GraphQLArgument(GraphQLList(GraphQLString)),
         'familyName': GraphQLArgument(GraphQLString),
         'nickname': GraphQLArgument(GraphQLString)
