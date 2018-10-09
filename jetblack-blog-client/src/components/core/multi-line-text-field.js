@@ -13,6 +13,8 @@ const styles = theme => ({
   },
   buttons: {
     width: 50
+  },
+  button: {
   }
 })
 
@@ -48,7 +50,7 @@ class MultiLineTextField extends Component {
               </Button>
             )}
             removeRenderer={(item, index, list, onRemove) => (
-              <Button onClick={onRemove}>
+              <Button onClick={onRemove} className={classes.button}>
                 {removeLabel}
               </Button>
             )}

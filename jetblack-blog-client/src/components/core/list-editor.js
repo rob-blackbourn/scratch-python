@@ -1,31 +1,19 @@
-import React, { Component, Fragment } from "react"
+import React, { Fragment } from "react"
 import PropTypes from "prop-types"
 import { withStyles } from "@material-ui/core/styles"
 import Grid from "@material-ui/core/Grid"
 
 const styles = theme => ({
-  textField: {
-    marginLeft: theme.spacing.unit,
-    marginRight: theme.spacing.unit,
-    width: 300
-  },
-  buttons: {
-    width: 50
-  }
 })
 
-class ListEditor extends Component {
-  render() {
-    const {
-      list,
-      onChange,
-      itemRenderer,
-      addRenderer,
-      removeRenderer,
-      defaultValue
-    } = this.props
-
-    return (
+const ListEditor = ({
+    list,
+    onChange,
+    itemRenderer,
+    addRenderer,
+    removeRenderer,
+    defaultValue
+  }) => (
       <Fragment>
         {(list || []).map((item, index) => (
             <Grid container key={index}>
@@ -41,8 +29,6 @@ class ListEditor extends Component {
         )}
       </Fragment>
     )
-  }
-}
 
 ListEditor.propTypes = {
   classes: PropTypes.object,
