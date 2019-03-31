@@ -1,0 +1,5 @@
+bareasgi~=1.0
+bareasgi_jinja2~=1.0
+bareclient~=0.4
+easydict~=1.9
+PyJWT~=1.7
