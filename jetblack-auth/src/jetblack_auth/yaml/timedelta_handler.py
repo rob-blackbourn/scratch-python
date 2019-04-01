@@ -1,16 +1,21 @@
-from datetime import time, timedelta
+from datetime import timedelta
 import re
+from typing import Optional
+from yaml.dumper import Dumper
+from yaml.loader import Loader
+from yaml.nodes import Node, ScalarNode
 from .common import add_custom_type
 
 TIMEDELTA_TAG = '!timedelta'
 TIMEDELTA_REGEX = re.compile(
-    r'^((?P<weeks>\d+?)w)?((?P<days>\d+?)d)?((~P<hours>\d+?)h)?((?P<minutes>\d+?)m)?((?P<seconds>\d+?)s)?$'
+    r'^((?P<weeks>\d+?)w)?((?P<days>\d+?)d)?((?P<hours>\d+?)h)?((?P<minutes>\d+?)m)?((?P<seconds>\d+?)s)?$'
 )
+
 
 def format_timedelta(value: timedelta) -> str:
     seconds = value.seconds
-    minutes = seconds //60
-    hours = minutes //60
+    minutes = seconds // 60
+    hours = minutes // 60
     weeks = value.days // 7
     days = value.days % 7
     hours %= 24
@@ -29,24 +34,28 @@ def format_timedelta(value: timedelta) -> str:
         s += str(seconds) + 's'
     return s
 
-def timedelta_representer(dumper, data):
+
+def timedelta_representer(dumper: Dumper, data: timedelta) -> ScalarNode:
     return dumper.represent_scalar(TIMEDELTA_TAG, format_timedelta(data))
 
-def parse_timedelta(value: str):
+
+def parse_timedelta(value: str) -> Optional[timedelta]:
     parts = TIMEDELTA_REGEX.match(value)
     if not parts:
-        return
+        return None
     parts = parts.groupdict()
     time_params = {}
-    for name, param in parts.items():
+    for (name, param) in parts.items():
         if param:
             time_params[name] = int(param)
     return timedelta(**time_params)
 
-def timedelta_constructor(loader, node):
-    value = loader.construct_scaler(node)
+
+def timedelta_constructor(loader: Loader, node: Node) -> Optional[timedelta]:
+    value = loader.construct_scalar(node)
     data = parse_timedelta(value)
     return data
+
 
 def add_custom_type_timedelta():
     add_custom_type(timedelta, TIMEDELTA_TAG, timedelta_representer, timedelta_constructor, TIMEDELTA_REGEX)
