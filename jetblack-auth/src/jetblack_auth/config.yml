@@ -1,0 +1,9 @@
+app:
+  cookie_name: jetblack-auth
+  secret: SECRET
+  token_expiry: !timedelta 1h
+  login_expiry: 1d
+  domain: jetblack.net
+  auth_host: 127.0.0.1
+  path_prefix: /auth
+  token_renewal_path: /renew_token

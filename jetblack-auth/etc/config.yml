@@ -1,4 +1,0 @@
-app:
-  path_prefix: /auth
-  cookie_name: jetblack-auth
-  token_expiry:
