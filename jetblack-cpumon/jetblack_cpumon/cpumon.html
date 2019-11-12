@@ -1,24 +1,63 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>CPU Monitor</title>
-</head>
+    <style>
+      .left-align {
+        text-align: left;
+      }
+      .right-align {
+        text-align: right;
+      }
+    </style>
+  </head>
 
-<body>
+  <body>
     <h1>CPU Monitor</h1>
 
-    CPU: <snap id="cpu"></span>
+    <table>
+      <thead>
+        <tr>
+          <th class="left-align">Metric</th>
+          <th class="right-align">Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th class="left-align">CPU</th>
+          <td class="right-align"><span id="cpu"></span></td>
+        </tr>
+        <tr>
+          <th class="left-align">Memory</th>
+          <td class="right-align"><span id="memory"></span></td>
+        </tr>
+        <tr>
+          <th class="left-align">Swap</th>
+          <td class="right-align"><span id="swap"></span></td>
+        </tr>
+      </tbody>
+    </table>
 
-        <script>
-            var eventSource = new EventSource("/cpu")
-            eventSource.onmessage = function (event) {
-                element = document.getElementById("cpu")
-                const data = JSON.parse(event.data)
-                element.innerHTML = `${(100 - data.idle).toFixed(2)}%`
-            }
-        </script>
-</body>
-
+    <script>
+      var eventSource = new EventSource("/cpu");
+      eventSource.onmessage = function(event) {
+        const cpuElement = document.getElementById("cpu");
+        const memoryElement = document.getElementById("memory");
+        const swapElement = document.getElementById("swap");
+        const data = JSON.parse(event.data);
+        console.log(data);
+        const cpuUsage = 100 - data.sample.cpu.idle;
+        const memTotal = data.memory.MemTotal[0],
+          memFree = data.memory.MemFree[0];
+        const memoryUsage = (100 * (memTotal - memFree)) / memTotal;
+        const swapTotal = data.memory.SwapTotal[0],
+          swapFree = data.memory.SwapFree[0];
+        const swapUsage = (100 * (swapTotal - swapFree)) / swapTotal;
+        cpuElement.innerHTML = `${cpuUsage.toFixed(2)}%`;
+        memoryElement.innerHTML = `${memoryUsage.toFixed(2)}%`;
+        swapElement.innerHTML = `${swapUsage.toFixed(2)}%`;
+      };
+    </script>
+  </body>
 </html>
