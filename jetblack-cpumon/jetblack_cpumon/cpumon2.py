@@ -56,7 +56,7 @@ async def _cpu_time_deltas(sample_duration: float) -> Dict[str, Dict[str, int]]:
 def _cpu_summarize(deltas: Dict[str, int]) -> Dict[str, float]:
     total = sum(deltas.values())
     return {
-        name: 100 - (100 * (float(total - value) / total))
+        name: 0 if total == 0 else 100 - (100 * (float(total - value) / total))
         for name, value in deltas.items()
     }
 

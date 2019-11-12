@@ -27,6 +27,7 @@ class CPUMonController:
 
     def __init__(self):
         self._listener_count = 0
+        self._listener_lock: Optional[asyncio] = None
         self._service: Optional[CPUMonService] = None
         self._service_task: Optional[asyncio.Task] = None
 
@@ -63,22 +64,30 @@ class CPUMonController:
         ]
         return 200, headers, text_writer(html)
 
+    @property
+    def listener_lock(self) -> asyncio.Lock:
+        if self._listener_lock is None:
+            self._listener_lock = asyncio.Lock()
+        return self._listener_lock
+
     async def _acquire_service(self) -> CPUMonService:
-        if self._service is None:
-            self._service = CPUMonService(1.0, 1.0)
-        if self._listener_count == 0:
-            self._service_task = asyncio.create_task(self._service.start())
-        self._listener_count += 1
-        return self._service
+        async with self.listener_lock:
+            if self._service is None:
+                self._service = CPUMonService(1.0, 1.0)
+            if self._listener_count == 0:
+                self._service_task = asyncio.create_task(self._service.start())
+            self._listener_count += 1
+            return self._service
 
     async def _release_service(self) -> None:
-        self._listener_count -= 1
-        if self._listener_count == 0 and self._service is not None:
-            self._service.stop()
-        if self._service_task is not None:
-            await self._service_task
-        self._service = None
-        self._service_task = None
+        async with self.listener_lock:
+            self._listener_count -= 1
+            if self._listener_count == 0 and self._service is not None:
+                self._service.stop()
+            if self._service_task is not None:
+                await self._service_task
+            self._service = None
+            self._service_task = None
 
     async def _send_samples(self) -> AsyncIterator[bytes]:
         service = await self._acquire_service()
