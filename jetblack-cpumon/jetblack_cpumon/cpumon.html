@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CPU Monitor</title>
+</head>
+
+<body>
+    <h1>CPU Monitor</h1>
+
+    CPU: <snap id="cpu"></span>
+
+        <script>
+            var eventSource = new EventSource("/cpu")
+            eventSource.onmessage = function (event) {
+                element = document.getElementById("cpu")
+                const data = JSON.parse(event.data)
+                element.innerHTML = `${(100 - data.idle).toFixed(2)}%`
+            }
+        </script>
+</body>
+
+</html>
