@@ -1,7 +1,13 @@
 """A CPU Monitor"""
 
 import asyncio
-from typing import Dict, List, Optional, Tuple
+from typing import (
+    Any,
+    Dict,
+    List,
+    Optional,
+    Tuple
+)
 
 import aiofiles
 
@@ -86,3 +92,20 @@ async def meminfo() -> Dict[str, Tuple[int, Optional[str]]]:
             stats[name] = (value, unit)
 
     return stats
+
+async def cpuinfo() -> List[Dict[str, Any]]:
+    """Returns cpu info"""
+    info: List[Dict[str, Any]] = []
+    async with aiofiles.open('/proc/cpuinfo') as f:
+        processor: Dict[str, Any] = {}
+        while True:
+            line = await f.readline()
+            if not line:
+                break
+            if line == '\n':
+                info.append(processor)
+                continue
+            name, value = line.strip().split(':')
+            name, value = name.strip(), value.strip()
+            processor[name.strip()] = value.strip()
+    return info

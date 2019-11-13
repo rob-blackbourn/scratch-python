@@ -2,7 +2,7 @@
 
 import pytest
 
-from jetblack_cpumon.cpumon2 import _cpu_times, cpu_percents, meminfo
+from jetblack_cpumon.cpumon2 import _cpu_times, cpu_percents, meminfo, cpuinfo
 
 @pytest.mark.asyncio
 async def test__cpu_times():
@@ -18,6 +18,12 @@ async def test_cpu_percents():
 
 @pytest.mark.asyncio
 async def test_meminfo():
-    """Test _meminfo()"""
+    """Test meminfo()"""
     info = await meminfo()
+    assert info is not None
+
+@pytest.mark.asyncio
+async def test_cpuinfo():
+    """Test cpuinfo()"""
+    info = await cpuinfo()
     assert info is not None
