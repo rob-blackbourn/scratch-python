@@ -1,0 +1,36 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Yakitori Sauce",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "200ml",
+  "prepTime": "PT1M",
+  "cookTime": "PT10M",
+  "recipeIngredient": [
+    "100 ml soy sauce,",
+    "100 ml sake,",
+    "3 tbsp brown sugar,",
+    "1 tbsp honey,",
+    "1 clove of garlic (crushed)."
+  ],
+  "recipeInstructions": [
+    "1. Add all the ingredients to a pan.",
+    "2. On a medium heat, dissolve the sugar.",
+    "3. When it starts to boil remove the foam.",
+    "4. Reduce the heat, and allow the sauce to reduce a little."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Japanese",
+  "keywords": [
+    "Sauces"
+  ],
+  "tool": []
+}

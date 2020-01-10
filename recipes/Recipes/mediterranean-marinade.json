@@ -1,0 +1,31 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Mediterranean Marinade ",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "250ml olive oil",
+    "125ml fresh lemon juice",
+    "80ml red wine vinegar",
+    "1 1/2 tablespoons chopped oregano",
+    "1 tablespoons minced garlic",
+    "1/2 teaspoon salt",
+    "1/2 teaspoon ground black pepper"
+  ],
+  "recipeInstructions": [
+    "1. Mix all ingredients except oil together. Blend until smooth in food processor. Slowly add oil while blending. Cover and refrigerate until ready to use. Can be stored up to 2 weeks."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "BBQ",
+  "keywords": [],
+  "tool": []
+}

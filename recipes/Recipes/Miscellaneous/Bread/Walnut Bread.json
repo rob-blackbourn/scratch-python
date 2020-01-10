@@ -1,0 +1,42 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Walnut Bread",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "1 small loaf",
+  "recipeIngredient": [
+    "2 tsp dried active yeast,",
+    "1 cup strong wholemeal bread flour,",
+    "1/2 cup strong white bread flour,",
+    "1 tbsp olive oil,",
+    "165 ml warm water,",
+    "1 tsp salt,",
+    "1/4 cup walnut pieces."
+  ],
+  "recipeInstructions": [
+    "1. Mix the yeast with 4 tbsp warm water.",
+    "2. Put the flour in a large mixing bowl.",
+    "3. Add the salt and mix thoroughly.",
+    "4. Add the oil and yeast and make a dough, adding extra water if necessary.",
+    "5. Knead for 10 minutes.",
+    "6. Set aside to prove for 40 minutes",
+    "7. Add the walnuts.",
+    "8. Knock down and knead for another 5 minutes.",
+    "9. Set aside for 30 mins or until doubled in size.",
+    "10. Cook on Gas 7 for 25 minutes."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Miscellaneous",
+  "keywords": [
+    "Bread"
+  ],
+  "tool": []
+}

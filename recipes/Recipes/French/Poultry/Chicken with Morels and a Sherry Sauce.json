@@ -1,0 +1,46 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Chicken with Morels and a Sherry Sauce",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "",
+  "prepTime": "PT15M",
+  "cookTime": "PT30M",
+  "recipeIngredient": [
+    "For the chicken",
+    "7 g dried morel mushrooms,",
+    "2 chicken breasts.",
+    "Salt & pepper,",
+    "1/2 tbsp unsalted butter,",
+    "30 g button mushrooms,",
+    "50 ml of dry white wine or sherry (boiled for 30 seconds to reduce the alcohol,",
+    "100 ml double cream.",
+    "For the leeks",
+    "Salt,",
+    "1/2 tbsp unsalted butter,",
+    "2 leeks (sliced into 2 cm pieces)"
+  ],
+  "recipeInstructions": [
+    "1. Soak the morels in 125 ml of water (ideally overnight).",
+    "2. Drain the morels, reserving the juice, sieve to remove any grit, squeezing the mushrooms dry. Rinse the mushrooms to remove any grit. Chop the roughly.",
+    "3. Season the chicken breasts and Brown in butter over a medium heat for 3 minutes per side. Remove from the pan. ",
+    "4. Add the morel and button  mushrooms to the pan with a pinch of salt and soften for 2 minutes. Add the boiled wine or sherry and the mushroom juice and double cream. Bring to the boil and add the chicken breasts. Reduce the heat to a bare simmer and cook for 7 minutes. ",
+    "5. Remove the chicken breasts and keep warm. Increase the heat, and boil down the sauce until it coats the back of a spoon. Season. ",
+    "6. Boil the chopped leaks in 100ml of water with the butter and salt with the lid on for 3 minutes. ",
+    "7. Return the chicken breasts to the sauce, warm through, then serve over the leeks. "
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "French",
+  "keywords": [
+    "Poultry"
+  ],
+  "tool": []
+}

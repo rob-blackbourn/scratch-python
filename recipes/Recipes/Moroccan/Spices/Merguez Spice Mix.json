@@ -1,0 +1,34 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Merguez Spice Mix",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "4 tbsp sweet paprika",
+    "2 tbsp ground fennel seeds",
+    "2 tbsp ground cumin",
+    "1 tbsp ground coriander seeds",
+    "2 tbsp salt",
+    "1 tsp ground cinnamon",
+    "1 tsp cayenne pepper",
+    "3/4 tsp black pepper"
+  ],
+  "recipeInstructions": [
+    "1. Combine the ingredients in a pestle and mortar and grind to a powder."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Moroccan",
+  "keywords": [
+    "Spices"
+  ],
+  "tool": []
+}

@@ -1,0 +1,25 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Kir Royal",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "2 tsp cassis,",
+    "Champagne."
+  ],
+  "recipeInstructions": [
+    "1. Add the cassis to a champagne glass and top up with champagne."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Drinks",
+  "keywords": [],
+  "tool": []
+}

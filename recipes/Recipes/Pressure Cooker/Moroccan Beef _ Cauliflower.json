@@ -1,0 +1,42 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Moroccan Beef & Cauliflower",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4 servings",
+  "prepTime": "PT15M",
+  "cookTime": "PT1H10M",
+  "recipeIngredient": [
+    "1 head cauliflower",
+    "1 1/2 lbs beef stew meat",
+    "2 tablespoons olive oil",
+    "1/2 onion, diced",
+    "2 medium garlic cloves",
+    "1/4 cup fresh parsley, finely chopped",
+    "1 tablespoon tomato paste",
+    "1 beef bouillon cube",
+    "1 teaspoon cumin",
+    "1/2 teaspoon ginger",
+    "1/2 teaspoon black pepper",
+    "1/2 teaspoon salt",
+    "1/4 teaspoon turmeric"
+  ],
+  "recipeInstructions": [
+    "1. Pull off the green leaves surrounding the cauliflower. Then cut the bottom off & break the cauliflower into large pieces. Rinse & then place in a bowl to be used later.",
+    "2. Heat the olive oil in either a saucepan or pressure cooker. Cook the beef in the oil until all the sides are brown.",
+    "3. Add enough water in the pot to cover the beef. At this point put everything into the pot except the cauliflower and cover with a lid. If using a saucepan simmer the beef for 40 minutes, stirring occasionally. If you are using a pressure cooker, let the beef cook for 15 minutes (after the cooker begins to hiss).",
+    "4. Dip the cauliflower into the sauce to cover all the sides. Once that is done leave it in the pot & recover with a lid. Simmer for another 15 minutes or until the cauliflower is done. If using a pressure cooker, cover and cook for additional 5-7 minutes (after the cooker begins to hiss)."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Pressure Cooker",
+  "keywords": [],
+  "tool": []
+}

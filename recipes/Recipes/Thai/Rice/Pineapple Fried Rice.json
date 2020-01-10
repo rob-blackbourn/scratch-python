@@ -1,0 +1,44 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Pineapple Fried Rice",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "2",
+  "prepTime": "PT10M",
+  "cookTime": "PT10M",
+  "recipeIngredient": [
+    "8 oz. leftover and overnight rice,",
+    "2 cloves garlic (finely chopped),",
+    "1 fresh pineapple,",
+    "8 medium prawns (shelled and deveined),",
+    "2 tbsp cashew nuts,",
+    "1 tsp shrimp paste,",
+    "1 tbsp fish sauce,",
+    " 1/4 tsp dark soy sauce,",
+    "1 fresh red chili (seeded and cut into small pieces),",
+    "2 tbsp oil,",
+    "Coriander leaves for garnishing."
+  ],
+  "recipeInstructions": [
+    "1. Cut the pineapple in two. Scoop out the flesh and reserve. Separate the juice into a bowl.",
+    "2. Heat up a wok and add oil. Stir-fry garlic, red chili, and shrimp paste until aromatic.",
+    "3. Add the prawns and stir-fry until half-cooked.",
+    "4. Add the rice, pineapple pieces,  1/2 tbsp of the pineapple juice, and stir. Add fish sauce and dark soy sauce to blend well with rice.",
+    "5. Add the cashew nuts",
+    "6. Stir-fry for another minute then serve."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Thai",
+  "keywords": [
+    "Rice"
+  ],
+  "tool": []
+}

@@ -1,0 +1,47 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Roast Duck",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "6",
+  "prepTime": "PT15M",
+  "cookTime": "PT2H30M",
+  "totalTime": "PT5H",
+  "recipeIngredient": [
+    "1.8 kg Duck,",
+    "5 cm piece of fresh ginger,",
+    "2 tbsp dark soy sauce,",
+    "1 tbsp honey,",
+    "1 1/2 tsp Chinese five spice,",
+    "1/2 tsp freshly ground white pepper,",
+    "2 spring onions (chopped),",
+    "Sesame oil or vegetable oil for basting."
+  ],
+  "recipeInstructions": [
+    "1. Remove the giblets from the duck and rinse well.",
+    "2. Pour boiling water over the skin and set aside to dry for 2 hours.",
+    "3. Grate 1/2 the ginger and squeeze the liquid into a small mixing bowl.",
+    "4. Add the honey, soy sauce, five spice powder and pepper to the bowl and mix well.",
+    "5. Paint 3/4 of the mixture over the duck skin.",
+    "6. Place the spring onions and the remaining ginger into the cavity.",
+    "7. Brush a large piece of foil with oil and set the duck in the centre and wrap well.",
+    "8. Place the duck in an oven dish and bake for 2 hours at Gas Mark 3 (160C, 320F).",
+    "9. Remove the foil and prick the skin to release fat. Brush with the reserved marinade, then with oil.",
+    "10. Bake uncovered for 30 minutes, turning once."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Chinese",
+  "keywords": [
+    "Poultry",
+    "Duck"
+  ],
+  "tool": []
+}

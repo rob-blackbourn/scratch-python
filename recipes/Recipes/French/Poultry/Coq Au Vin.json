@@ -1,0 +1,57 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Coq Au Vin",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4 servings",
+  "prepTime": "1 hour, plus overnight marinade.",
+  "cookTime": "",
+  "recipeIngredient": [
+    "1 chicken (jointed),",
+    "2 sticks celery (chopped),",
+    "2 carrots (chopped),",
+    "1 onion (chopped),",
+    "Peppercorns,",
+    "Bay leaf,",
+    "125g lardons,",
+    "1 bottle red Burgundy,",
+    "2 cloves garlic (chopped),",
+    "2 tbsp flour.",
+    "parsley,",
+    "thyme,",
+    "button mushrooms,",
+    "pearl onions"
+  ],
+  "recipeInstructions": [
+    "1. Put the jointed chick in a large mixing bowl and add the celery, carrot, onion, garlic, peppercorns and bay leaf. Pour over the bottle of wine, the leave in the fridge to marinate overnight.",
+    "2. Pick out the meat from the marinade, and dry on paper towels. Strain the marinade from the vegetables.",
+    "3. Add some oil to a pan on a medium high heat. Add the lardons, and after a minute, brown the chicken pieces.",
+    "4. Remove the chicken, reduce the heat to medium and add the vegetables. After three minutes add the flour, and keep it moving with a bowl whisk.",
+    "5. Slowly add the cold marinade liquid to the pad, whisking continuously.",
+    "6. Add the garlic, parsley and thyme.",
+    "7. Add the chicken pieces.",
+    "8. Leave on the hob at a low heat, or in the oven on Gas 4 for 2 hours.",
+    "9. Remove the chicken pieces and put them on a warm plate.",
+    "10. Warm a pan to a medium heat. Add some butter, the fry off the mushroom, seasoning.",
+    "11. Take the mushrooms out then put in the pearl onions.",
+    "12 After a couple of minutes put the onions back in.",
+    "13. Add the strained sauce.",
+    "14 Reduce the sauce.",
+    "15 Add more parsley and thyme.",
+    "16. Pour over the chicken, and top with crispy bacon."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "French",
+  "keywords": [
+    "Poultry"
+  ],
+  "tool": []
+}

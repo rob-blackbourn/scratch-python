@@ -1,0 +1,36 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Pearl Barley Casserole",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4",
+  "prepTime": "PT15M",
+  "cookTime": "PT45M",
+  "recipeIngredient": [
+    "1 large onion (chopped),",
+    "2 stalks of celery,",
+    "1 cup pearl barley,",
+    "8 oz mushrooms,",
+    "1 green pepper (chopped),",
+    "2 cups chicken broth."
+  ],
+  "recipeInstructions": [
+    "1. Preheat oven to 350 degrees F (175 degrees C).",
+    "2. Melt butter in a 1 1/2-quart Dutch oven or oven-safe pot over medium heat and cook onion until lightly browned, 5 to 8 minutes. Add celery and cook until starting to soften, stirring often, about 5 more minutes. Mix barley into the vegetables and stir until coated with butter. Fold mushrooms and green pepper into barley mixture; season to taste with salt and black pepper. Pour chicken broth into barley mixture and bring to a boil; cover casserole dish.",
+    "3. Bake in the preheated oven until barley is nearly tender, about 30 minutes; uncover casserole dish and bake barley until most of the liquid has been absorbed, about 15 more minutes. Adjust salt and black pepper before serving."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "British",
+  "keywords": [
+    "Vegetables"
+  ],
+  "tool": []
+}

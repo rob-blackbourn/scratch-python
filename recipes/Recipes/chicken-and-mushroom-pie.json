@@ -1,0 +1,50 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Chicken & Mushroom Pie - Hairy Bikers",
+  "author": {
+    "@type": "Person",
+    "name": "Hairy Bikers"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4",
+  "prepTime": "PT30M",
+  "cookTime": "PT2H",
+  "recipeIngredient": [
+    "For the pastry",
+    "550g/1lb 4oz lard, plus extra for greasing",
+    "1.15kg/3lb 5oz plain flour, plus extra for dusting",
+    "1 1/2 tsp salt",
+    "300ml/ 1/2 pint water",
+    "For the filling",
+    "300ml/ 1/2 pint sunflower oil",
+    "4kg/9lb chicken thighs, boned and skin removed, flesh cut into pieces",
+    "100g/3 1/2oz chopped fresh thyme",
+    "1kg/2lb 4oz mushrooms, roughly chopped",
+    "100g/3 1/2oz chopped fresh tarragon",
+    "500ml/18fl oz soured cream",
+    "milk, to glaze",
+    "salt and freshly ground black pepper",
+    "Preparation method",
+    "1. Preheat the oven to 180C/350F/Gas 4. Grease five large pie dishes with lard. Add a small amount of flour, then turn the tin to coat the base and sides, shaking out any excess. ",
+    "2. For the pastry, pulse the flour, salt, and lard in a large food processor until the mixture resembles breadcrumbs. Add the water, mix until just combined, then tip onto a work surface and knead until smooth. Place the pastry in the fridge for 30 minutes. (This makes a lot of pastry, so you may need to make it in batches.)",
+    "3. Meanwhile, for the filling, heat half of the oil in a large saucepan over a medium heat, add the chicken pieces and cook for 4-5 minutes, or until browned (you may need to do this in batches). Add 1.5 litre/2 3/4 pints water and the thyme, and season, to taste, with salt and freshly ground black pepper. Bring the mixture to the boil, reduce the heat, and simmer for 15-20 minutes, or until the volume of liquid has reduced by a third and the chicken is cooked through. ",
+    "4. Heat the remaining oil in a separate frying pan over a medium heat, add the mushrooms, and cook for 4-5 minutes, or until golden-brown, then season, to taste, with salt and freshly ground black pepper. (It is best not to overcrowd the pan, so you may need to do this in batches.)",
+    "5. Add the mushrooms to the chicken mixture along with the tarragon, then stir in the soured cream until well combined. If the mixture is looking dry add a little hot water or stock. Divide the mixture among the pie dishes and set aside.",
+    "6. Divide the pastry into five pieces and roll each piece of pastry out on a clean, floured work surface until it is a little bit larger than the diameter of the pie dish.",
+    "7. Place the pastry lid on top of the pie and trim off any excess pastry. With a knife, make two small holes in the centre of the pastry lid to allow steam to escape. Brush the pastry with a little milk.",
+    "8. Repeat with the remaining pastry.",
+    "9. Bake the pies in the oven for 30-35 minutes, or until golden-brown."
+  ],
+  "recipeInstructions": [],
+  "recipeCategory": null,
+  "recipeCuisine": "British",
+  "keywords": [
+    "Pies"
+  ],
+  "tool": []
+}

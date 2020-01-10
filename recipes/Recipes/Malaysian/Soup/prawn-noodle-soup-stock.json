@@ -1,0 +1,42 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Prawn Noodle Soup Stock",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "1 l",
+  "prepTime": "PT5M",
+  "cookTime": "PT2H",
+  "recipeIngredient": [
+    "3 tbsp dried shrimp,",
+    "1 dried red chilli,",
+    "50 g fresh root ginger (peeled and sliced),",
+    "2 onions (quartered),",
+    "4 cloves of garlic (bruised),",
+    "2 lemongrass stalks (bruised),",
+    " 1/2 tsp black peppercorns,",
+    "2-3 tbsp dark soy sauce,",
+    "700 g pork and chicken bones (or pork ribs and chicken wings),",
+    "Heads and shells of prawns."
+  ],
+  "recipeInstructions": [
+    "1. Put all the stock ingredients into a deep pan along with the prawn shells.",
+    "2. Pour in 2 l of water and bring to the boil.",
+    "3. Reduce the heat and simmer gently, uncovered, for about 2 hours, until the stock has reduced by half.",
+    "4. Strain the stock into a fresh pan and put on a low heat to keep warm.",
+    "5. Season the stock with salt and pepper."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Malaysian",
+  "keywords": [
+    "Soup"
+  ],
+  "tool": []
+}

@@ -1,0 +1,38 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Merguez Spice Blend",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "Seasoning for 1kg lamb",
+  "prepTime": "PT10M",
+  "cookTime": "PT0M",
+  "recipeIngredient": [
+    "2 tsp fennel seeds,",
+    "2 tsp cumin seeds,",
+    "2 tsp coriander seeds,",
+    "2 tbsp sweet paprika,",
+    "1 tbsp harissa paste,",
+    "1 tbsp salt,",
+    "1 tsp ground cinnamon,",
+    "1 tsp cayenne pepper,",
+    "1 tsp ground black pepper,",
+    "4 garlic cloves,"
+  ],
+  "recipeInstructions": [
+    "1. Grid spices and combine."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Moroccan",
+  "keywords": [
+    "Spices"
+  ],
+  "tool": []
+}

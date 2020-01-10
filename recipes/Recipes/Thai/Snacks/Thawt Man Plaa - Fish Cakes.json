@@ -1,0 +1,36 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Thawt Man Plaa - Fish Cakes",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "30",
+  "recipeIngredient": [
+    "450g firm white fish fillets (roughly chopped),",
+    "1 tbsp red curry paste,",
+    "1 tbsp fish sauce,",
+    "1 egg,",
+    "50g green beans (very thinly sliced),",
+    "5 kaffir lime leaves (finely shredded),"
+  ],
+  "recipeInstructions": [
+    "1. Mince the fish in a food processor until smooth.",
+    "2. Add the curry paste, fish sauce, and egg, then blend briefly.",
+    "3. Spoon into a bowl and mix with the beans and lime leaves.",
+    "4. Take a tbsp of the mixture and form into a 2\" round cake.",
+    "5. Shallow fry on both sides."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Thai",
+  "keywords": [
+    "Snacks"
+  ],
+  "tool": []
+}

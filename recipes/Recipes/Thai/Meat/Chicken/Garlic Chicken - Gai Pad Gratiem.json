@@ -1,0 +1,43 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Garlic Chicken - Gai Pad Gratiem",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4 starters",
+  "recipeIngredient": [
+    "500 g chicken breast or thigh (cut into 1-cm thick slices)",
+    "8 cloves garlic (chopped),",
+    "1 tbsp oyster sauce,",
+    "1 tbsp soy sauce,",
+    "1 tsp Golden Mountain sauce (or substitute regular soy sauce),",
+    "1 tsp fish sauce,",
+    "black soy sauce (as needed for colour, about 1 tsp),",
+    "1  1/2 tsp caster sugar,",
+    " 1/4 tsp white pepper,",
+    " 1/4 tsp black pepper,",
+    "7-8 coriander stems (chopped),",
+    "water (as needed)."
+  ],
+  "recipeInstructions": [
+    "1. Mix chicken with oyster sauce, soy sauce, Golden Mountain Sauce, fish sauce, white pepper, and black pepper. Set aside while you fry garlic.",
+    "2. In a small pot or wok, add the garlic, then add just enough vegetable oil to cover the garlic. Fry garlic over low heat (gentle bubbling) until the garlic turns golden brown and the bubbling has mostly stopped, about 5 minutes. Drain garlic from oil, reserving the oil.",
+    "3. In a wok, add about 2 Tbsp of the garlic oil and heat over high heat. Pour a tablespoon or so of the remaining garlic oil into the marinated chicken and stir to lubricate. When oil is hot, add the chicken and sugar, then stir until chicken is cooked. You can add a splash of water if the chicken sticks, or if you want more sauce in the final product. You can also add a little bit more black soy sauce if you want a darker colour.",
+    "4. When the chicken is cooked, stir in half of the fried garlic and chopped cilantro stems, and remove from heat.",
+    "5. Just before serving, sprinkle over the remaining fried garlic. Serve with jasmine rice, but it can also be wonderful when added to other dishes such as pasta, noodles, salads, wraps, and omelettes!"
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Thai",
+  "keywords": [
+    "Meat",
+    "Chicken"
+  ],
+  "tool": []
+}

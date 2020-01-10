@@ -1,0 +1,58 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Thai-style chicken rolls",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "20 pieces",
+  "prepTime": "PT15M",
+  "cookTime": "PT7M",
+  "recipeIngredient": [
+    "For the chicken",
+    "4 boneless, skinless chicken breast halves (about 110 g each),",
+    "2 tsp Asian chili paste, such as sambal oelek,",
+    "Salt and freshly ground black pepper,",
+    "4 spring onions,",
+    "1/4 red pepper (cut into long thin strips),",
+    "1/4 yellow pepper (cut into long thin strips),",
+    "1 tbsp vegetable oil, like soy or groundnut,",
+    "2 tbsp chopped toasted peanuts,",
+    "For the dipping sauce",
+    "2 tbsp freshly squeezed lime juice,",
+    "2 tbsp southeast asian fish sauce,",
+    "2 tbsp water,",
+    "1/2 tsp asian chili paste, such as sambal oelek,",
+    "1 tsp honey,",
+    "1 tbsp chopped fresh mint or coriander."
+  ],
+  "recipeInstructions": [
+    "For the chicken",
+    "1) Pound each chicken breast between cling film into a 10 by 10 cm by 0.3cm thick.",
+    "2) Lay a piece of chicken smooth-side down on the work surface.",
+    "3) Spread 1/2 teaspoon of the chilli paste over the surface and season with salt and pepper, to taste.",
+    "4) Trim and halve the spring onions lengthwise. Lay them side-by-side across the lower third of the chicken, so there is white and greens at both ends.",
+    "5) Top with 2 or 3 pieces of the red and yellow peppers.",
+    "6) Roll the chicken around the vegetables into a tight cylinder and thread a wooden skewer through the seam of the roll to seal.",
+    "7) Repeat with the remaining chicken and vegetables to make 4 rolls. These can be made up to 24 hours ahead and refrigerated.",
+    "8) Preheat the oven to 220C/Gas 7.",
+    "9) Heat the oil in an ovenproof non-stick pan over high heat. Season the rolls with salt and",
+    "pepper, to taste. Lay the rolls, seam side down, in the pan, and cook, turning occasionally, until browned, about 2 minutes.",
+    "10) Transfer the pan to the oven, and cook until the chicken is cooked through, about 5 minutes more.",
+    "For the assembly",
+    "1) Carefully remove the skewers, taking care to keep the rolls intact. Cut across the rolls to make round pieces about 2 cm thick, and thread onto skewers.",
+    "2) Transfer to a platter, sprinkle with peanuts and serve with the dipping sauce.",
+    "For the dipping sauce",
+    "1) Combine the lime juice, fish sauce, water, chili paste, honey, mint and coriander in a small bowl and set aside."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "BBQ",
+  "keywords": [],
+  "tool": []
+}

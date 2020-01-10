@@ -1,0 +1,45 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Salmon with Saikyo Miso",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "2",
+  "prepTime": "PT30M",
+  "cookTime": "PT20M",
+  "totalTime": "PT2D",
+  "recipeIngredient": [
+    "For the Saikyo miso",
+    "100 ml sake,",
+    "100 ml mirin,",
+    "150 g caster sugar,",
+    "300 g white miso paste.",
+    "For the fish",
+    "2 salmon steaks (or cod, halibut, or sablefish).",
+    "For the garnish",
+    "Cherry plum tomatoes (on the vine),",
+    "Small slender courgettes (ideally with the flowers attached, briefly blanched and refreshed)."
+  ],
+  "recipeInstructions": [
+    "1. About 2 days ahead, make the Saikyo miso: in a heavy-based non-reactive saucepan, bring the sake and mirin to the boil, and continue to boil for  2-3 minutes to allow the alcohol to evaporate.",
+    "2. Using a wooden spoon, stir in the sugar until it has dissolved, then slowly mix in the miso paste, a little at a time. Cook over medium heat, stirring constantly so as to not let any of the mixture burn, for 10-15 minutes.",
+    "3. Strain the mixture through a sieve to remove any lumps, allow to cool, then chill until quite cold.",
+    "4. Place the fish in a non-reactive container, pour in a good splash of the Saikyo miso over each of the fillets and leave for 1-2 days in the refrigerator.",
+    "5. When you want to cook the fish, preheat a hot grill or the oven to 200C/gas 6. Place the fillets on the grill pan or a non-stick baking sheet and cook under the grill or in the preheated oven for 10-12 minutes, turning once if grilling, until cooked through and golden on the outside.",
+    "6. Place on a serving dish and dress the plate with a little extra Saikyo miso, and some cherry plum tomatoes on the vine, or small slender courgettes."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Japanese",
+  "keywords": [
+    "Seafood",
+    "Salmon"
+  ],
+  "tool": []
+}

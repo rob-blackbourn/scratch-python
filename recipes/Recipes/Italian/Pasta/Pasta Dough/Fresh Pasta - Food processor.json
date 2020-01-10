@@ -1,0 +1,35 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Fresh Pasta - Food processor",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4",
+  "prepTime": "PT20M",
+  "cookTime": "PT0M",
+  "recipeIngredient": [
+    "140 g (5 oz) plain flour or Italias \u201800\u2019 flour,",
+    "1 whole egg,",
+    "1 egg yolk.",
+    "Preparation method",
+    "1. Place the flour in a food processor and pulse it. Add the whole egg and egg yolk and keep whizzing until the mixture resembles fine breadcrumbs (it shouldn't be dusty, nor should it be a big, gooey ball). This takes 2-3 minutes.",
+    "2. Tip out the dough and knead to form into a ball shape. Knead it briskly for 1 minute, it should be quite stiff and hard to knead. Wrap in cling film and leave to rest in a cool place for 1 hour before using.",
+    "3. Now cut the dough into 2 pieces. For each piece, flatten with a rolling pin to about 5mm/ 1/4 in) thickness. Fold over the dough and pass it through the pasta machine at its widest setting, refolding and rolling 7 times (not changing the setting) until you have a rectangular shape 7.5x18cm / 3x7 in. It is important to work the dough until it is nice and shiny, as this gives it the \"al dente\" texture. Repeat with the second piece of dough.",
+    "4. Now you are ready to roll out. Start with the pasta machine at its widest setting, pass the dough through the rollers. Do not fold but repeat this process, decreasing the roller setting down grade by grade with each pass. For most uses, I take the pasta down to the penultimate setting - especially for ravioli, as you are sandwiching two layers together when it is folded. Use straight away to make the ravioli."
+  ],
+  "recipeInstructions": [],
+  "recipeCategory": null,
+  "recipeCuisine": "Italian",
+  "keywords": [
+    "Pasta",
+    "Pasta Dough"
+  ],
+  "tool": []
+}

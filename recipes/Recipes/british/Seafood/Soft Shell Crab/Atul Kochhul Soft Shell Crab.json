@@ -1,0 +1,42 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Atul Kochhul Soft Shell Crab",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "1",
+  "prepTime": "PT5M",
+  "cookTime": "PT2M",
+  "recipeIngredient": [
+    "2 soft shell crabs,",
+    "1 tsp turmeric,",
+    "1 tsp ground coriander,",
+    "1 tsp mango powder,",
+    "1/2 tsp red chilli powder,",
+    "2 tbsp mustard oil,",
+    "1/2 lime (juice only),",
+    "3/4 tbsp cornflour,",
+    "3/4 tbsp rice flour,",
+    "light green salad."
+  ],
+  "recipeInstructions": [
+    "1. Put into a mixing bowl: 1 tsp turmeric, 1 tsp ground coriander, 1 tsp mango powder, 1/2 tsp red chilli powder, 2 tbsp mustard oil, the juice of 1/2 lime, salt, 3/4 tbsp cornflour, 3/4 tbsp rice flour. Mix well. If the paste is too thick add a little more oil to form a gluey paste.",
+    "2. Coat the crabs with the past by holding the crab in one hand, and massaging in the mixture with the other.",
+    "3. Deep fry for 2 minutes.",
+    "4. Serve with a light green salad."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "British",
+  "keywords": [
+    "Seafood",
+    "Soft Shell Crab"
+  ],
+  "tool": []
+}

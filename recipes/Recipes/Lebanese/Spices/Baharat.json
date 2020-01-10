@@ -1,0 +1,34 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Baharat",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "prepTime": "PT20M",
+  "recipeIngredient": [
+    "4 parts black pepper",
+    "3 parts coriander seeds",
+    "3 parts cinnamon",
+    "3 parts cloves",
+    "4 parts cumin seeds",
+    "1 part cardamom pods",
+    "3 parts nutmeg",
+    "6 parts paprika"
+  ],
+  "recipeInstructions": [
+    "Put all the ingredients into a pestle and grind until a fine powder."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Lebanese",
+  "keywords": [
+    "Spices"
+  ],
+  "tool": []
+}

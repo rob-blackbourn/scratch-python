@@ -1,0 +1,45 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Kedgeree",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "3",
+  "prepTime": "PT10M",
+  "cookTime": "PT15M",
+  "recipeIngredient": [
+    "1 1/2 fillets of smoked haddock,",
+    "1 medium onion (sliced),",
+    "2 tbsp olive oil,",
+    "2 scant tsp curry powder.",
+    "2 tbsp sultanas,",
+    "125 g basmati rice,",
+    "2 hard boiled eggs,",
+    "chopped parsley,",
+    "lemon wedges and mango chutney."
+  ],
+  "recipeInstructions": [
+    "1. Pour boiling water over the haddock, leave for 3 minutes, drain, skin, and flake.",
+    "2. Cook the onion until pale yellow in the oil in a saute pan.",
+    "3. Stir in the curry powder and cook for a minute, stirring.",
+    "4. Add the sultanas and rice, plus 600 ml water.",
+    "5. Bring to the boil and simmer for 10 minutes.",
+    "6. Put in the haddock and season.",
+    "7. Continue cooking until the rice is soft, and the water absorbed.",
+    "8. Serve with hard boiled eggs and parsley on top, and lemon wedges and mango chutney on the side."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "British",
+  "keywords": [
+    "Seafood",
+    "Smoked Haddock"
+  ],
+  "tool": []
+}

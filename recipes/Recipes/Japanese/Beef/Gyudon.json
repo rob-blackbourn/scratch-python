@@ -1,0 +1,46 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Gyudon",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "200g thinly sliced beef,",
+    "1/2 onion (cut into thin wedges),",
+    "1 inch ginger (grated),",
+    "2 tbsp soy sauce,",
+    "1 tbsp sake,",
+    "1 tbsp sugar,",
+    "1 tbsp hon-mirin,",
+    "100 ml dashi stock,",
+    "2 eggs,",
+    "beni shoga (Japanese pickled ginger),",
+    "shichimi (\u201cSeven Flavor\" chili pepper)",
+    "4 spring onions (sliced),",
+    "steamed rice."
+  ],
+  "recipeInstructions": [
+    "1. To poach the eggs, put them in a small saucepan and cover with boiling water. Put on the lid, and leave for 20 minutes. Remove and place into iced water.",
+    "2. To par-boil the beef, bring a medium saucepan of water to the boil and add the beef. When the beef loses its red colour remove and drain well.",
+    "3. Add the sake, mirin, soy sauce, and sugar to a medium frying pan. Turn on the heat and stir the mixture at medium heat until it starts to boil.",
+    "4. Add the beef and stir to coat the beef with the sauce. after a minute remove the beef.",
+    "5. Add the dashi stock, grated ginger and onion to the mixture, stir and cover. When the liquid starts to boil reduce the heat to low and cook for 5 more minutes.",
+    "6. Remove the lid and add the beef and warm though.",
+    "7. Put the rice in a bowl and add the beef and juices.",
+    "8. Sprinkle on the spring onions.",
+    "9. Top with the poached egg."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Japanese",
+  "keywords": [
+    "Beef"
+  ],
+  "tool": []
+}

@@ -1,0 +1,55 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Green Curry of Chicken with Baby Corn (geng gwio warn gai)",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "2 cups coconut cream,",
+    "150g skinless chicken thigh fillets (sliced),",
+    "2 tbsp fish sauce,",
+    "2 cups thin coconut milk or stock,",
+    "6 - 10 baby corn,",
+    "3 kaffir lime leaves (torn),",
+    "2 long red chilies (diagonally sliced),",
+    "handful of Thai basil leaves.",
+    "For the paste",
+    "3 tbsp green birds eye chilies,",
+    "large pinch of salt,",
+    "1 tbsp chopped galangal,",
+    "2 tbsp chopped lemongrass,",
+    "1 tbsp finely chopped kaffir lime zest,",
+    "1 tbsp scraped and chopped corriander root,",
+    "1 teaspoon chopped red turmeric,",
+    "3 tbsp chopped red shallot,",
+    "2 tbsp chopped garlic,",
+    "1 tsp gapi shrimp paste,",
+    "10 white peppercorns,",
+    "1/2 tsp coriander seeds (roasted and ground),",
+    "1/4 tsp cumin seeds (roasted and ground)."
+  ],
+  "recipeInstructions": [
+    "Make the paste",
+    "Make the curry",
+    "1. Crack the coconut cream in a pan and add 2 tbsp of the paste.",
+    "2. Fry over a medium heat, stirring regularly to prevent the paste burning.",
+    "3. Add chicken and continue to cook, still stirring, until the paste is fragrant.",
+    "4. Season with fish sauce, and then add coconut milk or stock.",
+    "5. Bring to the boil, reduce the heat, add corn, and simmer.",
+    "6. When the chicken is cooked (about 3-4 minutes), garnish with lime leaves and thai basil."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Thai",
+  "keywords": [
+    "Thai Food",
+    "Curries"
+  ],
+  "tool": []
+}

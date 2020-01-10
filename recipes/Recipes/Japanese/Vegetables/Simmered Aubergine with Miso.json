@@ -1,0 +1,32 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Simmered Aubergine with Miso",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "1",
+  "recipeIngredient": [
+    "100g Aubergine (cut into bite sized pieces),",
+    "1 tbsp miso,",
+    "1 tbsp mirin,",
+    "3 tbsp sake,",
+    "1 chilli pepper. ",
+    "Preparation ",
+    "1. Put all the ingredients into a saucepan and bring to the boil. ",
+    "2. Reduce the heat and cook for 8 minutes. "
+  ],
+  "recipeInstructions": [],
+  "recipeCategory": null,
+  "recipeCuisine": "Japanese",
+  "keywords": [
+    "Vegetables"
+  ],
+  "tool": []
+}

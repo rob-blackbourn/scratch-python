@@ -1,0 +1,62 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Beef Wellington",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "For the rough puff pastry",
+    "500 g plain flour, plus extra for dusting,",
+    "500 g very cold butter, diced,",
+    "250 ml ice-cold water.",
+    "For the herb cr\u00eapes",
+    "60 g plain flour,",
+    "150 ml milk,",
+    "2 eggs,",
+    "15 g mixed herbs, such as flat-leaf parsley, chervil and chives, chopped,",
+    "30 g clarified butter.",
+    "For the beef",
+    "1 beef fillet, about 800g-1kg, cut from the thick end,",
+    "clarified butter, for frying,",
+    "12 large spinach leaves,",
+    "1 egg,",
+    "watercress, to garnish.",
+    "For the mushroom duxelles",
+    "80 g clarified butter,",
+    "1 kg button mushrooms, very finely chopped,",
+    "1 lemon, juice only,",
+    "60 g shallots, finely chopped,",
+    "100 ml double cream,",
+    "2 tbsp chopped parsley."
+  ],
+  "recipeInstructions": [
+    "1. For the rough puff pastry: put the flour in a mound on the work surface and make a well in the centre. Add the butter and 1 teaspoon of salt and work them together with the fingertips of one hand, gradually drawing the flour into the centre with the other hand. ",
+    "2. When the cubes of butter have become small pieces and the dough is grainy, gradually add the iced water and mix until incorporated, being careful not to overwork the dough. Roll it into a ball, wrap in cling film and refrigerate for 10 minutes. ",
+    "3. Lightly flour the work surface and roll out the pastry to a 40 x 20cm rectangle. Fold it into three and give it a quarter-turn. Roll the block of pastry into a 40 x 20cm rectangle as before, and fold it into three again. These are the first two turns. Wrap the block in cling film and refrigerate for 10 minutes. ",
+    "4. Give the chilled pastry another two turns, rolling and folding as before. This makes a total of four turns, and the pastry is now ready. Wrap it in cling film and refrigerate for another 10 minutes before using. ",
+    "5. For the cr\u00eapes: put the flour in a bowl and make a well in the centre. Add one-third of the milk, the eggs, a pinch of salt and a twist of pepper. Whisk lightly to make a smooth batter, then pour in the rest of the milk and mix thoroughly. Pass the batter through a chinois or fine sieve. Cover with cling film and leave to rest for at least 30 minutes. ",
+    "6. For the beef: preheat the oven to 190C/170C fan/Gas 5. Trim the fillet of any membrane, then season all over with salt and pepper. Heat the clarified butter in a roasting pan over a medium-high heat and sear the beef for 3-4 minutes until golden, turning to colour evenly. Transfer to the oven and roast for 5-8 minutes, turning the meat over after 4 minutes. Lift the beef onto a wire rack and leave to cool completely. At this stage it will be very rare. ",
+    "7. Just before cooking the cr\u00eapes, stir the herbs into the batter. Lightly grease a 26-30cm frying pan with a touch of clarified butter and place over a high heat. Give the batter a stir then ladle in just enough to cover the base of the pan. Cook quickly for about 1 minute, then turn over with a palette knife and cook for barely a minute more. Repeat until you have used all the batter. Stack the cr\u00eapes on a plate, layering a piece of greaseproof paper between each to prevent them sticking together. ",
+    "8. For the mushroom duxelles: heat the clarified butter in a pan over a medium heat. Add the mushrooms and lemon juice and cook, stirring from time to time, until all the moisture has evaporated. Add the shallot and cook for another 2 minutes, then pour in the cream and cook, stirring, until it is all absorbed. Add the chopped parley and season to taste. Set aside to cool, then chill. ",
+    "9. Blanch the spinach leaves in boiling salted water for 30 seconds, then drain and refresh in cold water. Drain well, separate the leaves and pat each one dry with kitchen paper. In a small dish, beat the egg together with a pinch of salt to make an egg wash and set aside. ",
+    "10. To assemble, on a lightly floured surface roll out the pastry to a rectangle about 40 x 25cm and 3-4mm thick. Trim the sides to neaten. Place 2 cr\u00eapes along the middle of the rectangle and cover with 8 spinach leaves. Spread a 1cm-thick layer of mushroom duxelles along the middle of the spinach and cr\u00eapes. Put the cold beef fillet on top and thickly cover the meat, including the ends, with the remaining duxelles. ",
+    "11. Cover the mushroom duxelles with the remaining spinach leaves and another 2 cr\u00eapes. Fold the cr\u00eapes over the beef and, if necessary, cut off any overlapping parts with scissors. Lightly brush the ends of the pastry rectangle with egg wash. Fold one side over the beef; brush it and the ends with egg wash, then fold the other side over the beef. ",
+    "12. Roll the two ends of the pastry to a thickness of 4-5mm and trim to 8cm in length. Brush these with egg wash and fold them over the beef. Turn the pastry-wrapped beef over onto a baking sheet. Brush the entire surface of the pastry with egg wash and refrigerate for 10 minutes. Meanwhile heat the oven to 200C/180C fan/Gas 6. ",
+    "13. Brush the entire surface of the pastry with egg wash a second time and score it with leaf patterns using the tip of a pointed knife. Cut a small hole in the middle of the pastry to allow the steam to escape during cooking and, if you have one, insert a pastry funnel. Bake for 25 minutes if you like your beef rare, or 35 minutes for medium. If the pastry becomes too brown as it cooks, cover loosely with foil and lower the oven setting to 170C/150C fan/Gas 3. ",
+    "14. Use a palette knife to transfer the cooked beef en cro\u00fbte to a wire rack and leave it to rest for 5 minutes before carving and serving with a garnish of watercress and a jug of b\u00e9arnaise sauce."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "British",
+  "keywords": [
+    "Meat",
+    "Beef"
+  ],
+  "tool": []
+}

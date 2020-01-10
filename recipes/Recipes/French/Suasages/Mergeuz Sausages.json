@@ -1,0 +1,39 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Mergeuz Sausages",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "",
+  "prepTime": "PT15M",
+  "cookTime": "PT0M",
+  "recipeIngredient": [
+    "250 g lamb,",
+    "250 g beef,",
+    "120 g ground or finely chopped fat,",
+    "3 cloves garlic, finely chopped or pressed,",
+    "2 tbsp chopped fresh coriander,",
+    "2 tbsp ,",
+    "2 to 3 tsp ,",
+    "Sheep sausage casings"
+  ],
+  "recipeInstructions": [
+    "1. Mince the meat through a 6mm plate.",
+    "2. Mix the ingredients in a bowl. (Add ice water?)",
+    "3. Mince the batch again through a 6mm plate or process briefly in a food processor.",
+    "4. Fill out into pre soaked natural sheep casings 20/22 or 22/24."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "French",
+  "keywords": [
+    "Suasages"
+  ],
+  "tool": []
+}

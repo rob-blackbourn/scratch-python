@@ -1,0 +1,44 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Yakisoba",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4",
+  "recipeIngredient": [
+    "Sauce",
+    "1/2 cup ketchup",
+    "2 tablespoons Worcestershire sauce",
+    "1 tablespoon soy sauce",
+    "2 teaspoons prepared hot mustard (preferably Japanese, but Colman\u2019s will work too)",
+    "1 teaspoon freshly ground black pepper",
+    "3 tablespoons vegetable oil",
+    "8 ounces thinly sliced pork (or thick, uncured bacon), cut into 1-inch wide pieces",
+    "3 cups shredded savoy cabbage",
+    "2 cups bean sprouts",
+    "1/2 medium yellow onion, diced",
+    "17 ounces cooked Chinese egg noodles (yakisoba noodles, sometimes labeled \u201cchukamen\"), at room temperature",
+    "salt and pepper\u2014to season",
+    "ao nori (shredded nori seaweed)\u2014to taste",
+    "beni shoga (julienned red pickled ginger)\u2014to garnish"
+  ],
+  "recipeInstructions": [
+    "1. Prepare the sauce: Whisk together the sauce ingredients in a small bowl. Cover and set aside.",
+    "2. Heat one tablespoon of oil in a 12-inch skillet or wok and cook the pork until just barely cooked.  Using a slotted spoon, transfer the meat to a bowl.",
+    "3. Cook the cabbage, bean sprouts, and onion in the same skillet, over medium-high heat until tender, but not browned. While cooking, drizzle in additional oil as needed.",
+    "4. Add the noodles to the skillet. Gently toss them to break them up and incorporate them with the rest of the ingredients. When the noodles have warmed through and are starting to crisp, add the cooked meat and half of the sauce and stir until everything is evenly coated. Add additional sauce until you have reached your desired moisture level. Garnish with a pinch of ao nori and beni shoga (optional) and serve immediately."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Japanese",
+  "keywords": [
+    "Noodles"
+  ],
+  "tool": []
+}

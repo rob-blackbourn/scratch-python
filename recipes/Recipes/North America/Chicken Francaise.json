@@ -1,0 +1,40 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Chicken Francaise",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "2",
+  "prepTime": "PT20M",
+  "cookTime": "PT10M",
+  "recipeIngredient": [
+    "1 large chicken breast,",
+    "2 large eggs,",
+    "2 tbsp Parmesan cheese (finely grated),",
+    "1 tbsp chopped parsley (roughly chopped),",
+    "1 clove of garlic (crushed),",
+    "2 tbsp seasoned flour."
+  ],
+  "recipeInstructions": [
+    "1. Slice the chicken breast into thin wide strips. Flatten with a meat tenderizer.",
+    "2. Lightly beat the eggs in a medium glass bowl.",
+    "3. Dip the chicken in the flour, then into the egg, leaving in the bowl.",
+    "4. Put some butter in a frying pan over a medium heat.",
+    "5 When the butter is foaming add the chicken.",
+    "6. Sprinkle the parmesan over the chicken and some parsley.",
+    "7. After a couple of minutes flip turn.",
+    "8. Add some crushed garlic to the pan.",
+    "9. When the chicken is cooked remove it from the pan, then reduce the sauce for  few more seconds."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "North America",
+  "keywords": [],
+  "tool": []
+}

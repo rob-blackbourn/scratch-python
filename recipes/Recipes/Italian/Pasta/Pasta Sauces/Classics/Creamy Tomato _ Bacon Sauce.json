@@ -1,0 +1,39 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Creamy Tomato & Bacon Sauce",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4",
+  "prepTime": "PT5M",
+  "cookTime": "PT15M",
+  "recipeIngredient": [
+    "2 cloves garlic,",
+    "2 x 400 g cans chopped tomatoes,",
+    "4 tbsp olive oil,",
+    "1 tsp dried oregano,",
+    "1 tsp castor sugar,",
+    "8 rashers of smoked back bacon (finely chopped),",
+    "75 g mascarpone cheese"
+  ],
+  "recipeInstructions": [
+    "1. Put the garlic, tomatoes, oil, oregano and sugar in a saucepan, bring to the boil, then reduce the heat,  cover and simmer for 10 minutes.",
+    "2. Add the bacon and simmer, uncovered for a further 5 minutes. Season to taste with salt and peper.",
+    "3. Stir in the marscapone, heat through, and adjust the seasoning if necessary."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Italian",
+  "keywords": [
+    "Pasta",
+    "Pasta Sauces",
+    "Classics"
+  ],
+  "tool": []
+}

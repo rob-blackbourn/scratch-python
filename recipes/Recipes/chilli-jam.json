@@ -1,0 +1,38 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Chilli Jam (nahm prik pao)",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "oil for deep frying,",
+    "4 cups red shallots (sliced lengthwise),",
+    "2 cups garlic (sliced lengthwise),",
+    "1/2 cup dried prawns (rinsed and dried),",
+    "1 cup dried long red chilli (deseeded and chopped),",
+    "10 slices galangal,",
+    "1 tsp gapi shrimp paste (roasted),",
+    "1 cup palm sugar,",
+    "1/2 cup thick tamarind water,",
+    "3 tbsp salt or 1/2 cup fish sauce."
+  ],
+  "recipeInstructions": [
+    "1. Heat oil in a wok and separately deep fry shallots garlic, prawns, chilies, and galangal until golden. Blend them all in a food processor, with the shrimp paste, moistening with some of the oil used for deep frying (up to 1 cup) to facilitate the blending.",
+    "2. In a pan, bring the mixture to the boil and season with palm sugar and tamarind water and salt or fish sauce.",
+    "3. Simmer until quite thick. stirring regularly. The resulting \u201cjam\" should taste sweet, sour, and salty."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Thai",
+  "keywords": [
+    "Thai Food",
+    "Relishes"
+  ],
+  "tool": []
+}

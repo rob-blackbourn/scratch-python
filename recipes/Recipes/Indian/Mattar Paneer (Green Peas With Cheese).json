@@ -1,0 +1,47 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Mattar Paneer (Green Peas With Cheese)",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4",
+  "recipeIngredient": [
+    "500g frozen green peas",
+    "3 medium size tomatoes",
+    "250g paneer",
+    "3 tablespoons oil",
+    "Pinch of asafetida (hing)",
+    "1 teaspoon cumin seeds (jeera)",
+    "2 bay leaves (tajpat)",
+    "1/2 inch of cinnamon stick (dalcheene)",
+    "1 tablespoon chopped ginger",
+    "1 tablespoon coriander powder (dhania)",
+    "1/2 teaspoon turmeric (haldi)",
+    "1/2 teaspoon chili powder",
+    "1/2 teaspoon paprika",
+    "1 teaspoon salt or adjust to taste",
+    "1/2 teaspoon sugar",
+    "1 tablespoon cornstarch"
+  ],
+  "recipeInstructions": [
+    "Cube the paneer into half inch pieces and deep-fry them on medium high heat. Fry until the paneer becomes a light golden color. Take the paneer out and place on a paper towel so the extra oil is absorbed.",
+    "Mix cornstarch with three tablespoons of water and keep aside.",
+    "Blend the tomatoes and ginger to make a paste.",
+    "Heat the oil in a saucepan. Test the heat by adding one cumin seed to the oil. If the cumin seed cracks right away, the oil is ready.",
+    "Add the asafetida (hing), cumin seeds, bay leaves and cinnamon and stir-fry for a few seconds.",
+    "Add the tomato paste, coriander, turmeric, chili powder and paprika. Cook until the mixture reduces to half.",
+    "Add the green peas and 1/4 cup of water. cook on medium heat pan should be covered. When the peas are tender, add the salt and paneer.",
+    "To thicken the gravy add corn starch mix. Cover the pan and let it cook for 3-4 minutes."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Indian",
+  "keywords": [],
+  "tool": []
+}

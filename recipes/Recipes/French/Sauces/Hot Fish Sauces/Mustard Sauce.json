@@ -1,0 +1,31 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Mustard Sauce",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "600 ml",
+  "prepTime": "PT5M",
+  "cookTime": "PT0M",
+  "recipeIngredient": [
+    "600 ml  made with half milk and half ,",
+    "1 tsp french mustard."
+  ],
+  "recipeInstructions": [
+    "1. Add the mustard just before serving."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "French",
+  "keywords": [
+    "Sauces",
+    "Hot Fish Sauces"
+  ],
+  "tool": []
+}

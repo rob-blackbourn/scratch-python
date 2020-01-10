@@ -1,0 +1,51 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Risotto with Radicchio and Sea Scallops",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4 to 6",
+  "prepTime": "PT10M",
+  "cookTime": "PT20M",
+  "recipeIngredient": [
+    "For the scallops",
+    "1/4 cup extra virgin olive oil,",
+    "1/2 lb sea scallops (diced into 1/2\" pieces),",
+    "1 garlic clove (minced),",
+    "1/2 tsp salt (plus more to taste).",
+    "For the risotto",
+    "6 cups vegetable broth,",
+    "4 tbsp unsalted butter,",
+    "1/2 small onion (minced),",
+    "2 cups arborio rice,",
+    "1 cup dry white wine,",
+    "3 medium heads of radicchio (leaves),",
+    "Ground black pepper (to taste)."
+  ],
+  "recipeInstructions": [
+    "1. Heat the oil in a medium frying pan over high heat. Fry the scallops until barely golden (2 minutes). ",
+    "2. Season with salt and set aside. ",
+    "3. Bring the broth to the boil then kept warm over a low heat. ",
+    "4.  Melt 3 tbsp butter in a large heavy pan over a medium heat.",
+    "5. When the butter begins to foam add the onions. Cook until pale yellow and soft (4 - 5 minutes). ",
+    "6. Add the rice, stir to coat with the butter, and cook until it turns white (2 minutes). ",
+    "7. Add the wine and stir until absorbed. ",
+    "8. Add the radicchio and a ladle of stock and stir until the broth has been absorbed. ",
+    "9. Continue adding the stock a ladle at a time, stirring to absorb before adding the next. ",
+    "10. Add the scallops and their juices and mix well. ",
+    "11. Add a knob of butter. Mix and season. "
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Italian",
+  "keywords": [
+    "Risotto"
+  ],
+  "tool": []
+}

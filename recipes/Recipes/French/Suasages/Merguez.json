@@ -1,0 +1,43 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Merguez",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "500 gm Lean Beef ",
+    "500 gm Breast of Lamb ",
+    "30 gm Iced Water ",
+    "10 gm Olive Oil ",
+    "38 gm Spice Mix ",
+    "Spice Mix",
+    "18 gm Salt ",
+    "2.4 gm Black Pepper ",
+    "4 gm Hot chilli Powder ",
+    "0.6 gm Spanish Smoked Hot Paprika ",
+    "3 gm Ground Garlic ",
+    "4 gm Ground Cumin ",
+    "4 gm Ground Fennel seed ",
+    "2 gm Spanish Sweet Paprika "
+  ],
+  "recipeInstructions": [
+    "Grinding and Mixing ",
+    "The meat can be ground in the grinder or chopper to obtain a grain of 4-6 mm (1/4 in) as shown. The meats are then blended with the seasonings (dissolved in cold water) on low speed in a mixer until just mixed to avoid warming the mixture which causes the release of fat during cooking resulting in a dry ",
+    "product. ",
+    "Filling the Casings ",
+    "The merguez mixture is stuffed into sheep casings (18-20 mm (3/4 in)). The standard merguez is sectioned into 12-15 cm (5-6 in) links. Smaller sausages measuring 5 cm (2 in) are used for brochettes and are served with couscous. Tinted casings can be used to intensify the colour which makes them more eye-catching and easier to market. The filled sausages are hung in the refrigerator to drain."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "French",
+  "keywords": [
+    "Suasages"
+  ],
+  "tool": []
+}

@@ -1,0 +1,42 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Monkfish with White Wine and Basil (Rana Pescatrice al Pomodoro e Basilico)",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "2",
+  "recipeIngredient": [
+    "500g monkfish tails (cut into bite sized pieces),",
+    "3 to 4 tbsp extra virgin olive oil,",
+    "1/4 tsp of salt plus more to taste,",
+    "8 tbsp plain flour,",
+    "1 garlic clove (minced),",
+    "1 anchovy fillet (minced),",
+    "125ml cup dry white wine,",
+    "400g can italian plum tomatoes,",
+    "1/8 tsp crushed red pepper flakes,",
+    "4 fresh basil leaves (finely shredded),",
+    "1/2 tbsp unsalted butter."
+  ],
+  "recipeInstructions": [
+    "1. Wash the monkfish under cold water and pat dry with a paper towel.",
+    "2. Heat the oil in a large frying pan over medium-high heat. Season the monkfish with salt and flour it lightly. Place the monkfish in the pan without crowding. Cook, turning once, until the fish has a nice golden colour (about 2 minutes per side).",
+    "3. Discard half of the fat in the pan and return it to medium heat. Add the garlic and anchovies and stir for 20 to 30 seconds. Add the wine and cook, stirring and scraping the bottom of the pan with a wooden spoon until the wine is reduced by half. Add the tomatoes, season with salt and red pepper flakes and bring the sauce to a fast simmer.",
+    "4. Return the monkfish and juices to the pan. Cover and reduce the heat to low. Simmer, basting once or twice, until the fish is cooked (about 7 minutes).",
+    "5. Place the fish on warm serving dishes.",
+    "6. Add the basil and butter to the pan, raise the heat to high and stir quickly for a minute to thicken the sauce. Adjust the seasoning and pour over the fish."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Italian",
+  "keywords": [
+    "Fish"
+  ],
+  "tool": []
+}

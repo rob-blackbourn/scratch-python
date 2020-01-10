@@ -1,0 +1,38 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Basil Vinaigrette",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4 people",
+  "prepTime": "PT5M",
+  "cookTime": "PT0M",
+  "recipeIngredient": [
+    "1 tsp Dijon mustard,",
+    "1 shallot (chopped),",
+    "1/2 tsp salt,",
+    "1 tsp sugar,",
+    "1/2 cup roughly chopped basil leaves,",
+    "1/4 cup white wine vinegar,",
+    "3/4 cup olive oil. "
+  ],
+  "recipeInstructions": [
+    "1. Place the salt, sugar, mustard, shallot and basil in a blender or food processor. Scrape the sides of the blender down with a spatula. Add the vinegar and pulse again. ",
+    "2. Turn the blender on low and take off the cap in the centre of the blenders lid and dribble in the olive oil. ",
+    "3. Scrape down the sides of the blender and pulse for a further 2 minutes. "
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "French",
+  "keywords": [
+    "Sauces",
+    "Vinegrette"
+  ],
+  "tool": []
+}

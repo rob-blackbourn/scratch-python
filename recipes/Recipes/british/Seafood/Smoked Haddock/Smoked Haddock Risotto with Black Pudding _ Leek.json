@@ -1,0 +1,42 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Smoked Haddock Risotto with Black Pudding & Leek",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "300g smoked haddock,",
+    "85g butter,",
+    "600ml fresh fish stock,",
+    "300ml chicken stock,",
+    "225g Arborio rice,",
+    "3 shallots,",
+    "2 cloves garlic,",
+    "170g black pudding,",
+    "2 leeks",
+    "Mascarpone cheese,",
+    "Parmesan cheese,",
+    "Salt and pepper,",
+    "Fresh flat parsley (chopped),",
+    "White wine."
+  ],
+  "recipeInstructions": [
+    "1. Peel and chop the onions and garlic, and saut\u00e9 in a pan with a little butter and add the rice and cook for a further 30 seconds, then add the white wine and fish stock. ",
+    "2. Dice the black pudding and add it to the pan with some thinly sliced leek. Bring back to the boil and simmer gently for about 5 minutes before adding the diced smoked haddock. ",
+    "3. Cook for a further 4\u20135 minutes to ensure the rice is cooked, finish with chopped parsley, Mascarpone, grated Parmesan and seasoning. Assembly Serve in a large bowl with grated cheese and olive oil drizzled over the top. "
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "British",
+  "keywords": [
+    "Seafood",
+    "Smoked Haddock"
+  ],
+  "tool": []
+}

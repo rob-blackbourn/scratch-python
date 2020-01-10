@@ -1,0 +1,46 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Pheasant Ravioli Filling",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "6 portions",
+  "recipeIngredient": [
+    "2 pheasant legs (deboned),",
+    "a sprig of rosemary,",
+    "1 banana shallot,",
+    "40 g pancetta (chopped),",
+    "4 tbsp double cream,",
+    "1 egg,",
+    "2 tbsp grated Parmesan."
+  ],
+  "recipeInstructions": [
+    "1. Preheat the oven to 220C/425F/gas mark 7.",
+    "2. Cut off the pheasant's legs, debone the thighs, reserving the bones and the lower leg for stock. Chop into two pieces.",
+    "3. Season the skin.",
+    "4. Heat an ovenproof saut\u00e9 pan until it smokes, add a tablespoon of vegetable oil and put in the legs, skin-side down. Cook until the skin turns golden.",
+    "5. Add the chopped pancetta and a finely chopped shallot.",
+    "6. Turn over the legs, cook for a couple more minutes, then add a glass of dry white wine and cook until the alcohol evaporates.",
+    "7. Transfer to the oven until the meat is cooked through, then remove and allow to cool a little.",
+    "8. While the meat is still warm, tip the lot into a food processor and whizz to a rough paste.",
+    "9. Spoon a little of the mixture at a time on to a board, and run over it with a spatula or table knife, to feel whether there is any shot in it - if so, remove it.",
+    "10. Put the mixture into a bowl, add two tablespoons of grated Parmesan and one egg, and season.",
+    "11.  Stir in four tablespoons of double cream, then put into the fridge.",
+    "12. Once it's cold, roll small amounts of the mixture into little balls (two legs should give you enough for 32 balls), and place on a tray or plate, ready for filling your ravioli. These balls can also be frozen, for later use."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Italian",
+  "keywords": [
+    "Pasta",
+    "Ravioli Fillings",
+    "Game"
+  ],
+  "tool": []
+}

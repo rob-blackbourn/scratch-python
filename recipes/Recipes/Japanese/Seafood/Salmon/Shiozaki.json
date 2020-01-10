@@ -1,0 +1,32 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Shiozake",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "Fillet of salmon with the skin on,",
+    "Maldon sea salt."
+  ],
+  "recipeInstructions": [
+    "1. Dry the salmon with kitchen towel.",
+    "2. Salt both sides.",
+    "3. Wrap in kitchen towel and put in a sieve over a bowl. ",
+    "4. Refridgerate for 24 hours. ",
+    "5. Unwrap and either dry fry or grill. "
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Japanese",
+  "keywords": [
+    "Seafood",
+    "Salmon"
+  ],
+  "tool": []
+}

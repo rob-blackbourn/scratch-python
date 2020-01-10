@@ -1,0 +1,34 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Rough Puff Pastry",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "1.25 kg",
+  "prepTime": "PT30M",
+  "cookTime": "",
+  "recipeIngredient": [
+    "500 g plain flour, plus extra for dusting,",
+    "500 g very cold butter (diced),",
+    "250 ml ice-cold water."
+  ],
+  "recipeInstructions": [
+    "1. For the rough puff pastry: put the flour in a mound on the work surface and make a well in the centre. Add the butter and 1 teaspoon of salt and work them together with the fingertips of one hand, gradually drawing the flour into the centre with the other hand. ",
+    "2. When the cubes of butter have become small pieces and the dough is grainy, gradually add the iced water and mix until incorporated, being careful not to overwork the dough. Roll it into a ball, wrap in cling film and refrigerate for 10 minutes. ",
+    "3. Lightly flour the work surface and roll out the pastry to a 40 x 20cm rectangle. Fold it into three and give it a quarter-turn. Roll the block of pastry into a 40 x 20cm rectangle as before, and fold it into three again. These are the first two turns. Wrap the block in cling film and refrigerate for 10 minutes. ",
+    "4. Give the chilled pastry another two turns, rolling and folding as before. This makes a total of four turns, and the pastry is now ready. Wrap it in cling film and refrigerate for another 10 minutes before using. "
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "French",
+  "keywords": [
+    "Meat"
+  ],
+  "tool": []
+}

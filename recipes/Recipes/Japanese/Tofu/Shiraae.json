@@ -1,0 +1,35 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Shiraae",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "150g Firm or Soft Tofu (5.3 oz)",
+    " 1/2 tsp Dashi Soy Sauce or substitute: mentsuyu or soy sauce",
+    "2 tbsp Toasted White Sesame Seeds",
+    " 1/2 tbsp Sugar",
+    " 1/4 tsp Salt",
+    "100g Nanohana (Broccolini or substitute: broccoli, snap bean pods or spinach),",
+    "20g Carrot,",
+    "30g Shimeji Mushrooms,",
+    "4 tbsp water,",
+    " 1/2 tsp dashi soy sauce or substitute: mentsuyu or soy sauce"
+  ],
+  "recipeInstructions": [
+    "1."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Japanese",
+  "keywords": [
+    "Tofu"
+  ],
+  "tool": []
+}

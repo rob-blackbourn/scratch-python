@@ -1,0 +1,45 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Kedgeree",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "6",
+  "prepTime": "PT10M",
+  "cookTime": "PT20M",
+  "recipeIngredient": [
+    " 1/2 onion (finely chopped),",
+    "55g butter,",
+    "300g basmati rice,",
+    "1 tsp madras curry powder,",
+    "freshly grated nutmeg,",
+    "200ml milk,",
+    "110ml double cream,",
+    "300g smoked haddock (picked over, bones removed and flesh cut into chunks),",
+    "sea salt and cracked black pepper,",
+    "small bunch parsley (chopped),",
+    "3 hard-boiled eggs (shelled and halved),",
+    "good pinch cayenne and freshly ground nutmeg (optional)",
+    "knob of butter",
+    "wedges of lemon"
+  ],
+  "recipeInstructions": [
+    "Cook the onion gently in the butter for a few minutes, then add the rice.",
+    "Continue cooking gently and stirring, adding the curry powder and nutmeg. After a few minutes, add the milk, cream and 250ml water.",
+    "When the mixture begins to simmer, add the fish and continue simmering, stirring occasionally until the rice is cooked. Add water if the mixture becomes dry.",
+    "Season, add the parsley and stir. Add the eggs and garnish with cayenne and nutmeg if using. Serve topped with a knob of butter and wedges of lemon."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "British",
+  "keywords": [
+    "Breakfast"
+  ],
+  "tool": []
+}

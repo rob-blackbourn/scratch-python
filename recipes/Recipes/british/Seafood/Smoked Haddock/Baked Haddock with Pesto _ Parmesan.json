@@ -1,0 +1,39 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Baked Haddock with Pesto & Parmesan",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "4 x 175g fillets of haddock (skinned),",
+    "375g peeled potatoes,",
+    "Good knob of butter,",
+    "A little milk,",
+    "4 tsp pesto,",
+    "4 large tomatoes (skinned, seeded and cut into long strips),",
+    "A few sprigs of basil (torn),",
+    "50g Parmesan (coarsely grated)",
+    "Paprika"
+  ],
+  "recipeInstructions": [
+    "1. Bring potatoes to the boil in salted water, simmer until tender, about 30 minutes. Then mash adding butter, a little milk, pesto and seasoning. ",
+    "2. Season a greased roasting tin. ",
+    "3. Place the fish on the seasoning and also season the fish. Spread a quarter of the mashed potato on each fillet, top with the tomatoes and basil mixed together, sprinkle with Parmesan and dust with paprika.",
+    "4. Bake in a hot oven 220 \u030aC, 400 \u030aF, Gas 7 for about 15 minutes until the fish has turned white.",
+    "5. Serve at once garnished with parsley. If the fish is very fresh and mashed potato cold, you may cover the assembled, uncooked fish and store in the fridge for 24 hours, then cook as above."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "British",
+  "keywords": [
+    "Seafood",
+    "Smoked Haddock"
+  ],
+  "tool": []
+}

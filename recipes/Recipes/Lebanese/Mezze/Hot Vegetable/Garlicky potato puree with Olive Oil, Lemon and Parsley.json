@@ -1,0 +1,40 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Garlicky potato puree with Olive Oil, Lemon and Parsley",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "2",
+  "prepTime": "PT5M",
+  "cookTime": "PT20M",
+  "recipeIngredient": [
+    "350g fluffy potatoes (peeled and roughly chopped",
+    "2 tbsp olive oil,",
+    "2 cloves garlic (crushed),",
+    "1/2 lemon (juice),",
+    "2 tbsp fresh dill,",
+    "Salt & pepper,",
+    "2 spring onions (finely sliced),",
+    "2 tbsp flat leaf parsley (finely chopped."
+  ],
+  "recipeInstructions": [
+    "Boil the potatoes in salted water until they are soft,",
+    "Drain, add the olive oil, and roughly mash,",
+    "Add the garlic, lemon juice, and dill and mix well",
+    "Transfer to a serving dish and sprinkle over with spring onions and parsely."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Lebanese",
+  "keywords": [
+    "Mezze",
+    "Hot Vegetable"
+  ],
+  "tool": []
+}

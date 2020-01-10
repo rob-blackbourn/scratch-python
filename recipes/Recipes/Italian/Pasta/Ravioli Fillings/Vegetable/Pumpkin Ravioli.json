@@ -1,0 +1,52 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Pumpkin Ravioli",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4",
+  "prepTime": "PT3H20M",
+  "cookTime": "PT1H30M",
+  "recipeIngredient": [
+    "10 tablespoons (5 ounces) unsalted butter",
+    "1 pound fresh pumpkin, peeled and cut in 1-inch cubes",
+    "2 cups heavy cream",
+    "1/2 bay leaf",
+    "2 tablespoons minced fresh sage, plus 6 small leaves for garnish",
+    "2 teaspoons minced fresh thyme leaves",
+    "2 eggs, beaten",
+    "Salt",
+    "Freshly ground white pepper",
+    "1/2 recipe Spinach Pasta Dough or Regular Pasta Dough, recipe follows",
+    "1 egg, beaten lightly, for egg wash",
+    "Semolina",
+    "2 cups chicken stock or light duck stock, recipe follows",
+    "2 shallots, chopped"
+  ],
+  "recipeInstructions": [
+    "1. Heat a saute pan over low heat and add 4 tablespoons of the butter. When the butter is foamy, add the cubed pumpkin and cook, stirring often to stop it from sticking and burning, until it softens and falls into a puree.",
+    "2. Turn the pumpkin into a saucepan, add 1/2 of the cream and half the herbs and cook over a low heat for approximately 1 hour, or until the puree is thick and the liquid has evaporated. Stir occasionally to prevent scorching. Remove from the heat and beat in an additional 2 tablespoons of butter. Whisk in the beaten eggs, season, to taste, with salt and pepper and set a side to cool.",
+    "3. On a floured surface, roll out the pasta as thin as possible. Cut into 2 sheets and brush 1 of them with egg wash. Using a teaspoon, place 24 equal mounds of the pumpkin puree on the egg-washed dough, about 2 inches apart. Cover the mounded dough with the second sheet of pasta and press around the mounds of pumpkin to seal the dough.",
+    "4. Using a ravioli cutter or a sharp knife cut the ravioli. Dust a tray with semolina and place the ravioli on it.",
+    "5. Bring a large pot of water to a boil, while you make the sauce.",
+    "6. Prepare the sauce: In a saucepan, reduce the stock with the shallots to 1/2 cup. Add the remaining cream and reduce by half. Over a low heat, whisk in the remaining 4 tablespoons butter, a little at a time, over low heat. Strain the sauce into a clean saucepan and add the remaining sage and thyme. Season to taste with salt and pepper.",
+    "7. Add the ravioli to the rapidly boiling water and cook for 4 to 5 minutes. Remove with a slotted spoon and drain. Add the ravioli to the sauce and bring just to a boil. Correct the seasonings.",
+    "8. Divide the ravioli among preheated soup dishes and spoon the sauce over them. Garnish each serving with a fresh sage leaf. Serve immediately.",
+    "9. A simple but delicious alternative sauce can be made from fresh unsalted butter, minced fresh sage, and a little freshly grated Parmesan."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Italian",
+  "keywords": [
+    "Pasta",
+    "Ravioli Fillings",
+    "Vegetable"
+  ],
+  "tool": []
+}

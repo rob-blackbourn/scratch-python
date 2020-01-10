@@ -1,0 +1,34 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Thai Beef Satay",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4",
+  "prepTime": "PT30M",
+  "cookTime": "PT15M",
+  "recipeIngredient": [
+    "1 lb (500g) beef steak sliced into very thin strips or diced into  3/4\" cubes,",
+    "12 wooden skewers"
+  ],
+  "recipeInstructions": [
+    "1. Soak the skewers for 20 minutes.",
+    "2. Pour the marinade over and stir well to combine. Allow at least 1 hour for marinating, or longer (up to 24 hours).",
+    "3. When ready to cook, thread meat onto the skewers. Tip: Fill up to 3/4 of the skewer; leaving the lower half empty so the person grilling has a \"handle\" to easily turn the satay.",
+    "4. Cook on an outdoor grill, basting the first time you time it with a little of the leftover marinade from the bottom of the bowl. Turn the satay every 5 to 6 minutes until done to your liking (15 to 25 minutes)."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Thai",
+  "keywords": [
+    "Meat",
+    "Beef"
+  ],
+  "tool": []
+}

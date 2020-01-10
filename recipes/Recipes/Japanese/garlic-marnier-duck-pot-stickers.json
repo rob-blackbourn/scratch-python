@@ -1,0 +1,51 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Garlic Marnier Duck Pot Stickers",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "6 servings",
+  "prepTime": "PT45M",
+  "cookTime": "PT1H35M",
+  "recipeIngredient": [
+    "7 ounces skinless, boneless duck breast (one whole breast)",
+    "4 cups garlic marnier duck pot sticker marinade",
+    "15 to 20 roasted garlic cloves",
+    "4 scallions, both white part and 2 inches of green part",
+    "1 stalk celery",
+    "1 medium carrot, cleaned and cut into 1 inch pieces",
+    "1/2 cup cilantro",
+    "1 (2-inch) piece fresh ginger, peeled and cut into 2 pieces",
+    "1 1/2 teaspoons Chinese hot oil",
+    "5 tablespoons plum sauce",
+    "1 teaspoon soy sauce",
+    "Salt",
+    "3 teaspoons toasted sesame seeds, reserved",
+    "1 tablespoon olive oil",
+    "1/2 teaspoon orange liqueur",
+    "1 small orange, zested",
+    "1 package pot sticker wrappers",
+    "1 cup olive oil",
+    "1/2 cup soy sauce",
+    "1/4 cup white vinegar"
+  ],
+  "recipeInstructions": [
+    "Lightly score both sides of the duck breast with a sharp knife. Place in a shallow dish or plastic bag. Pour the marinade over the duck breasts and marinate for 1 hour.",
+    "Place the garlic, scallions, celery, carrot, cilantro, and ginger in the food processor and pulse until finely chopped. Place in medium mixing bowl. Add Chinese hot oil, plum sauce, soy sauce, salt, and sesame seeds and set aside.",
+    "Coat the bottom of a medium skillet with 1 tablespoon of olive oil. Heat over medium heat until very hot. Remove the duck breast from the marinade. Add to the hot skillet along with 1 or 2 tablespoons of the marinade. Lower heat to medium, cover and cook for 20 minutes, turning often until cooked through and well glazed. Transfer to a cutting board and allow to cool slightly. Remove all but 1 tablespoon of the duck fat from the skillet. Mince the cooked duck breast and return it to the skillet adding a pinch of salt and 1/2 teaspoon orange liqueur. Cook over high heat until browned. Remove from heat and add to the reserved vegetable mixture. Add the orange zest and stir until well mixed.",
+    "Separate 24 pot sticker wrappers. To fill the pot stickers, place 1 heaping teaspoon of filling on each wrapper. Avoid getting any of the filling on the edges or the wrapper will not seal properly. Wet edges with water, fold wrapper in half to form a half moon shape. Seal the top center of the wrapper by pressing between the fingers. Make 2 pleats, working towards the bottom left corner. Repeat working towards the bottom right corner. Set aside. Repeat with remaining ingredients.",
+    "Heat 1 cup of olive oil in a deep frying pan. Add half of the pot stickers to the hot oil and cook until browned and crisp. Remove to a platter and keep hot until ready to serve. Repeat with the remaining pot stickers.",
+    "Mix together soy sauce and white vinegar to use as a dip for the warm pot stickers"
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Japanese",
+  "keywords": [],
+  "tool": []
+}

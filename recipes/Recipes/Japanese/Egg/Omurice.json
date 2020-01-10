@@ -1,0 +1,65 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Omurice",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "2",
+  "recipeIngredient": [
+    "130g chicken,",
+    "1 clove of garlic,",
+    "1/4 onion,",
+    "4 button mushrooms,",
+    "1 tbsp sake,",
+    "200g canned tomato,",
+    "1 tbsp tomato ketchup,",
+    "1/2 bouillon cube,",
+    "1 bay leaf,",
+    "30g frozen peas,",
+    "olive oil,",
+    "salt & pepper,",
+    "280g steamed rice (cooked with less water)",
+    "4 eggs,",
+    "2 tsp single cream,",
+    "baby salad greens,",
+    "parsley."
+  ],
+  "recipeInstructions": [
+    "1. Cut the chicken into 1/2 inch pieces.",
+    "2. Sprinkle with salt and pepper.",
+    "3. Rub the seasonings into the chicken meat.",
+    "4. Finely dice the onion,",
+    "5. Slice the mushroom.",
+    "6. Very finely dice the garlic.",
+    "7. Finely slice the stock cube.",
+    "8. Pour hot water over the frozen peas, drain, then season with salt.",
+    "9. Crack the eggs into a bowl, mix well, and add the cream. Season with salt and pepper.",
+    "10. Put a large frying pan on a low heat. Add a little olive oil.",
+    "11. Add the garlic. ",
+    "12. When softened, increase the heat to medium and add the onion.",
+    "13. When translucent, add the chicken.",
+    "14. When the chicken begins to brown add the button mushrooms.",
+    "15. Add the wine and cook out the alcohol.",
+    "16. Add the canned tomato, ketchup, shave stock cube, and a bay leaf.",
+    "17. Reduce the sauce slightly, then add the peas.",
+    "18. When the sauce is thick and begins to sizzle, remove the bay leaf, taste, and adjust the seasoning.",
+    "19. Add the rice and combine.",
+    "20. Divide into two bowls.",
+    "21. Make an omelette with two eggs. When the omelette is done, lay the filling in a thick stip across the centre. Bring the sides of the omelette up around the mixture.",
+    "22. Turn out onto a plate, and shape with a paper towel.",
+    "23. Drizzle tomato ketchup over in a zig zag style."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Japanese",
+  "keywords": [
+    "Egg"
+  ],
+  "tool": []
+}

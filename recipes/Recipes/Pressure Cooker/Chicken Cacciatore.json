@@ -1,0 +1,43 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Chicken Cacciatore",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4 servings",
+  "prepTime": "PT15M",
+  "cookTime": "PT25M",
+  "recipeIngredient": [
+    "3 shallots (chopped),",
+    "1 green bell pepper (seeded and coarsely chopped),",
+    "280g mushrooms, sliced",
+    "3 garlic cloves, chopped",
+    "5 skinless chicken breasts (halved),",
+    "1 tin chopped tomatoes,",
+    "1 tbsp paste",
+    "20 pitted black olives",
+    "50g parmesan cheese",
+    "120ml dry white wine",
+    "Salt and ground black pepper, to taste"
+  ],
+  "recipeInstructions": [
+    "1. In a large pressure cooker, saute shallots and bell pepper until shallots soften slightly, or around 2 minutes.",
+    "2. Cook mushrooms and garlic, stirring occasionally and removing any browned bits at the bottom of the pressure cooker.",
+    "3. Add the dry white wine. Bring to a boil until the liquid is reduced in half.",
+    "4. Lay the chicken on top and cover with crushed tomatoes. Be careful not to stir. Set tomato paste on top.",
+    "5. Secure the lid in place and bring to high pressure, according to manufacturer's instruction. Reduce the heat to stabilise the pressure. Cook until chicken is tender, or around 10 minutes.",
+    "6. Turn off the heat. Let pressure release naturally. Carefully remove lid and allow steam to escape.",
+    "7. Stir in the olives and cheese. Season with salt and pepper, to taste. Serve with additional sprinkling of parmesan cheese."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Pressure Cooker",
+  "keywords": [],
+  "tool": []
+}

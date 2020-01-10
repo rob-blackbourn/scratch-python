@@ -1,0 +1,55 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Arbroath Smokie Kedgeree With Grilled Haddock & Grain Mustard Cream Sauce",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "1 onion (diced),",
+    "1 tsp garlic pur\u00e9e,",
+    "250g butter,",
+    "1kg Arborio rice,",
+    "500ml white wine,",
+    "2l fish stock,",
+    "250g Parmesan (grated),",
+    "200ml cream,",
+    "2 flaked Arbroath Smokies 1 pkt,",
+    "dill (finely chopped),",
+    "Salt and pepper.",
+    "For the grain mustard sauce",
+    "570ml cream",
+    "570ml fish stock,",
+    "2 tbsp coarse grain mustard,",
+    "Juice of 1 lemon,",
+    "Salt and pepper"
+  ],
+  "recipeInstructions": [
+    "1. Sweat onion and garlic in half the butter. \u2022 Add rice and sweat for 2 minutes.\u2022 Add wine and stock bit by bit.",
+    "2. Bring to boil, reduce heat.",
+    "3. Simmer for 15 minutes or so, until liquid is absorbed and rice is cooked.",
+    "4. Add flaked Smokies, then add rest of butter, cream, Parmesan and dill.",
+    "5. Stir until all combined and butter melted.",
+    "6. Season to taste.",
+    "For the sauce",
+    "7. Place cream, stock, lemon juice and mustard in pan.",
+    "8. Bring to boil and reduce until coats the back of a spoon, season to taste.",
+    "For The Haddock",
+    "9. Place portion of haddock on tray, season with salt, drizzle with fresh squeezed lemon juice, place knob of butter on top. Grill until just cooked.",
+    "10. Assembly",
+    "11. Spoon kedgeree onto centre of plate, place grilled haddock on top, top with soft poached egg and drizzle mustard cream sauce over the top and around plate."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "British",
+  "keywords": [
+    "Seafood",
+    "Smoked Haddock"
+  ],
+  "tool": []
+}

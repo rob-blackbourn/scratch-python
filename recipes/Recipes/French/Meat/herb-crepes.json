@@ -1,0 +1,34 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Herb Cr\u00eapes",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "15",
+  "prepTime": "PT35M",
+  "cookTime": "PT10M",
+  "recipeIngredient": [
+    "60 g plain flour,",
+    "150 ml milk,",
+    "2 eggs,",
+    "15 g mixed herbs such as flat-leaf parsley, chervil and chives (chopped),",
+    "30 g clarified butter."
+  ],
+  "recipeInstructions": [
+    "1. Put the flour in a bowl and make a well in the centre. Add one-third of the milk, the eggs, a pinch of salt and a twist of pepper. Whisk lightly to make a smooth batter, then pour in the rest of the milk and mix thoroughly. Pass the batter through a chinois or fine sieve. Cover with cling film and leave to rest for at least 30 minutes. ",
+    "2. Just before cooking the cr\u00eapes, stir the herbs into the batter. Lightly grease a 26-30cm frying pan with a touch of clarified butter and place over a high heat. Give the batter a stir then ladle in just enough to cover the base of the pan. Cook quickly for about 1 minute, then turn over with a palette knife and cook for barely a minute more. Repeat until you have used all the batter. Stack the cr\u00eapes on a plate, layering a piece of greaseproof paper between each to prevent them sticking together. "
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "French",
+  "keywords": [
+    "Meat"
+  ],
+  "tool": []
+}

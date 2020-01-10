@@ -1,0 +1,51 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Quiche Lorraine - Rachel Khoo",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "",
+  "prepTime": "PT10M",
+  "cookTime": "PT40M",
+  "totalTime": "PT2H",
+  "recipeIngredient": [
+    "For the pastry",
+    "90g unsalted butter,",
+    "1 tsp sugar,",
+    "1 pinch salt,",
+    "180g plain flour,",
+    "2 egg yolks,",
+    "2 egg whites (for the wash).",
+    "For the filling",
+    "4 whole eggs,",
+    "2 egg yolks,",
+    "300 ml double cream.",
+    "150g bacon lardons."
+  ],
+  "recipeInstructions": [
+    "1. Soften the butter and cream with 1 tsp sugar and 1 pinch salt.",
+    "2. Add 180g of plain flour, 2 egg yolks, and 2 tbsp cold water.",
+    "3. Using a wooden spoon, mix until it has a coarse sandy texture.",
+    "4. Using your hands bring the dough together, wrap in cling film for a minimum of 30 minutes, ideally overnight.",
+    "5. Remove the pastry from the fridge 30 minutes before use.",
+    "6. Butter and flour with dish, then roll out the pastry and line the dish with it.",
+    "7. Brush the base with egg white, and put in the fridge for 30 minutes.",
+    "8. Fry the lardons without oil, then dry with a paper towel.",
+    "9. Into a medium sized glass mixing bowl add 4 whole eggs, 2 egg yolks, and 300ml of double cream. Season with salt and pepper and mix lightly with a bowl whisk.",
+    "10. Scatter the fried lardons into the pastry base, and pour over the cream and eggs.",
+    "11. Cook at 180C/Gas4 for 40 minutes."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "French",
+  "keywords": [
+    "Pastry"
+  ],
+  "tool": []
+}

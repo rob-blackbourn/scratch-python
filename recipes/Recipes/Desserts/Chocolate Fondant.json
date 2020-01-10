@@ -1,0 +1,38 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Chocolate Fondant",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "2",
+  "prepTime": "PT20M",
+  "cookTime": "PT14M",
+  "recipeIngredient": [
+    "60g unsalted butter (cut into dice, plus extra to grease),",
+    "1 tbsp cocoa powder,",
+    "60g dark chocolate (broken into pieces),",
+    "1 egg and 1 egg yolk,",
+    "60g caster sugar,",
+    "1 tbsp plain flour."
+  ],
+  "recipeInstructions": [
+    "1. Pre-heat the oven to Gas 7/200C, and put a baking tray on the middle shelf.",
+    "2. Butter the inside of 2 small ramekins or pudding moulds, and then put the cocoa in one and turn it to coat the inside, holding it over the second mould to catch any that escapes. Do the same with the other mould.",
+    "3. Put the butter and chocolate into a heatproof bowl set over, but not touching, a pan of simmering water and stir occasionally until melted. Allow to cool slightly.",
+    "4. Vigorously whisk together the egg, yolk, sugar and a pinch of salt until pale and fluffy.",
+    "5. Gently fold in the melted chocolate and butter, and then the flour.",
+    "6. Spoon into the prepared moulds, stopping just shy of the top. Put in the fridge for 30 minutes.",
+    "4. Put on to a hot baking tray and cook for 14 minutes until the tops are set and coming away from the sides of the moulds. Leave to rest for 30 seconds and then serve in the ramekins or turn out onto plates."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Desserts",
+  "keywords": [],
+  "tool": []
+}

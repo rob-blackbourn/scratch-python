@@ -1,0 +1,32 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Vanilla & Passion Fruit Meringues",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "6 meringues",
+  "prepTime": "PT20M",
+  "cookTime": "PT1H30M",
+  "recipeIngredient": [
+    "1 vanilla pod,",
+    "4 egg whites,",
+    "100 g / 3 1/2 oz caster sugar,",
+    "4 tbsp passion fruit seeds (approx 2 medium fruits)"
+  ],
+  "recipeInstructions": [
+    "1. Preheat the oven to Gas mark 1/4 (90C).",
+    "2. Split the vanilla pod lengthwise and scrape out the seeds. Set the seeds aside.",
+    "3. Follow the preparation for classic meringues."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Desserts",
+  "keywords": [],
+  "tool": []
+}

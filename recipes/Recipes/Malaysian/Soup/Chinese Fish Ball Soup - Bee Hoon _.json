@@ -1,0 +1,51 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Chinese Fish Ball Soup - Bee Hoon",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4-6",
+  "prepTime": "PT20M",
+  "cookTime": "PT10M",
+  "recipeIngredient": [
+    "For the fish balls",
+    "450g white fish fillets (haddock, cod, bream - boned and flaked),",
+    "1 - 2 tbsp rice flour,",
+    "Salt and ground black pepper.",
+    "For the soup",
+    "1  1/2 l fish or chicken stock,",
+    "1 - 2 tbsp light soy sauce,",
+    "4-6 mustard green leaves (chopped),",
+    "90 g mung bean thread noodles (soaked in hot water until soft).",
+    "For the garnish",
+    "2 spring onions,",
+    "1 red or green chilli,",
+    "Fresh coriander leaves (chopped)."
+  ],
+  "recipeInstructions": [
+    "1. Bring the stock to the boil.",
+    "2. Meanwhile make the fish balls.",
+    "2.1 Grind the flaked fish into a paste using a mortar and pestle or a food processor.",
+    "2.2 Season with salt and pepper.",
+    "2.3 Stir in 4 tbsp water.",
+    "2.4 Sprinkle with rice flour and mould into balls.",
+    "3. Season stock and add fish balls, simmering for 5 minutes.",
+    "4. Add the shredded mustard greens and simmer for 1 minute.",
+    "5. Divide the noodles between the bowls.",
+    "6. Put the fish balls and soup into the bowls.",
+    "7. Garnish with spring onions, chilli, and chopped coriander."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Malaysian",
+  "keywords": [
+    "Soup"
+  ],
+  "tool": []
+}

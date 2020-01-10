@@ -1,0 +1,47 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Rustic Potato, Leek & Smoked Haddock Soup",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4",
+  "prepTime": "Preparation time:",
+  "cookTime": "Cooking time:",
+  "recipeIngredient": [
+    "100g butter,",
+    "2 natural smoked haddock skin on bone in,",
+    "60ml white wine,",
+    "100g smoked bacon (diced 15 mm),",
+    "1 onion (peeled and finely chopped),",
+    "4 large leeks (harsh green removed, quarter and wash well, then sliced),",
+    "2 large potatoes (peeled and cut into 15mm chunks),",
+    "250ml milk,",
+    "600ml light fish stock or vegetable stock,",
+    "120ml double cream,",
+    "1 tablespoon flat parsley (chopped),",
+    "Sea salt,",
+    "White pepper and nutmeg."
+  ],
+  "recipeInstructions": [
+    "1. Place a couple of knobs of butter on the flesh side of each haddock add a splash of white wine, wrap each haddock in tin foil and place in a hot oven for five minutes, ",
+    "2. Remove from oven and pick the fish clean of all skin and bone, keep warm and reserve any juices. ",
+    "3. Melt the remaining butter then add bacon, onions, leeks and potatoes and sweat over a low heat for 10\u201315 minutes. ",
+    "4. Add milk and stock and cook for a further 15 minutes. Stir in the cream and any reserved juices from the fish, bring back to the boil. The potatoes should be cooked by this stage. ",
+    "5. Add flaked haddock and chopped parsley and season with pepper and nutmeg. ",
+    "6. You may only need a little salt as the haddock can be quite salty. Assembly Ladle into bowls and swirl on some extra cream and chopped parsley, serve with hunks of soda bread."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "British",
+  "keywords": [
+    "Seafood",
+    "Smoked Haddock"
+  ],
+  "tool": []
+}

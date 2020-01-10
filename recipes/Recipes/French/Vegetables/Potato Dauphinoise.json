@@ -1,0 +1,38 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Potato Dauphinoise",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "2",
+  "prepTime": "PT10M",
+  "cookTime": "PT1H30M",
+  "recipeIngredient": [
+    "1 clove of garlic (crushed),",
+    "250g Maris Piper potatoes (thinly sliced),",
+    "150ml double cream,",
+    "150ml whole milk,",
+    "salt & black pepper."
+  ],
+  "recipeInstructions": [
+    "Put the oven on Gas 3/170C.",
+    "Put the thinly sliced potato in a gratin dish in layers, seasoning each layer with salt and pepper.",
+    "Put the crushed garlic in the cream.",
+    "Pour the cream and garlic mixture over the potatoes.",
+    "Top up with milk, so that the liquid is just below the surface of the potatoes.",
+    "Cook for between 1 and 1 1/2 hours. Turn the oven up a notch for the last 15 minutes to brown the top."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "French",
+  "keywords": [
+    "Vegetables"
+  ],
+  "tool": []
+}

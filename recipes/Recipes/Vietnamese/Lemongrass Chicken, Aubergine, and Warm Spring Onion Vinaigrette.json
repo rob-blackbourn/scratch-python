@@ -1,0 +1,59 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Lemongrass Chicken, Aubergine, and Warm Spring Onion Vinaigrette",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "2",
+  "prepTime": "PT30M",
+  "cookTime": "PT30M",
+  "recipeIngredient": [
+    "For the chicken thighs",
+    "4 chicken thighs, skinless and boneless",
+    "4 tbsp chopped lemongrass (very finely chop the bottom part of the",
+    "lemongrass)",
+    "2 tbsp vegetable oil",
+    "1 tsp fish sauce",
+    "For the fish caramel sauce",
+    "35g/1 1/4oz dark palm sugar",
+    "2 tbsp fish sauce",
+    "For the smokey aubergine",
+    "1 Japanese long aubergine",
+    "10g/?oz finely chopped shallot",
+    "1 tbsp chopped spring onion (green part only)",
+    "1 shallot, sliced into rings",
+    "sea salt",
+    "For the spring onion vinaigrette",
+    "75g/2 1/2oz pickling liqueur (equal quantities of caster sugar and water,",
+    "flavoured with a smashed garlic clove)",
+    "75g/2 1/2oz Vietnamese chilli paste",
+    "To serve",
+    "2 lime leaves, thinly sliced ",
+    "jasmine rice, to serve"
+  ],
+  "recipeInstructions": [
+    "1. For the chicken thighs, put the chicken in a bowl and add half the lemongrass and oil, and all the fish sauce. Leave to marinade for 20 minutes, or longer if convenient.",
+    "2. Preheat the oven to 200C/400F/Gas 6.",
+    "3. For the fish caramel sauce, heat a flameproof casserole. Add a tablespoon of water and the palm sugar. Cook over a low heat until the sugar has dissolved and the mixture has a syrup-like consistency.",
+    "4. Set aside to cool for two minutes, then add the fish sauce and marinated chicken. Return to the heat and cook for 5-8 minutes. Transfer to the oven to finish. ",
+    "5. For the smokey aubergine, heat a deep-fat fryer to 180C/350F. (CAUTION: hot oil can be dangerous. Do not leave unattended.)",
+    "6. Pierce the aubergine all over with a fork and place over an open flame until it is blistered and burnt all over and tender inside. Set aside to cool a little.",
+    "7. Meanwhile, for the spring onion vinaigrette place all the ingredients in a pan with 460ml/16fl oz water. Heat gently.",
+    "8. For the smokey aubergine, add the finely chopped shallot and spring onions to the spring onion vinaigrette.",
+    "9. Place the shallot rings in the deep fat fryer and deep fry until crisp. Drain and place onto a plate lined with kitchen roll to drain.",
+    "10. To finish, top and tail the aubergine then slice it down the middle lengthways. Scoop out the tender flesh from the burnt skin and divide between serving plates. Use scissors to cut it into bite-sized pieces.",
+    "11. Take the spring onions out of the vinaigrette and drain them, reserving the vinaigrette for dressing.",
+    "12. Garnish with the blanched spring onions, crisp shallots and lime leaves. Dress with the vinaigrette. Serve the chicken in the casserole with jasmine rice."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Vietnamese",
+  "keywords": [],
+  "tool": []
+}

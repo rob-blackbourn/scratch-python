@@ -1,0 +1,44 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Merguez Sausages 2",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "For the Sausage",
+    "1 kilo ground shoulder and leg",
+    "250 grams finely diced hard fat",
+    "4 cloves garlic, mashed with 1 tablespoon salt",
+    "1 teaspoon harissa",
+    "1 tablespoon finely minced cilantro",
+    "1 tablespoon merguez spice blend",
+    "For the spice blend",
+    "1 part Cumin",
+    "1/4 part turmeric",
+    "1/8 part caraway",
+    "1/6 coriander",
+    "1/16 fennel",
+    "1/8 dried thyme (zaatar)",
+    " 1/4 sumac",
+    "1/4 sweet paprika",
+    "1/8 ancho chile powder",
+    "1/4 cayenne",
+    "1/32 black pepper",
+    "1/32 white pepper",
+    "1/32 pink pepper"
+  ],
+  "recipeInstructions": [],
+  "recipeCategory": null,
+  "recipeCuisine": "French",
+  "keywords": [
+    "Suasages"
+  ],
+  "tool": []
+}

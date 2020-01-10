@@ -1,0 +1,33 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Smoked Salmon Mousse",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "1/2 lb (250 g) smoked salmon,",
+    "1 egg,",
+    "100 ml double cream,",
+    "1 tsp fresh chopped chives,",
+    "pepper."
+  ],
+  "recipeInstructions": [
+    "1. Puree the smoked salmon and egg until smooth.",
+    "2. Add the cream, chives and a little pepper."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Italian",
+  "keywords": [
+    "Pasta",
+    "Ravioli Fillings",
+    "Seafood"
+  ],
+  "tool": []
+}

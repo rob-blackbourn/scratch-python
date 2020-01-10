@@ -1,0 +1,44 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Baked Fillet of Haddock, Teriyaki Glaze, Herb Mash & Coriander Infusion",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "1 x 175-225g haddock fillet,",
+    "3 large baking potatoes,",
+    "1 tbsp of rice wine or medium dry sherry,",
+    "2 tbsp of soy sauce,",
+    "1 tbsp of brown sugar,",
+    "1 tbsp of grated fresh ginger,",
+    "4 tbsp of finely chopped sprig of parsley,",
+    "Half lemon, squeezed,",
+    "60g butter,",
+    "3 sprigs of finely chopped fresh coriander",
+    "Salt and pepper",
+    "100ml double cream",
+    "Chervil/Parsley to garnish",
+    "3 shallots",
+    "Perparation",
+    "\t\u2022\tUsing a sharp knife, trim edges of haddock. Take the tail and other end of the haddock and fold into the centre. Add salt and pepper seasoning, before baking in a moderate oven (150 \u030aC) for 10\u201313 minutes. ",
+    "\t\u2022\tPeel potatoes and cut into 1/4, boil in salted water until soft. Sweat off finely diced shallot with butter in saucepan, add white wine, coriander and juice from lemon. Reduce the liquid for 30 seconds \u2013 1 minute. Next add the double cream and bring to the boil, simmer for 1\u20132 minutes and season to taste. Take off the heat. ",
+    "\t\u2022\tFor the glaze, in a small saucepan combine the soya sauce, rice wine, sherry, sugar and the ginger. Simmer for 2\u20134 minutes until a light syrup forms. Let cool. Mash the baking potatoes and knob of butter and some chopped parsley, season to taste. Take haddock out of oven and brush with the glaze that has now cooled. ",
+    "\t\u2022\tPlace under hot grill until golden brown colour. Place mash into the centre of plate in a plastic ring mould 6cm diameter/6cm deep (21/2\" x 21/2\"). Remove the mould and place haddock on top. ",
+    "\t\u2022\tReheat the sauce on low heat till hot. Assembly Place sauce round the potato and the haddock that\u2019s on the plate. Garnish with sprigs of chervil and parsley on the top. Serve with a cold glass of chardonnay. "
+  ],
+  "recipeInstructions": [],
+  "recipeCategory": null,
+  "recipeCuisine": "British",
+  "keywords": [
+    "Seafood",
+    "Smoked Haddock"
+  ],
+  "tool": []
+}

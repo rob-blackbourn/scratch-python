@@ -1,0 +1,49 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Place with Crab & Kalamata Olive Stuffing",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4",
+  "recipeIngredient": [
+    "4 fillets of plaice,",
+    "50 ml white wine,",
+    "juice of 1 lemon,",
+    "50 g unsalted butter,",
+    "1 finely chopped shallot,",
+    "1 clove of garlic (peeled and crushed),",
+    "1/2 medium chilli (deseeded and finely chopped),",
+    "100 g fresh white breadcrumbs,",
+    "30 g finely chopped Kalamata olives,",
+    "1/2 bunch flat leaf parsley (finely chopped),",
+    "zest of 1 lemon,",
+    "extra virgin olive oil,",
+    "salt & pepper."
+  ],
+  "recipeInstructions": [
+    "1.Heat the butter in a saucepan.",
+    "2. Add the shallot, garlic and chilli, and cook for 2 minutes, until soft.",
+    "3. Add the breadcrumbs and cook for a further 1 minute.",
+    "4. Remove from the heat and add the crab, olives, parsley and lemon zest, and mix well.",
+    "5. If the stuffing seems dry add a splash of olive oil and season.",
+    "6. Preheat the oven to 200C/Gas 6.",
+    "7. Put the stuffing in the middle of each fillet and roll up from the tail to the head.",
+    "8. Place in an ovenproof baking dish and add olive olive, lemon juice and white wine.",
+    "9. Bake for 15 minutes.",
+    "10. Serve with spinach and buttered potatoes."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "British",
+  "keywords": [
+    "Seafood",
+    "Place"
+  ],
+  "tool": []
+}

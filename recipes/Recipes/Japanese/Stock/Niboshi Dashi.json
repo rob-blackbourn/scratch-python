@@ -1,0 +1,30 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Niboshi Dashi",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "4 cups water,",
+    "1/2 cup niboshi,",
+    "small piece of kombu (optional)."
+  ],
+  "recipeInstructions": [
+    "1. Soak the niboshi in water for 30 minutes. Optionally add a small piece of kombu; remove before heating.",
+    "2. Bring to the boil, then simmer for 5 minutes.",
+    "3. Strain through a paper towel."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Japanese",
+  "keywords": [
+    "Stock"
+  ],
+  "tool": []
+}

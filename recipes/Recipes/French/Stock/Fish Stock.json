@@ -1,0 +1,47 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Fish Stock",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "2 l",
+  "prepTime": "PT20M",
+  "cookTime": "PT30M",
+  "recipeIngredient": [
+    "1.5 kg bones and trimmings of white fish (cut into pieces),",
+    "50 g unsalted butter,",
+    "2 leeks (white part, thinly sliced),",
+    "75 g onions (thinly sliced),",
+    "75 g button mushrooms (thinly sliced),",
+    "200 ml dry white wine,",
+    "1 ,",
+    "2 slices of lemon,",
+    "8 white peppercorns (crushed and wrapped in a piece of muslin)."
+  ],
+  "recipeInstructions": [
+    "1. Rinse the bones and trimmings then drain.",
+    "2. Melt the butter in a saucepan and sweat the vegetables over a low heat for a few minutes.",
+    "3. Add the fish bones and trimmings and bubble gently for a few seconds.",
+    "4. Pur in the wine.",
+    "5. Cook until reduced to one third.",
+    "6. Add 2.5 l cold water, bring to the boil, then immediately reduce to a simmer.",
+    "7. Skim the surface.",
+    "8. Add the bouquet garni and lemon.",
+    "9. Simmer gently for 25 minutes, skimming when necessary.",
+    "10. 10 minutes before the end add the muslin wrapped peppercorns.",
+    "11. Strain the stock and cool as quickly as possible."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "French",
+  "keywords": [
+    "Stock"
+  ],
+  "tool": []
+}

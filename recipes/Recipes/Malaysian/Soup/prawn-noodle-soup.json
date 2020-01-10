@@ -1,0 +1,45 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Prawn Noodle Soup - Penang Hokkien Mee",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4-6",
+  "prepTime": "PT20M",
+  "cookTime": "PT2H15M",
+  "recipeIngredient": [
+    "For the soup",
+    "1 l prawn noodle soup stock",
+    "1 tbsp sugar,",
+    "6 rashers sliced bacon (or cubed pork belly),",
+    "150 g fresh egg noodles,",
+    "20 large prawns (peeled, reserving shells for stock),",
+    "90 g beansprouts,",
+    "2 spring onions (trimmed and finely sliced),",
+    "Salt and pepper."
+  ],
+  "recipeInstructions": [
+    "1. In a small pan heat the sugar with 15 ml of water until it turns rich and brown.",
+    "2. Add the sugar to the stock and mix well.",
+    "3. In a heavy pan deep fry the bacon or pork belly and set aside.",
+    "4. Using a perforated ladle of sieve, plunge the noodles into the hot stock for 1 minute to heat through.",
+    "5. Remove the noodles and divide into the bowls.",
+    "6. Add the prawns to the stock and cook for 1 minute, then remove with a slotted spoon and divide between the bowls.",
+    "7. Add the beansprouts to the bowls.",
+    "8. Ladle the stock into the bowls.",
+    "9. Garnish with bacon and spring onions."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Malaysian",
+  "keywords": [
+    "Soup"
+  ],
+  "tool": []
+}

@@ -1,0 +1,49 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Osso Bucco",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "2",
+  "prepTime": "PT20M",
+  "cookTime": "PT2H30M",
+  "recipeIngredient": [
+    "2 veal shanks",
+    "1 carrot (diced),",
+    "1/2 onion (diced)",
+    "1 stick of celery (diced)",
+    "4 fresh tomatoes (roughly chopped) or 400g tin",
+    "Chicken or veal stock,",
+    "2 cloves garlic (crushed and finely chopped),",
+    "Fresh Rosemary",
+    "Fresh Thyme",
+    "Dried bay leaf",
+    "Butter",
+    "Olive oil",
+    "Flour",
+    "Red wine"
+  ],
+  "recipeInstructions": [
+    "Season, dredge and sear the veal shanks on a medium high heat with olive oil and butter for 5 minutes on each side..",
+    "Set aside the veal shanks and saute the onion, carrot and celery for about 5 minutes until softened.",
+    "Add the garlic and saute for another 30 seconds",
+    "Deglaze the pan with wine,",
+    "Add the veal, tomatoes and stock.",
+    "Add the bay leaf and bouquet garnet.",
+    "Cover and cook in the oven on 160C for 2 to 2 1/2 hours."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Italian",
+  "keywords": [
+    "Meat",
+    "Veal"
+  ],
+  "tool": []
+}

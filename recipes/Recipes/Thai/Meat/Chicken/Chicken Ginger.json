@@ -1,0 +1,49 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Chicken Ginger",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "2",
+  "prepTime": "PT10M",
+  "cookTime": "PT8M",
+  "recipeIngredient": [
+    "2 cloves of garlic - finely chopped,",
+    "25mm ginger - julienned,",
+    "2 skinless chicken breasts - sliced into bite sized pieces,",
+    "3 spring onions cut into 25mm lengths,",
+    "1/2 carrot - julienned,",
+    "1/2 onion - sliced,",
+    "1/2 green pepper - sliced,",
+    "1/2 red pepper - sliced,",
+    "6 king oyster mushrooms - thickly sliced,",
+    "Small bunch of Thai celery (or European celery leaves) - chopped,",
+    "1 tbsp fish sauce,",
+    "1/2 tbsp palm sugar (or caster sugar),",
+    "1/2 tbsp oyster sauce,",
+    "1/2 tbsp dark soy sauce,",
+    "1 tbsp groundnut oil."
+  ],
+  "recipeInstructions": [
+    "Add oil to the wook.",
+    "On a low heat, add the ginger and garlic and fry to 30 seconds. It should become fragrant.",
+    "Add the chicken. Increase to a medium heat. Fry for 2 minutes until slightly undercooked. The chicken should be white on the outside, but still slightly pink in the center.",
+    "Add the remaining vegetables except the Thai celery , and fry for 1 minute.",
+    "Add the oyster sauce, soy sauce, fish sauce, and sugar and cook for a further minute.",
+    "Add the Thai celery, mix, and serve."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Thai",
+  "keywords": [
+    "Meat",
+    "Chicken"
+  ],
+  "tool": []
+}

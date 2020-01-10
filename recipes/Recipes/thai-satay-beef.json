@@ -1,0 +1,44 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Thai Satay Beef",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4 large skewers",
+  "prepTime": "PT15M",
+  "cookTime": "PT7M",
+  "totalTime": "PT2H20MM",
+  "recipeIngredient": [
+    "2 lbs beef top sirloin steak, sliced thin across grain, about 1/8-inch thick",
+    "For the marinade",
+    "1 tbsp grated ginger",
+    "4 cloves garlic, crushed",
+    "2 tbsp minced onion",
+    "1/4 cup packed brown sugar",
+    "1/4 cup fish sauce",
+    "2 tbsp soy sauce",
+    "2 tbsp vegetable oil",
+    "2 tbsp ground coriander",
+    "1 tbsp cumin",
+    "1/2 tsp turmeric",
+    "1/8 tsp cayenne pepper",
+    "1 rounded tbsp minced lemongrass"
+  ],
+  "recipeInstructions": [
+    "1. Combine all the ingredients for the marinade.",
+    "2. Slice the beef into thin strips.",
+    "3. Put the sliced beef in the marinade, cover with clingfilm, and refrigerate for 2 hours.",
+    "4. Thread onto four long metal skewers and barbecue for 8 minutes."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "BBQ",
+  "keywords": [],
+  "tool": []
+}

@@ -1,0 +1,37 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Mushroom Duxelles",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "200 g",
+  "prepTime": "PT5M",
+  "cookTime": "PT10M",
+  "recipeIngredient": [
+    "80 g clarified butter,",
+    "1 kg button mushrooms (very finely chopped),",
+    "1 lemon (juice only),",
+    "60 g shallots (finely chopped),",
+    "100 ml double cream,",
+    "2 tbsp chopped parsley."
+  ],
+  "recipeInstructions": [
+    "1. Heat the clarified butter in a pan over a medium heat.",
+    "2. Add the mushrooms and lemon juice and cook, stirring from time to time, until all the moisture has evaporated.",
+    "3. Add the shallot and cook for another 2 minutes, then pour in the cream and cook, stirring, until it is all absorbed.",
+    "4. Add the chopped parley and season to taste. Set aside to cool, then chill. "
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "French",
+  "keywords": [
+    "Meat"
+  ],
+  "tool": []
+}

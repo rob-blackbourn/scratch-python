@@ -1,0 +1,30 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Ponzu Plum Sauce",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "1 cup",
+  "prepTime": "PT5M",
+  "cookTime": "PT0M",
+  "recipeIngredient": [
+    "1 1/2 c. Japanese ponzu sauce",
+    "3 Tbsp. neri ume paste (3 Tbsp. extra plum sauce can be substituted)",
+    "6 Tbsp. Chinese plum sauce",
+    "3 Tbsp. Asian chili oil"
+  ],
+  "recipeInstructions": [
+    "In a small bowl, whisk together the plum dipping sauce ingredients: ponzu sauce, neri ume, and plum sauce.  Add the chili oil last, mixing gently.  The oil will float on top of the sauce."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Japanese",
+  "keywords": [],
+  "tool": []
+}

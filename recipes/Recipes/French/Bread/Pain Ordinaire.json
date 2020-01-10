@@ -1,0 +1,36 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Pain Ordinaire",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "350 ml warm water,",
+    "15 g of fresh yeast or 2 tsp dried yeast,",
+    "500 g strong white flour,",
+    "1 1/2 tsp salt. "
+  ],
+  "recipeInstructions": [
+    "1. Pour 100 ml of water in a large bowl, sprinkle in the yeast, whisk lightly, and leave for 5 minutes. ",
+    "2. Add a third of the flour and mix to a light paste. Cover the bowl with a tea towel and wait for 20 minutes. ",
+    "3. Add the rest of the flour and salt and the majority of the remaining water. Mix, and add enough water to make a moist yet firm dough. ",
+    "4. Knead for 10 minutes on a floured surface. ",
+    "5. Leave covered to prove for 30 minutes to 2 hours, until more than doubled in size. ",
+    "6. Knock back the dough for 1 minute and put in a greased bread tin. ",
+    "7. Cover with a tea towel and leave for 45 minutes to 1 hour until doubles in size. ",
+    "8. Place in a pre-heated oven at 220C/gas 7 for 45 minutes. "
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "French",
+  "keywords": [
+    "Bread"
+  ],
+  "tool": []
+}

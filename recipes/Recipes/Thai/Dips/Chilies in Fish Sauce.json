@@ -1,0 +1,30 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Chilies in Fish Sauce",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "1/4 cup fish sauce,",
+    "10-15 birds eye chilies (finely sliced),",
+    "2 garlic cloves (finely sliced),",
+    "1 tbsp lime juice,",
+    "good pinch of chopped coriander."
+  ],
+  "recipeInstructions": [
+    "1. Combine the fish sauce, chillies and garlic in a bowl and set aside. It keeps for some time \u2013 in fact it becomes richer and milder as it settles for a day. Make sure it is covered if you are making it in advance \u2013 and if the fish sauce evaporates, add an equivalent amount of water to refresh it. Just before serving, stir through the lime juice and coriander."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Thai",
+  "keywords": [
+    "Dips"
+  ],
+  "tool": []
+}

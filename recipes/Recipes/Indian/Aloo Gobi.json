@@ -1,0 +1,43 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Aloo Gobi",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4",
+  "prepTime": "PT10M",
+  "cookTime": "PT20M",
+  "recipeIngredient": [
+    "2 tbsp sunflower oil",
+    "25g/1oz butter (or alternative)",
+    "2 tsp cumin seeds",
+    "2 tsp ground turmeric",
+    "4cm/1 1/2in fresh root ginger, finely grated",
+    "2 onions, roughly chopped",
+    "2 tsp freshly chopped green bird\u2019s-eye chillies (or to taste)",
+    "3 tbsp dried fenugreek leaves (methi)",
+    "1 cauliflower, broken into florets, leaves chopped",
+    "2 large potatoes, cut into 2cm/ 3/4in cubes",
+    "2 tsp garam masala",
+    "salt and freshly ground black pepper",
+    "handful fresh coriander, to garnish"
+  ],
+  "recipeInstructions": [
+    "Heat the oil and butter in a large heavy-based saucepan over a medium heat.",
+    "Add the cumin, turmeric, ginger, onions, chillies and fenugreek and fry for a few minutes.",
+    "Add the cauliflower florets and leaves, stir to coat in the spices and cook for a few minutes.",
+    "Add the potatoes, stir again, cover and steam for 10\u201315 minutes, or until the vegetables are tender.",
+    "Sprinkle over the garam masala and season to taste. Garnish with coriander before serving with the rice."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Indian",
+  "keywords": [],
+  "tool": []
+}

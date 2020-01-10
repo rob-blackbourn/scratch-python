@@ -1,0 +1,58 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Poached Haddock on a Ham and Spring Onion Rosti Potato",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "100ml whipping cream,",
+    "125g spring onions,",
+    "9 asparagus spears,",
+    "125g Orkney smoked cheese,",
+    "60g flour,",
+    "1 shallot,",
+    "1 leek,",
+    "150ml sunflower oil,",
+    "2 litres water,",
+    "2 thyme sprigs,",
+    "6 black peppercorns,",
+    "450g Maris Piper potatoes,",
+    "125g diced ham,",
+    "2 x 675g whole haddock, ",
+    "60g butter,",
+    "1 red pepper,",
+    "1 onion,",
+    "1 clove garlic,",
+    "75ml dry white wine, ",
+    "6 parsley sprigs,",
+    "1 lemon,",
+    "125g butter."
+  ],
+  "recipeInstructions": [
+    "1. Put on a pan of water for the stock, scrub potatoes and boil with seasoning. ",
+    "2. Prepare vegetables for the fish stock and poaching dish and put on to sweat off. ",
+    "3. Fillet the haddock and cut into 3 portions, add fish bones to vegetables and sweat off. Put haddock in fridge ",
+    "4. Cut julienne of red pepper and put in cold water in fridge. Make bouquet garni. ",
+    "5. Add water to make fish stock, add bouquet garni and take to boil. Skin and simmer for 15-20 minutes. ",
+    "6. Sliceandsaut\u00e9springonions,peelasparagus,gratesmokedcheese. ",
+    "7. Drain potatoes and cool, melt butter add flour and cook to a blond roux, put shallots, lemon and parsley in a shallow greased dish and peel and grate potatoes add spring onions and ham and season. ",
+    "8. Sieve fish stock, place haddock in a dish and season, add lemon, shallots, fish stock and wine and cover with greased paper. Place in the oven. ",
+    "9. Make velout\u00e9 adding stock slowly until smooth, add peppercorns and reduce. ",
+    "10. Saut\u00e9 rosti potatoes in a heavy frying pan with metal rings, put on asparagus to cook. Sieve velout\u00e9, add cream and small amount of stock from fish dish, reduce and add cheese, check seasoning. ",
+    "11. Arrange potato on plate, drain asparagus and glaze with butter and put on top of potato. Nap the asparagus with sauce and place haddock on top skin side up, put sauce on plate and finish with julienne of pepper and serve. Whilst every care has been taken on the compilation of this publication,the publishers and promoters of this publication shall not be liable for any inaccuracies. "
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "British",
+  "keywords": [
+    "Seafood",
+    "Smoked Haddock"
+  ],
+  "tool": []
+}

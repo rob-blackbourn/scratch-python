@@ -1,0 +1,35 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Ras-el-Hanout",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "5 tsp",
+  "prepTime": "PT5M",
+  "cookTime": "PT0M",
+  "recipeIngredient": [
+    "2 tsp ground cinnamon",
+    "1 tsp ground turmeric",
+    "1 tsp coriander seeds",
+    " 1/2 tsp freshly ground black pepper",
+    " 1/4 tsp freshly grated nutmeg, or to taste",
+    " 1/4 tsp freshly ground cardamom seeds",
+    " 1/4 tsp freshly ground cloves"
+  ],
+  "recipeInstructions": [
+    "Mix all of the ingredients together until well combined. Grind in a spice grinder or coffee grinder to a fine powder. Store in an airtight jar."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Moroccan",
+  "keywords": [
+    "Spices"
+  ],
+  "tool": []
+}

@@ -1,0 +1,39 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Chicken Stock",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "1.5 l",
+  "prepTime": "PT15M",
+  "cookTime": "1 3/4 hours",
+  "recipeIngredient": [
+    "1 chicken (1.5 kg, blanched and refreshed),",
+    "200 g carrots (cut into chunks),",
+    "2 leeks (white part, cut into chunks),",
+    "1 celery stalk (coarsely chopped),",
+    "1 onion studded with 2 cloves,",
+    "150 g button mushrooms (thinly sliced),",
+    "1 ."
+  ],
+  "recipeInstructions": [
+    "1. Put chicken in a large saucepan and cover with 2.5 l cold water.",
+    "2. Bring to the boil on a high heat, then immediately lower to a simmer.",
+    "3. After 5 minutes skim and add the other ingredients.",
+    "4. Cook gently for 1 1/2 hours without boiling, skimming when necessary.",
+    "5. Strain and cool as quickly as possible."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "French",
+  "keywords": [
+    "Stock"
+  ],
+  "tool": []
+}

@@ -1,0 +1,44 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Rendang Ayam Negeri Sembilan",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4-6",
+  "prepTime": "PT20M",
+  "cookTime": "PT45M",
+  "recipeIngredient": [
+    "1 chicken (about 1.5 kg, cut into bite sized pieces),",
+    "1 tsp salt,",
+    "12 shallots (peeled and sliced),",
+    "6 cloves of garlic (peeled and sliced),",
+    "2 stalks of lemongrass (lightly crushed),",
+    "1 l coconut cream,",
+    "2 leaves of turmeric,",
+    "4 tbsp grated coconut,",
+    "To be ground",
+    "20 dried chillies (soaked),",
+    "20 birds eye chillies,",
+    "1\" piece of ginger (peeled),",
+    "1\" piece of galangal (peeled)."
+  ],
+  "recipeInstructions": [
+    "1. Into a mixing bowl put chicken, 1 tsp salt, shallots, garlic lemongrass and group ingredients. Mix well and leave for 30 minutes.",
+    "2. Transfer the marinated meat to a pot and add coconut cream. Bring to a slow boil.",
+    "3. Add the turmeric leaves and simmer gently until the gravy is thick.",
+    "4. Stir in kerisik and salt to taste, then simmer until chicken is tender and very little gravy remains."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Malaysian",
+  "keywords": [
+    "Meat Curry"
+  ],
+  "tool": []
+}

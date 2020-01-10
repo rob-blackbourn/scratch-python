@@ -1,0 +1,40 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Mozzarella, anchovies, chilli, capers & parsley pizza topping",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "4 anchovy fillets,",
+    " 1/2 fresh red chilli (sliced),",
+    "1 heaped teaspoon small capers (rinsed if salty),",
+    "extra virgin olive oil,",
+    "zest and juice of  1/2 lemon,",
+    "3 tablespoons tomato sauce,",
+    "50 g mozzarella,",
+    "1 tablespoon finely sliced fresh flat-leaf parsley,",
+    "sea salt,",
+    "freshly ground black pepper."
+  ],
+  "recipeInstructions": [
+    "1. Cut the anchovy fillets in half lengthways and add to a bowl with the sliced chilli, the capers, a couple of tablespoons of extra virgin olive oil and the lemon zest.",
+    "2. Squeeze over a little lemon juice as well and mix up.",
+    "3. Let the anchovies sit in the marinade for 15 minutes.",
+    "4. Smear the tomato sauce evenly over the pizza base and scatter torn-up pieces of mozzarella over the top.",
+    "5. Evenly lay over the anchovy fillets, scatter over the capers and chilli, and sprinkle with a little parsley and seasoning.",
+    "6. Drizzle with the leftover marinating oil and cook until crisp and golden."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Italian",
+  "keywords": [
+    "Pizza"
+  ],
+  "tool": []
+}

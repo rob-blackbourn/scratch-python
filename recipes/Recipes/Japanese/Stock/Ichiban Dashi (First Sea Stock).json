@@ -1,0 +1,34 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Ichiban Dashi (First Sea Stock)",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "Makes 4 cups",
+  "prepTime": "PT15M",
+  "cookTime": "PT20M",
+  "recipeIngredient": [
+    "1l water,",
+    "15g ,",
+    "15g ."
+  ],
+  "recipeInstructions": [
+    "1. Place the water and the kombu in a pan and let the kombu soak for 30 minutes.",
+    "2. Place the pan over medium heat. Just before the water starts to boil, remove from the heat and scatter the katsuobushi over the surface of the water.",
+    "3. After 3 or 4 minutes (the katsuobushi will have sunk to the bottom of the pot by this point), strain the stock through a strainer lined with muslin or a coffee-filter.",
+    "4. Refrigerate the stock in a tightly covered container for up to 4 days in the refrigerator."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Japanese",
+  "keywords": [
+    "Stock"
+  ],
+  "tool": []
+}

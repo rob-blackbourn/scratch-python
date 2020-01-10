@@ -1,0 +1,53 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Thai Chicken Satay",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "prepTime": "PT15M",
+  "cookTime": "PT8M",
+  "totalTime": "PT2H",
+  "recipeIngredient": [
+    "500g chicken breast ( cut into 1 in wide 3 in long)",
+    "8-10 bamboo skewers.",
+    "For the marinade",
+    "1/2 cup coconut milk,",
+    "2 tbsp minced galangal,",
+    "2 tbsp minced lemon grass,",
+    "1 tbsp coriander powder,",
+    "1-2 tbsp turmeric or curry powder,",
+    "1 tsp salt,",
+    "1-2 tsp sugar,",
+    "1-2 tsp white or black pepper.",
+    "For the satay sauce",
+    "1/2- 3/4 cup coconut milk",
+    "1/4 cup coarsely ground roast peanut or peanut ",
+    "1/4 cup red curry paste",
+    "1/4 cup tamarind juice",
+    "1 tsp salt or fish sauce",
+    "For the cucumber relish sauce",
+    "2 red spur chillies ( finely sliced)",
+    "1 cucumber ( sliced in quarters lenght then sliced thin)",
+    "1-2 shallot ( finely chopped)",
+    "1/2 sugar",
+    "1/2 cup vinegar"
+  ],
+  "recipeInstructions": [
+    "1. Cut the chicken into thin wide strips. A single strip will be threaded on a skewer lengthways.",
+    "2. Make the marinade, by combining all the dry ingredients in a food processor, then adding the liquids.",
+    "3. Add the chicken to the marinade, cover with clingfilm, and refrigerate for 2 hours.",
+    "4. To make the satay sauce, put the coarsely ground peanuts in a pan,then add the red curry paste, and coconut milk. Bring to the boil, then turn down the heat and add the remaining ingredients.",
+    "5. To make the cucumber relish, put the vinegar in a small pan, add the sugar, and dissolve over  low heat. Turn off the heat and allow to cool. Add the cucumber, shallot and chilli."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "BBQ",
+  "keywords": [],
+  "tool": []
+}

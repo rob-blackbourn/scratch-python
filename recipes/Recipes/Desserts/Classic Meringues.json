@@ -1,0 +1,33 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Classic Meringues",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "6 large meringues",
+  "prepTime": "PT10M",
+  "cookTime": "PT2H",
+  "recipeIngredient": [
+    "2 egg whites (at room temperature),",
+    "100 g / 3 1/2 oz caster sugar."
+  ],
+  "recipeInstructions": [
+    "1. Preheat the oven to Gas Mark 1/4 (90C).",
+    "2. Line a backing sheet with baking parchment.",
+    "3. Place the egg whites into a large metal bowl. Using an electric whisk, whisk on medium speed for about 1 minute. The egg whites will turn to foam and grow in volume. Increase to a high speed and continue whisking until soft peaks begin to form.",
+    "4. Still whisking, add the sugar gradually, a few spoonfuls at a time, whisking for  20 - 30 seconds between each addition. Continue to whisk until the whites are eight times their original volumes, the sugar has dissolved and the mixture is stiff and shiny. Touch the foam with your finger - if it feels gritty keep whisking. The mixture is ready for baking when it doesn\u2019t slide off a spoon and it holds it\u2019s shape.",
+    "5. Spoon the mixture onto the parchment-lined baking sheet.",
+    "6. "
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Desserts",
+  "keywords": [],
+  "tool": []
+}

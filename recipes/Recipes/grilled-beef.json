@@ -1,0 +1,38 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Grilled Beef (neua yang)",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "150g rump steak,",
+    "3-4 tbsp light soy sauce.",
+    "For the sauce",
+    "3 tbsp lime juice,",
+    "2 tbsp fish sauce,",
+    "pinch of white sugar (optional),",
+    "very large pinch of roasted chilli powder,",
+    "1 red shallot (finely sliced),",
+    "1 tbsp chopped coriander leaves."
+  ],
+  "recipeInstructions": [
+    "1. Clean the beef and remove excess fat, as preferred. Marinate in the light soy sauce for an hour or so. Drain and pat dry.",
+    "2. To make the chilli sauce, combine the ingredients and check seasoning: the sauce should taste hot, sour, and salty.",
+    "3. Grill the beef over high heat for 5-10 minutes, until cooked to the preferred degree, then rest for the same amount of time in a warm place.",
+    "4. Slice and serve with the chilli sauce."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Thai",
+  "keywords": [
+    "Thai Food",
+    "Street Food"
+  ],
+  "tool": []
+}

@@ -1,0 +1,44 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Baked Risotto of Smoked Haddock & Leek",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4",
+  "prepTime": "PT5M",
+  "cookTime": "PT35M",
+  "recipeIngredient": [
+    "small knob of butter,",
+    "1 large leek (thinly sliced),",
+    "300 g risotto rice,",
+    "700 ml fish or vegetable stock,",
+    "250 ml full-fat milk,",
+    "375 g smoked haddock (skinned and cut into large chunks),",
+    "3 tbsp cr\u00e8me fra\u00eeche,",
+    "100g baby spinach."
+  ],
+  "recipeInstructions": [
+    "1. Heat oven to 200C/180C fan/gas 6.",
+    "2. Heat the butter in a large ovenproof dish over a medium heat.",
+    "3. Cook the leek for 4-5 mins, stirring regularly, until just tender.",
+    "4. Add the rice and stir for a further 2 mins.",
+    "5. Add the stock and milk, bring to the boil and bubble for 5 mins.",
+    "6. Put the haddock on top.",
+    "7. Cover and bake in the oven for 18 mins until the rice is tender.",
+    "8. Fold in the cr\u00e8me fra\u00eeche and spinach, season with plenty of black pepper, then cover the pan again and leave to rest out of the oven for 3 mins to allow the spinach to soften."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "British",
+  "keywords": [
+    "Seafood",
+    "Smoked Haddock"
+  ],
+  "tool": []
+}

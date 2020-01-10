@@ -1,0 +1,61 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Singapore Laksa",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4-6",
+  "recipeIngredient": [
+    "For the spice paste",
+    "8 shallots (chopped),",
+    "4 cloves of garlic (chopped),",
+    "40 g fresh root ginger (peeled and chopped),",
+    "2 stalks of lemongrass (chopped),",
+    "6 candlenut or macadamia nuts,",
+    "4 dried red chilies (soaked until soft and deseed),",
+    "2 tbsp dried shrimp (soaked until soft),",
+    "1-2 tsp belacon (Malaysian shrimp paste),",
+    "1-2 tsp sugar,",
+    "1 tbsp vegetable oil.",
+    "For the laksa",
+    "6 shallots (finely sliced),",
+    "600 ml coconut milk,",
+    "400 ml chicken stock,",
+    "90 g prawn (peeled),",
+    "90 g shrimp (cleaned, trimmed and sliced),",
+    "6-8 scallops,",
+    "75 g cockles (shelled),",
+    "225 g rice noodles or dried rice vermicelli (soaked in luke warm water until pliable),",
+    "90 g beansprouts,",
+    "Salt and freshly ground black pepper,",
+    "A small bunch of Vietnamese mint of fresh garden mint (roughly chopped),",
+    "Chilli oil."
+  ],
+  "recipeInstructions": [
+    "1. Make the spice paste.",
+    "1.1 Put all the spice paste ingredients except the oil into a food processor and process.",
+    "1.2 Add the oil and process into a paste, then set aside.",
+    "2. Deep fry the shallots and set aside.",
+    "3. In a wok, fry the spice paste in a little oil on a low heat for 3-4 minutes.",
+    "4. Add the coconut milk and chicken stock and bring to the boil, stirring continually.",
+    "5. Add the prawns, squid, and scallops, and simmer gently for 5-10 minutes until cooked.",
+    "6. At the last minute add the cockles and season with salt and pepper.",
+    "7. Ladle the noodles into bowls.",
+    "8. Add the beansprouts.",
+    "9. Add the soup.",
+    "10. Garnish with crispy shallots, mint, and a drizzle of chilli oil."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Malaysian",
+  "keywords": [
+    "Soup"
+  ],
+  "tool": []
+}

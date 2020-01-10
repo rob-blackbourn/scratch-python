@@ -1,0 +1,44 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Italian Potted Beef",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "15 servings",
+  "prepTime": "PT10M",
+  "cookTime": "PT45M",
+  "recipeIngredient": [
+    "4kg rump steak or chuck roast,",
+    "3 tsp cooking oil",
+    "3 onions (chopped),",
+    "2 cups diced celery,",
+    "3 carrots (chopped),",
+    "3 bay leaves,",
+    "1 tsp salt,",
+    "2 cups sliced mushrooms,",
+    "3 (6 ounce) cans tomato paste,",
+    "2 (10 1/2 ounce) cans beef broth,",
+    "1 1/2 cups dry red wine."
+  ],
+  "recipeInstructions": [
+    "1. Heat the cooker, add oil and brown roast on all sides.",
+    "2. Add veggies and seasonings.",
+    "3. Blend the paste with the broth and wine.",
+    "4. Pour over meat and veg.",
+    "5. Close cover securely.",
+    "6. Place pressure regulator on vent pipe and cook 35 minutes at 15 pounds pressure.",
+    "7. Let pressure drop of its own accord.",
+    "8. Thicken gravy if desired."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Pressure Cooker",
+  "keywords": [],
+  "tool": []
+}

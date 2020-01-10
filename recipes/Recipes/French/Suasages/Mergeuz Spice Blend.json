@@ -1,0 +1,34 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Mergeuz Spice Blend",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "888g Lamb breast ",
+    "982g Lamb shoulder ",
+    "4 rounded tbsp smoked sweet paprika ",
+    "1 tsp ground black pepper ",
+    "2 tsp fennel seeds ground ",
+    "2 tbsp cumin seeds ground ",
+    "1.5 tsp ground cinnamon ",
+    "4 tsp fine sea salt ",
+    "67g fresh corriander chopped ",
+    "10 garlic cloves peeled and crushed ",
+    "4 tbsp harrisa (I used Barts)"
+  ],
+  "recipeInstructions": [],
+  "recipeCategory": null,
+  "recipeCuisine": "French",
+  "keywords": [
+    "Suasages"
+  ],
+  "tool": []
+}

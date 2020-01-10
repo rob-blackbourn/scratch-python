@@ -1,0 +1,44 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Ebi Fry",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "2",
+  "recipeIngredient": [
+    "6 black tiger prawns,",
+    "a pinch of salt,",
+    "1 tbsp potato starch,",
+    "water",
+    "Batter",
+    "1 egg",
+    "? tbsp water,",
+    "2 tbsp flour,",
+    "80g Nama Panko (moist bread crumbs)"
+  ],
+  "recipeInstructions": [
+    "1. Shell the prawns, leaving the tail. Pierce the back of the prawn with a skewer, and remove the salt vein. Remove the sharp pointed scales from the tail and trim.",
+    "2. Add a little salt to the prawns, dust with potato starch, add water and mix.",
+    "3. Rinse the prawns.",
+    "4. Dry the prawns on a paper towel.",
+    "5. Score the stomach of the prawns diagonally and, from the back, break the resistance of the body with your fingers to stop them curling when cooked.",
+    "6. Season the prawns with salt.",
+    "7. Beat the egg in a bowl and add a little water.",
+    "8. Roll the prawns in the flour, dip in the egg and coat with breadcrumbs.",
+    "9. Deep fry."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Japanese",
+  "keywords": [
+    "Seafood",
+    "Prawn"
+  ],
+  "tool": []
+}

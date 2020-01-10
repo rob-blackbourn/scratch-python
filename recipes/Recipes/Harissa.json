@@ -1,0 +1,36 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Harissa",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "3 tbsp",
+  "prepTime": "PT10M",
+  "cookTime": "PT0M",
+  "recipeIngredient": [
+    "12 to 15 dried red chili peppers (approx. 1 1/2 oz. or 100 g)",
+    "3 or 4 cloves garlic",
+    "1 teaspoon salt, or to taste",
+    "1 teaspoon ground cumin (optional)",
+    "1/2 teaspoon ground coriander seeds (optional)",
+    "1/2 teaspoon ground caraway seeds (optional)",
+    "2 to 3 teaspoons lemon juice",
+    "Olive oil"
+  ],
+  "recipeInstructions": [
+    "Remove the seeds from the dried chili peppers and place them in a bowl. Cover them with very hot water and leave to soften for 30 minutes to an hour.",
+    "Drain the chili peppers, and gently squeeze out excess water with a paper towel. Using a mortar and pestle (or a blender or mini food processor) grind the chili peppers, garlic, salt and spices to a paste. Add the lemon juice and just enough olive oil to moisten the harissa, or add additional olive oil to thin it.",
+    "Store unused harissa in an airtight container in the fridge. For long storage, lightly top the harissa with a little oil before covering."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Moroccan",
+  "keywords": ["Spices"],
+  "tool": []
+}

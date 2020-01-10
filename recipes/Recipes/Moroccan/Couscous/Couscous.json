@@ -1,0 +1,40 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Couscous",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4 servings",
+  "prepTime": "PT0M",
+  "cookTime": "PT10M",
+  "recipeIngredient": [
+    "1 cup couscous,",
+    "1 cup hot water,",
+    "a knob of butter,",
+    "salt & pepper.",
+    "Optional Ingredients",
+    "Chives (chopped),",
+    "red pepper (diced)."
+  ],
+  "recipeInstructions": [
+    "1. Put the couscous in a pyrex bowl.",
+    "2. Boil the water and pour over the couscous.",
+    "3. Cover with cling film and wait for 10 minutes.",
+    "4. Remove the cling film and fluff with a fork.",
+    "5. Add a knob of butter and season.",
+    "6. If required add the optional ingredients."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Moroccan",
+  "keywords": [
+    "Couscous"
+  ],
+  "tool": []
+}

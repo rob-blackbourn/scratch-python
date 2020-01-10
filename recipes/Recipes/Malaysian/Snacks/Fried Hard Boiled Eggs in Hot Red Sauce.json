@@ -1,0 +1,47 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Fried Hard Boiled Eggs in Hot Red Sauce",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4",
+  "recipeIngredient": [
+    "8 shelled hard boiled eggs,",
+    "1 stalk of lemongrass (trimmed quartered and crushed),",
+    "2 large tomatoes (skinned, seeded, and chopped to a pulp),",
+    "1-2 tsp sugar,",
+    "2 tbsp dark soy sauce,",
+    "1 lime (juiced),",
+    "1 sprig of fresh coriander (coarsely chopped),",
+    "1 sprig mint (coarsely chopped).",
+    "For the rempah",
+    "4-6 red chilies (seeded and chopped),",
+    "4 shallots (chopped),",
+    "2 cloves of garlic (chopped),",
+    " 1/2 tsp shrimp paste."
+  ],
+  "recipeInstructions": [
+    "1. Process the rempah into a smooth paste.",
+    "2. Deep fry the eggs until golden brown.",
+    "3. Put some oil in a wok and fry the rempah until it becomes fragrant.",
+    "4. Add the lemongrass, tomatoes, and sugar.",
+    "5. Cook for 2-3 minutes until it becomes a thick paste.",
+    "6. Reduce the heat.",
+    "7. Stir in the soy sauce and lime juice.",
+    "8. Add up to 2 tbsp water to thin the sauce then add the eggs and toss until coated.",
+    "9. Serve with chopped coriander and mint."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Malaysian",
+  "keywords": [
+    "Snacks"
+  ],
+  "tool": []
+}

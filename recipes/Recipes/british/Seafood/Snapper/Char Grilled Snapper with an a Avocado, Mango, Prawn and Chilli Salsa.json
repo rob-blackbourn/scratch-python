@@ -1,0 +1,42 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Char Grilled Snapper with an a Avocado, Mango, Prawn and Chilli Salsa",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "2",
+  "prepTime": "PT15M",
+  "cookTime": "PT8M",
+  "recipeIngredient": [
+    "2 fillets of snapper,",
+    "extra virgin olive oil,",
+    "coriander sprigs (to garnish).",
+    "For the salsa",
+    "1 deseeded and thinly sliced chilli,",
+    "50 g thickly sliced cooked tiger prawns,",
+    "2 thinly sliced spring onions,",
+    "1/2 finely chopped garlic clove,",
+    "1/2 peeled and diced avocado,",
+    "1/4 peeled and diced mango,",
+    "juice of 1/2 lime."
+  ],
+  "recipeInstructions": [
+    "1. Mix all the salsa ingredients together.",
+    "2. Halve the fillets diagonally, brush with oil, season, and grill.",
+    "3. Spoon the salsa on the plates and lay the fish on top. Garnish with the coriander."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "British",
+  "keywords": [
+    "Seafood",
+    "Snapper"
+  ],
+  "tool": []
+}

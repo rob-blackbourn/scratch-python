@@ -1,0 +1,49 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Malay Beehoon",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4",
+  "recipeIngredient": [
+    "1 carrot (cut into matchsticks),",
+    "225 g fresh prawns (peeled),",
+    "120 ml chicken stock,",
+    "2 tbsp dark soy sauce,",
+    "175 g beansprouts,",
+    "115 g mustard greens or pak choi (shredded),",
+    "225 g dried rice vermicelli (soaked in lukewarm water until pliable and drained),",
+    "1-2 fresh chilies (deseeded and finely sliced),",
+    "Fresh coriander leaves (roughly chopped).",
+    "For the rempah",
+    "4 dried red chilies (soaked until soft and deseeded),",
+    "4 cloves of garlic,",
+    "4 shallots (chopped),",
+    "25 g fresh root ginger (peeled and chopped),",
+    "1 tsp ground turmeric."
+  ],
+  "recipeInstructions": [
+    "1. Combine the ingredients for the rempah in a mortar and pestle or food processor into a paste.",
+    "2. In a wok fry off the rempah in a little oil until it begins to colour and becomes fragrant.",
+    "3. Toss in the carrots and cook for a few minutes.",
+    "4. Add the prawns.",
+    "5. Add the stock and soy sauce and cook for 1 minute.",
+    "6. Add the beansprouts and mustard greens.",
+    "7. Add the noodles.",
+    "8. Toss well to ensure the vegetables and noodles are coated and heated through.",
+    "9. Transfer to a serving plate and garnish with the sliced chilies and coriander."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Malaysian",
+  "keywords": [
+    "Rice and Noodles"
+  ],
+  "tool": []
+}

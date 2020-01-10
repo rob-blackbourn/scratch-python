@@ -1,0 +1,44 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Singapore Egg Noodles",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4",
+  "recipeIngredient": [
+    "3 cloves of garlic (finely chopped),",
+    "115 g pork fillet (cut into thin strips),",
+    "115 g fresh fish fillet (cut into bitesize pieces),",
+    "115 g fresh prawns (shelled and deveined),",
+    "2 small squid (cleaned and sliced reserving tenticles),",
+    "300 ml chicken stock,",
+    "450 g egg noodles,",
+    "1 carrot (shredded),",
+    "2 tbsp dark soy sauce,",
+    "2 tbsp light soy sauce,",
+    "Ground black pepper,",
+    "Small bunch of fresh coriander (roughly chopped)."
+  ],
+  "recipeInstructions": [
+    "1. In a wok fry off the garlic.",
+    "2. When it becomes fragrant stir in the pork, fish, prawns,  and squid, tossing them around in the pan for 1 minute.",
+    "3. Pour in the stock and simmer to reduce it.",
+    "4. Add the noodles and toss them around in the wok for 1 minute.",
+    "5. Stir in the carrot and cabbage.",
+    "6. Add the soy sauces and cook until most of the liquid has been evaporated.",
+    "7. Season with pepper."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Malaysian",
+  "keywords": [
+    "Rice and Noodles"
+  ],
+  "tool": []
+}

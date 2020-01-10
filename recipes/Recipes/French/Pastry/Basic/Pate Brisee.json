@@ -1,0 +1,35 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Pate Brisee",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "250g plain flour,",
+    "150 g butter (cut into small pieces and slightly softened),",
+    "1 tsp fine salt,",
+    "pinch of caster sugar,",
+    "1 egg,",
+    "1 tbsp cold milk."
+  ],
+  "recipeInstructions": [
+    "1. Heap the flour on a work surface and make a well. Put in the butter, salt, sugar and egg. Using your fingertips, mix and cream these ingredients together.",
+    "2. Little by little, draw in the flour, working the dough delicately until it has a grainy texture.",
+    "3. Add the milk and incorporate gently with your fingertips until the dough begins to hold together.",
+    "4. Using the palm of your hand, work the dough by pushing it away from you 4 or 5 times until it is smooth. Roll it into a ball, wrap in clingfilm and refrigerate until ready to use."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "French",
+  "keywords": [
+    "Pastry",
+    "Basic"
+  ],
+  "tool": []
+}

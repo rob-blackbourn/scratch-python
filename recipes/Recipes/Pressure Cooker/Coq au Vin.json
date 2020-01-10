@@ -1,0 +1,46 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Coq au Vin",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4 servings",
+  "prepTime": "PT20M",
+  "cookTime": "PT30M",
+  "recipeIngredient": [
+    "1 kg chicken pieces",
+    " 1/4 cup olive or peanut oil",
+    "250g diced (smoked) bacon",
+    "2 medium brown onions, sliced",
+    "2 garlic cloves, crushed",
+    "500ml red wine",
+    "2 tbsp flour",
+    "1 or 2 bay leaves",
+    "200g small white mushrooms",
+    "1 cup chopped parsley",
+    "3 small potatoes per person",
+    "Salt & pepper",
+    "2 tbsp cognac (optional)"
+  ],
+  "recipeInstructions": [
+    "1. Heat oil in your pressure cooker (lid off) and brown the chicken pieces in batches, set aside.",
+    "2. Brown the bacon pieces and sliced onions.",
+    "3. Add chicken, sift over flour, mix well. Add cognac and light if you wish.",
+    "4. Cover with red wine, then add salt, pepper and bay leaves",
+    "5. Bring to boil and lock your pressure cooker.",
+    "6. After reaching pressure, cook on reduced heat for 25 to 35 minutes.",
+    "7. 5 Minutes before end, open pressure cooker (quick release method) and add the mushrooms.",
+    "8. Close and finish cooking. Steam potatoes (in separate pressure cooker or conventional steamer) and serve with chopped parsley."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Pressure Cooker",
+  "keywords": [],
+  "tool": []
+}

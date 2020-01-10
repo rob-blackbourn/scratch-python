@@ -1,0 +1,36 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Ricotta & Spinach Pasta Filling",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4",
+  "recipeIngredient": [
+    "225 g (8 oz) spinach leaves,",
+    "100 g (4 oz) ricotta cheese,",
+    "25 g (1 oz) grated Parmesan cheese,",
+    "1 egg,",
+    "a pinch of nutmeg,",
+    "salt and pepper.",
+    "Instructions",
+    "1. Place the spinach in a large saucepan pan with only the water which is left clinging to the leaves. Cover, place over a medium heat and cook for a few minutes, shaking the pan vigorously from time to time, until the spinach has wilted. ",
+    "2. Drain well, squeezing as much water out of the leaves as possible then transfer to a chopping board and chop. ",
+    "3. Place the chopped spinach in a mixing bowl together with the and cheeses, egg, nutmeg, salt and pepper and mix well. Allow to cool before using."
+  ],
+  "recipeInstructions": [],
+  "recipeCategory": null,
+  "recipeCuisine": "Italian",
+  "keywords": [
+    "Pasta",
+    "Ravioli Fillings",
+    "Cheese"
+  ],
+  "tool": []
+}

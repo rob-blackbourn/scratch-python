@@ -3,6 +3,7 @@ from pathlib import Path
 from typing import Any, List
 
 import docx2json
+import pkg_resources
 
 # text = docx2json.convert("Beef and oyster pie - Hairy Bikers.docx")
 
@@ -24,23 +25,30 @@ template = {
     "cookTime": "",
     "recipeIngredient": None,
     "recipeInstructions": None,
-    "recipeCategory": [],
-    "recipeCuisine": [],
+    "recipeCategory": None,
+    "recipeCuisine": None,
     "keywords": "",
-    "unparsed": []
+    "tool": None,
+    "unparsed": None
 }
 
-def transform(lines: List[str]) -> Any:
+def transform(lines: List[str], cuisine: str, keywords) -> Any:
     if not lines:
         return None
 
     recipe = template.copy()
     recipe['recipeIngredient'] = []
     recipe['recipeInstructions'] = []
+    recipe['tool'] = []
+    recipe['unparsed'] = []
     
     recipe['name'] = lines[0]
+    recipe['recipeCuisine'] = cuisine
+    recipe['keywords'] = keywords
+    section = None
     in_ingredients = False
     in_method = False
+    in_tool = False
     for line in lines[1:]:
         if line.lower().startswith('yield'):
             _name, _sep, value = line.partition(':')
@@ -61,30 +69,41 @@ def transform(lines: List[str]) -> Any:
             else:
                 recipe['cookTime'] = line
         elif line.lower().startswith('ingredients'):
-            in_ingredients = True
-            in_method = False
+            section = 'ingredients'
+        elif line.lower().startswith('equipment'):
+            section = 'tool'
         elif line.lower() in ('method', 'preperation', 'preparation'):
-            in_ingredients = False
-            in_method = True
-        elif in_ingredients:
+            section = 'method'
+        elif section == 'ingredients':
             recipe['recipeIngredient'].append(line)
-        elif in_method:
+        elif section == 'method':
             recipe['recipeInstructions'].append(line)
+        elif section == 'tool':
+            recipe['tool'].append({
+                '@type': 'HowToTool',
+                'name': line
+            })
         else:
+            section = None
             recipe['unparsed'].append(line)
+
+    if not recipe['unparsed']:
+        del recipe['unparsed']
+
     return recipe
 
 def descend(folder: Path):
     for item in folder.iterdir():
         if item.is_file():
-            print(f'file: {item}')
             if item.suffix == '.docx':
-                text = docx2json.convert(str(item), sepBold=False)
+                filename = str(item)
+                cuisine = item.parts[1]
+                keywords = list(item.parts[2:-1])
+                text = docx2json.convert(filename, sepBold=False)
                 dct = json.loads(text)
-                recipe = transform(dct['text'])
-                print(recipe)
+                recipe = transform(dct['text'], cuisine, keywords)
                 with open(item.with_suffix('.json'), "wt") as fp:
-                    json.dump(recipe, fp)
+                    json.dump(recipe, fp, indent=2)
             item.unlink()
         elif item.is_dir():
             descend(item)
@@ -93,4 +112,4 @@ def descend(folder: Path):
 
 
 if __name__ == "__main__":
-    descend(Path("/home/rtb/dev/scratch/data/recipes/drive"))
+    descend(Path("Recipes"))

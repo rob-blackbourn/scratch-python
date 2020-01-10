@@ -1,0 +1,30 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Onigiri",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "Sushi rice,",
+    "Nori seaweed sheets,",
+    "Filling: shiozake (salted salmon, grilled and flaked), umeboshi (salty pickled plum), tarako (salty cod roe cooked and cut into small chunks), okaka (bonito flakes mixed with a little soy sauce), umukaka (bonito flakes mixed with umeboshi), limbo no tsukudani or ship Kombu (kombu seaweed cooked in soy sauce until tender and salty). "
+  ],
+  "recipeInstructions": [
+    "1. Make the rice. ",
+    "2. Make a bowl of slightly salty water.",
+    "3. Moisten your hands with the salty water and mold into shape. "
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Japanese",
+  "keywords": [
+    "Rice"
+  ],
+  "tool": []
+}

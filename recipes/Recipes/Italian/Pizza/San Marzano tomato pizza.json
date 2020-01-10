@@ -1,0 +1,50 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "San Marzano tomato pizza",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "Makes 4 pizzas",
+  "prepTime": "PT24H",
+  "cookTime": "PT10M",
+  "recipeIngredient": [
+    "For the pizza dough",
+    "800 g '00' flour,",
+    "200 g semolina flour,",
+    "1 tsp salt,",
+    "1 tbsp caster sugar,",
+    "14g dried yeast, ",
+    "4 tbsp extra virgin olive oil,",
+    "650 ml water,",
+    "For the topping",
+    "2 x 400g tins San Marzano tomatoes,",
+    "2 large cow\u2019s milk mozzarella balls (grated),",
+    "3 tbsp olive oil,",
+    "3 tbsp peanut oil,",
+    "sea salt and freshly ground black pepper,",
+    "1 large handful basil leaves.",
+    "Preparation method",
+    "1. To make the dough, place the flours, salt, sugar and yeast into a large bowl and stir. Make a well in the centre of the flour and pour in the water, gradually mixing in the flour to form a soft dough.",
+    "2. Tip out and knead on an oiled work surface for about 10 minutes or until the dough is smooth and elastic. Place it into a bowl, cover and leave to rise for 24 hours.",
+    "3. Preheat the oven to its highest temperature. Place a heavy baking tray or pizza stone in the oven and allow it to heat.",
+    "4. Remove the dough from the bowl and knead for a couple of minutes, then divide into four pieces. Allow to rest for five minutes, then stretch each piece over your hands to form a disc about 5mm/ 1/4in thick.",
+    "5. Place the circles of dough onto upturned floured baking trays or a pizza peel if you have one.",
+    "6. Place the tinned tomatoes into a food processor and blend to a pur\u00e9e. Spoon the tomato pur\u00e9e thinly over the pizzas, scatter over the grated mozzarella, then drizzle over the oils. Season with sea salt and freshly ground black pepper.",
+    "7. Slide each pizza off the baking tray directly onto the heated baking tray or pizza stone in the oven and cook for 5 -10 minutes, or until golden-brown and crisp.",
+    "8. To serve, scatter the basil leaves over the pizza and drizzle with a little more peanut oil."
+  ],
+  "recipeInstructions": [],
+  "recipeCategory": null,
+  "recipeCuisine": "Italian",
+  "keywords": [
+    "Pizza"
+  ],
+  "tool": []
+}

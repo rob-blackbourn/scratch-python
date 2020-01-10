@@ -1,0 +1,47 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Beef Penaeg (gang panaeg neua)",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "200 g beef brisket (sinew removed),",
+    "1l coconut milk (for cooking the beef),",
+    "750ml coconut milk (for the curry),",
+    "750ml coconut cream,",
+    "1 1/2 tbsp palm sugar,",
+    "2 tbsp fish sauce,",
+    "3 kaffir lime leaves (torn),",
+    "3 long red or green chilies (cut in half and deseeded,",
+    "large handful of thai basil leaves.",
+    "For the paste",
+    "4 tbsp peanuts,",
+    "7 dried long red chilies (deseeded, soaked and drained),",
+    "large pinch of salt,",
+    "1 tsp scraped and chopped coriander root,",
+    "1 1/2 tbsp chopped galangal,",
+    "1 tbsp chopped lemongrass,",
+    "3 tbsp chopped red shallot,",
+    "2 tbsp chopped garlic,",
+    "1/2 nutmeg (coarsely pounded and briefly roasted)"
+  ],
+  "recipeInstructions": [
+    "1. First make the paste. Boil the peanuts for at least 30 minutes until very soft, drain and cool. Pound or blend the paste, adding the peanuts last.",
+    "2. Blanch the meat from a cold water start (to soften it\u2019s flavour) and rinse. Bring the coconut milk to the boil, add the beef, then turn down the heat and braise gently until tender (about 2 hours). Allow to cool in the liquid, then remove and slice.",
+    "3. Crack the coconut cream by simmering over a medium heat, then fry 4 tbsp of the paste in the coconut cream for 10 minutes. Season, first with palm sugar, and then, after a minute with the fish sauce. Moisten with 3 cups of coconut milk. Add the sliced beef, simmer briefly to heat through, and finish with the remaining ingredients."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Thai",
+  "keywords": [
+    "Thai Food",
+    "Curries"
+  ],
+  "tool": []
+}

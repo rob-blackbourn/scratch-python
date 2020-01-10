@@ -1,0 +1,36 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Kombu no tsukudani",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "100g Kombu,",
+    "4 tbsp dark soy sauce,",
+    "2 tbsp rice vinegar,",
+    "2 tbsp mirin,",
+    "2 tbsp sugar,",
+    "1 tsp grated ginger juice (optional)."
+  ],
+  "recipeInstructions": [
+    "1. Soak the Kombu in enough water to cover it until it is soft enough to cut.",
+    "2. Reserve the water and cut into bite size pieces, and return to the water.",
+    "3. Add the vinegar and leave for at least 1 hour. ",
+    "4. Add the other ingredients, bring the pan to a simmer, then lower the heat. ",
+    "5. Add liquid if necessary. ",
+    "6. Cook until soft, shiny, caramalised, and transluscent. "
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Japanese",
+  "keywords": [
+    "Vegetables"
+  ],
+  "tool": []
+}

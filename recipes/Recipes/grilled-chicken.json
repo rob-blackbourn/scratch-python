@@ -1,0 +1,48 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Grilled Chicken (gai yang)",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "3 coriander roots (scraped and chopped),",
+    "pinch of salt,",
+    "4 garlic cloves (peeled),",
+    "10 white peppercorns,",
+    "1 small chicken (about 400g),",
+    "3 tbsp fish sauce,",
+    "large pinch of palm sugar.",
+    "For the sauce",
+    "1/2 cup scraped and chopped coriander root,",
+    "pinch of salt,",
+    "1/2 cup garlic cloves (peeled),",
+    "1 cup long red chilies (deseeded if desired),",
+    "4 cups white vinegar,",
+    "3 cups white sugar,",
+    "4 cups water,",
+    "large pinch of salt."
+  ],
+  "recipeInstructions": [
+    "1. Using a pestle and mortar, pound the coriander roots, salt, garlic, and peppercorns into a fine paste.",
+    "2. Cut the chicken in half along the breastbone, flatten out, wash and dry. Work in the paste, fish sauce and sugar, and leave to marinate for a few hours.",
+    "3. For the sweet chilli sauce, pound the coriander root, salt, garlic and chilies into a paste.",
+    "4. Combine the vinegar, sugar, water, and salt in a pot and bring to the boil.",
+    "5. Add the paste and stir to dissolve. Simmer the sauce until reduced by half, skimming as necessary, then set aside to cool.",
+    "6. Chargrill the chicken for 15-20 minutes, turning regularly. Serve with a bowl of the sauce.",
+    "7. Eat with  especially cucumber."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "Thai",
+  "keywords": [
+    "Thai Food",
+    "Street Food"
+  ],
+  "tool": []
+}

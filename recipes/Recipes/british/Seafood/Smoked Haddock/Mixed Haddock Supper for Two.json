@@ -1,0 +1,43 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Mixed Haddock Supper for Two",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "2",
+  "recipeIngredient": [
+    "A piece of fresh haddock about 225g (7\u20138oz),",
+    "A piece of smoked haddock about the same weight,",
+    "A good handful of button mushrooms wiped not washed, sliced,",
+    "Tablespoon capers,",
+    "50g (2oz) lump of butter to saut\u00e9 mushrooms,",
+    "25g (1oz) flour,",
+    "150ml (1/4 pt) milk,",
+    "Glass of white wine,",
+    "Pinch of salt to taste,",
+    "A good shake of Parmesan cheese or grated Gruyere"
+  ],
+  "recipeInstructions": [
+    "1. Saut\u00e9 the mushrooms in the butter until soft and set aside. ",
+    "2. Leaving the skin, poach the two pieces of fish in the milk with capers for about 4 minutes. ",
+    "3. Don\u2019t forget the smoked fish has already been cooked so can be lifted first. Remember the golden rule for any kind of fish \u2013 DO NOT OVER COOK. ",
+    "4. Lift fish from stock and flake away from skin into a flat gratin dish. Sauce ",
+    "5. Shake flour into mushrooms stirring well and slowly as you pour in stock from fish over gentle heat, to make creamy sauce. Season to taste with pepper (you should not need salt), gently stir in the wine. ",
+    "6. Pour over the fish. ",
+    "7. Give a sprinkle of cheese, pop into a fairly hot oven \u2013 not to cook \u2013 just to brown the top. 8. Serve with peas, broccoli or spinach and a few new potatoes. "
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "British",
+  "keywords": [
+    "Seafood",
+    "Smoked Haddock"
+  ],
+  "tool": []
+}

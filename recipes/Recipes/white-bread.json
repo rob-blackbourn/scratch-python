@@ -1,0 +1,39 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "White Bread",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeIngredient": [
+    "500g strong white bread flour,",
+    "1 tsp sugar,",
+    "1 tbsp dried yeast,",
+    "2 tsp salt,",
+    "1 tbsp oil,"
+  ],
+  "recipeInstructions": [
+    "1. Put a little warm water in a small mixing bowl. Add the sugar and yeast, and whisk until dissolved.",
+    "2. Put the flour in a large mixing bowl, and add the salt.",
+    "3. When the yeast mixture is frothy, add to the flour, and mix with a wooden spoon.",
+    "4. Add the oil and mix again.",
+    "5. Add enough water (very little) to make the mixture a stiff dough.",
+    "6. Knead for 10 minutes on a clean surface.",
+    "7. Wash the bowl, dry, and lightly oil.",
+    "8. Return the dough to the bowl and leave to rest until it has doubled in size (about 45 minutes).",
+    "9. Knock down, break into 8 rolls and put on a lightly oiled baking tray. Leave to rise until doubled in size (about 30 minutes).",
+    "10. Cook on Gas 7 for 8 to 10 minutes."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "British",
+  "keywords": [
+    "Bread"
+  ],
+  "tool": []
+}

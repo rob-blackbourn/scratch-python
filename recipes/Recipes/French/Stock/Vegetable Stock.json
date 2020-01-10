@@ -1,0 +1,43 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Vegetable Stock",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "1.5 l",
+  "prepTime": "PT15M",
+  "cookTime": "PT45M",
+  "recipeIngredient": [
+    "300 g carrots (cut into rounds),",
+    "2 leeks (white part, thinly sliced),",
+    "100 g celery stalks (thinly sliced),",
+    "50 g bulb of fennel (very thinly sliced),",
+    "150 g shallots (thinly sliced),",
+    "100 g onion (thinly sliced),",
+    "2 cloves of garlic (unpeeled),",
+    "1 bouquet garni,",
+    "250 ml dry white wine,",
+    "2 l water",
+    "10 white peppercorns (crushed and wrapped in muslin),"
+  ],
+  "recipeInstructions": [
+    "1. Put all the ingredients except the peppercorns into a saucepan.",
+    "2. Bring to the boil over a high heat, then reduce immediately to a simmer.",
+    "3. Cook at a bare simmer for 45 minutes.",
+    "4. After 35 minutes add the muslin wrapped peppercorns.",
+    "5. Strain and cool as quickly as possible."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "French",
+  "keywords": [
+    "Stock"
+  ],
+  "tool": []
+}

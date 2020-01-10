@@ -1,0 +1,44 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Chorizo, New Potato & Haddock One-Pot",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "2",
+  "prepTime": "PT10M",
+  "cookTime": "PT20M",
+  "recipeIngredient": [
+    "1 tbsp extra-virgin olive oil (plus extra to serve),",
+    "50g chorizo (peeled and thinly sliced),",
+    "450g salad or new potatoes (sliced),",
+    "4 tbsp dry sherry,",
+    "2 skinless thick fillets of haddock,",
+    "good handful cherry tomatoes (halved),",
+    "20g bunch parsley (chopped),",
+    "crusty bread (to serve)."
+  ],
+  "recipeInstructions": [
+    "1. Heat a large lidded frying pan, then add the oil.",
+    "2. Tip in the chorizo, fry for 2 mins until it starts to release its oils.",
+    "3. Tip in the potatoes and season.",
+    "4. Splash over 3 tbsp Sherry, cover the pan tightly, then leave to cook for 10-15 mins stirring once until the potatoes are just tender.",
+    "5. Season the fish well.",
+    "6. Add the cherry tomatoes and most of the chopped parsley to the pan, then lay the fish on top. Splash over 1 tbsp Sherry, put the lid on again, then leave to cook for 5 mins, or until the fish has turned white and is flaky when prodded in the middle.",
+    "7. Scatter the whole dish with a little more parsley and drizzle with more extra virgin oil.",
+    "8. Serve straight away with crusty bread."
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "British",
+  "keywords": [
+    "Seafood",
+    "Smoked Haddock"
+  ],
+  "tool": []
+}

@@ -1,0 +1,62 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Lamb Shanks with Flageolet Beans",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4",
+  "prepTime": "PT30M",
+  "cookTime": "PT2H",
+  "recipeIngredient": [
+    "For the lamb shanks",
+    "4 lamb shanks,",
+    "salt and freshly ground black pepper,",
+    "1 tbsp olive oil,",
+    "350ml/12fl oz red wine,",
+    "1 onion (cut into quarters),",
+    "1 head garlic (cut in half horizontally),",
+    "2 sprigs fresh rosemary,",
+    "5 anchovy fillets,",
+    "1 litre/1 3/4 pints hot beef stock,",
+    "50g/2oz butter.",
+    "For the flageolet beans",
+    "75g/3oz butter,",
+    "1 onion (finely chopped),",
+    "1 garlic clove (finely chopped),",
+    "1 tsp chopped fresh rosemary,",
+    "4 tomatoes (skins and seeds removed, chopped),",
+    "400g/14oz canned flageolet beans (drained and rinsed),",
+    "3 tbsp chopped fresh flat leaf parsley,",
+    "Preparation method",
+    "1. For the lamb shanks, preheat the oven to 150C/300F/Gas 2.",
+    "2. Season the lamb shanks with salt and freshly ground black pepper.",
+    "3. Heat the oil in a large casserole over a medium heat. When the oil is hot, add the lamb shanks and fry on all sides until browned all over.",
+    "4. Add the red wine and bring to a simmer. Continue to simmer until the volume of liquid has reduced by a third.",
+    "5. Add the onion, garlic, rosemary and anchovy fillets and stir well to combine.",
+    "6. Add enough of the hot beef stock to just cover the lamb (the bones should be protruding from the surface of the liquid). Return the mixture to a gentle simmer.",
+    "7. Transfer the casserole to the oven and cook, uncovered, for three hours, turning the lamb shanks occasionally (about once every 45 minutes).",
+    "8. Meanwhile, for the flageolet beans, heat half of the butter in a frying pan over a medium heat. When the butter is foaming, add the onion, garlic and rosemary and fry for 2-3 minutes, or until just softened.",
+    "9. Add the tomatoes and cook for a further 2-3 minutes, or until they have broken down slightly. ",
+    "10. Add the drained flageolet beans and stir until heated through. Season, to taste, with salt and freshly ground black pepper.  ",
+    "11. Add the remaining butter and stir until the butter has melted. Add the parsley and stir well to combine.",
+    "12.When the lamb shanks are cooked through, remove them from the cooking liquid and set aside on a warm plate.",
+    "13. Return the casserole to the hob and bring the cooking liquid to the boil. Boil for 4-5 minutes, or until it has reduced slightly.",
+    "14. Strain the reduced cooking liquid through a fine sieve into a clean saucepan, then season, to taste, with salt and freshly ground black pepper. Add the butter and whisk until it has melted and the sauce is glossy.",
+    "15. To serve, divide the flageolet beans equally among four serving plates. Place one lamb shank on top of each. Drizzle the reduced sauce over and around the lamb shanks."
+  ],
+  "recipeInstructions": [],
+  "recipeCategory": null,
+  "recipeCuisine": "British",
+  "keywords": [
+    "Meat",
+    "Lamb"
+  ],
+  "tool": []
+}

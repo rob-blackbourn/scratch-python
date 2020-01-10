@@ -1,0 +1,35 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Scallop & Peach Ceviche",
+  "author": {
+    "@type": "Person",
+    "name": "Rob Blackbourn"
+  },
+  "description": "",
+  "datePublished": "2019-02-15T19:59:57+00:00",
+  "image": [
+    "https://www.example.com/image.png"
+  ],
+  "recipeYield": "4",
+  "prepTime": "PT30M",
+  "recipeIngredient": [
+    "8 scallops (coral removed).",
+    "3 limes,",
+    "1/2 red onion (grated),",
+    "3 peaches (stoned and chopped into small pieces),",
+    "1 tbsp fresh tarragon (chopped),"
+  ],
+  "recipeInstructions": [
+    "1. Slice each scallop horizontally into four disks,",
+    "2. Place the scallop slices into a bowl with the lime juice and zest, peaches, tarragon, and a pinch of salt. ",
+    "3. Stir, cover with cling film and put in the fridge for 20 minutes. "
+  ],
+  "recipeCategory": null,
+  "recipeCuisine": "British",
+  "keywords": [
+    "Seafood",
+    "Scallops"
+  ],
+  "tool": []
+}
