@@ -30,7 +30,7 @@ def descend(root: Path, folder: Path):
                 elements = []
                 cuisine = recipe.get('recipeCuisine')
                 if cuisine:
-                    elements.append(cuisine.lo)
+                    elements.append(cuisine.lower())
                 keywords = recipe.get('keywords')
                 if keywords:
                     elements += [
@@ -42,7 +42,7 @@ def descend(root: Path, folder: Path):
                     new_folder.mkdir(parents=True)
                 new_item = new_folder.joinpath(ascii_filename)
                 item.rename(new_item)
-                print(new_path)
+                print(new_item)
         elif item.is_dir():
             descend(root, item)
         else:
