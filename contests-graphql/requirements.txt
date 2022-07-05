@@ -20,7 +20,7 @@ multidict==4.4.2
 pluggy==0.7.1
 promise==2.1
 py==1.6.0
-pycares==2.3.0
+pycares==4.2.0
 pymongo==3.7.1
 pytest==3.8.1
 pytest-asyncio==0.9.0
