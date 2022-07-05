@@ -20,7 +20,7 @@ motorodm==0.0.1
 multidict==4.4.0
 pkg-resources==0.0.0
 promise==2.1
-pycares==2.3.0
+pycares==4.2.0
 pycodestyle==2.4.0
 PyJWT==1.6.4
 pylint==2.1.1
